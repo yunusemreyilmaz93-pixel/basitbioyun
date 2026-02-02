@@ -1,0 +1,10 @@
+# Python Backend için gereksinimler
+fastapi==0.109.0
+uvicorn==0.27.0
+soccerdata==1.6.0
+pandas==2.1.4
+python-dotenv==1.0.0
+httpx==0.26.0
+pydantic==2.5.3
+apscheduler==3.10.4
+cachetools==5.3.2
