@@ -26,16 +26,16 @@ interface Message {
 }
 
 const QUICK_PROMPTS = [
-  { icon: BarChart3, text: "Fenerbahçe'nin son performansını analiz et", color: "text-blue-400" },
-  { icon: Target, text: "GS - BJK maçı için tahmin yap", color: "text-purple-400" },
-  { icon: Users, text: "Icardi vs Dzeko karşılaştır", color: "text-green-400" },
-  { icon: FileText, text: "Derbi için video scripti yaz", color: "text-orange-400" },
+  { icon: BarChart3, text: "Fenerbahçe'nin son performansını analiz et", color: 'text-blue-400' },
+  { icon: Target, text: 'GS - BJK maçı için tahmin yap', color: 'text-purple-400' },
+  { icon: Users, text: 'Icardi vs Dzeko karşılaştır', color: 'text-green-400' },
+  { icon: FileText, text: 'Derbi için video scripti yaz', color: 'text-orange-400' },
 ]
 
 // Backend API URL (Railway'de deploy edildikten sonra güncellenecek)
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
-export default function ChatPage() {
+export default function ChatPageClient() {
   const searchParams = useSearchParams()
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
@@ -68,10 +68,10 @@ export default function ChatPage() {
       id: `msg_${Date.now()}`,
       role: 'user',
       content: text,
-      timestamp: new Date()
+      timestamp: new Date(),
     }
 
-    setMessages(prev => [...prev, userMessage])
+    setMessages((prev) => [...prev, userMessage])
     setInput('')
     setIsLoading(true)
 
@@ -84,11 +84,11 @@ export default function ChatPage() {
         },
         body: JSON.stringify({
           message: text,
-          context: messages.slice(-10).map(m => ({
+          context: messages.slice(-10).map((m) => ({
             role: m.role,
-            content: m.content
-          }))
-        })
+            content: m.content,
+          })),
+        }),
       })
 
       if (!response.ok) {
@@ -101,19 +101,19 @@ export default function ChatPage() {
         id: `msg_${Date.now()}_assistant`,
         role: 'assistant',
         content: data.response || 'Bir hata oluştu, lütfen tekrar deneyin.',
-        timestamp: new Date()
+        timestamp: new Date(),
       }
 
-      setMessages(prev => [...prev, assistantMessage])
+      setMessages((prev) => [...prev, assistantMessage])
     } catch (error) {
       // Hata durumunda demo yanıt
       const assistantMessage: Message = {
         id: `msg_${Date.now()}_assistant`,
         role: 'assistant',
         content: `**Demo Mod** - Backend henüz bağlı değil.\n\nSorunuz: "${text}"\n\nBackend Railway'de deploy edildikten sonra gerçek AI yanıtları alacaksınız. Şimdilik uygulamanın arayüzünü test edebilirsiniz.\n\n**Yapılacaklar:**\n1. Railway hesabı aç\n2. Backend'i deploy et\n3. API URL'ini güncelle`,
-        timestamp: new Date()
+        timestamp: new Date(),
       }
-      setMessages(prev => [...prev, assistantMessage])
+      setMessages((prev) => [...prev, assistantMessage])
     } finally {
       setIsLoading(false)
       inputRef.current?.focus()
@@ -204,9 +204,7 @@ export default function ChatPage() {
                       : 'bg-background-card border border-gray-800 text-gray-200'
                   }`}
                 >
-                  <div className="whitespace-pre-wrap text-sm leading-relaxed">
-                    {message.content}
-                  </div>
+                  <div className="whitespace-pre-wrap text-sm leading-relaxed">{message.content}</div>
                   <div className={`text-xs mt-2 ${message.role === 'user' ? 'text-primary-light' : 'text-gray-500'}`}>
                     {message.timestamp.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })}
                   </div>
