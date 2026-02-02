@@ -23,6 +23,30 @@ from ai_assistant import (
     predict_match
 )
 
+# API-Football modülü
+from api_football import (
+    get_live_matches,
+    get_standings as apif_get_standings,
+    get_fixtures as apif_get_fixtures,
+    get_head_to_head as apif_get_h2h,
+    get_team_statistics,
+    get_top_scorers as apif_get_scorers,
+    get_top_assists,
+    get_today_matches,
+    get_team_next_match,
+    get_team_last_matches,
+    get_fixture_statistics,
+    get_fixture_lineups,
+    get_fixture_events,
+    get_predictions,
+    search_team,
+    search_player,
+    LEAGUE_IDS,
+    TURKISH_TEAMS,
+    get_league_id,
+    get_team_id,
+)
+
 load_dotenv()
 
 
@@ -627,13 +651,376 @@ async def ai_predict_match(request: MatchPredictionRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# ============================================
+# API-FOOTBALL ENDPOİNT'LERİ (Canlı Veriler)
+# ============================================
+
+@app.get("/live/matches")
+async def live_matches(league: Optional[str] = None):
+    """Canlı maçları getir"""
+    try:
+        league_id = get_league_id(league) if league else None
+        data = await get_live_matches(league_id)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "matches": data.get("response", []),
+            "count": data.get("results", 0),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/standings/{league}")
+async def live_standings(league: str, season: int = 2024):
+    """API-Football'dan canlı puan durumu"""
+    try:
+        league_id = get_league_id(league)
+        if not league_id:
+            raise HTTPException(status_code=404, detail=f"Lig bulunamadı: {league}")
+
+        data = await apif_get_standings(league_id, season)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        standings = []
+        if data.get("response") and len(data["response"]) > 0:
+            league_data = data["response"][0].get("league", {})
+            standings_data = league_data.get("standings", [[]])[0]
+            standings = standings_data
+
+        return {
+            "league": league,
+            "season": season,
+            "standings": standings,
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/fixtures/{league}")
+async def live_fixtures(
+    league: str,
+    season: int = 2024,
+    next: Optional[int] = None,
+    last: Optional[int] = None
+):
+    """API-Football'dan fikstür"""
+    try:
+        league_id = get_league_id(league)
+        if not league_id:
+            raise HTTPException(status_code=404, detail=f"Lig bulunamadı: {league}")
+
+        data = await apif_get_fixtures(league_id, season, next, last)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "league": league,
+            "season": season,
+            "fixtures": data.get("response", []),
+            "count": data.get("results", 0),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/today")
+async def today_matches(league: Optional[str] = None):
+    """Bugünün maçlarını getir"""
+    try:
+        league_id = get_league_id(league) if league else None
+        data = await get_today_matches(league_id)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "matches": data.get("response", []),
+            "count": data.get("results", 0),
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/team/{team_name}/stats")
+async def live_team_stats(team_name: str, league: str = "super_lig", season: int = 2024):
+    """Takım istatistiklerini getir (API-Football)"""
+    try:
+        team_id = get_team_id(team_name)
+        league_id = get_league_id(league)
+
+        if not team_id:
+            # Takım bulunamadıysa arama yap
+            search_result = await search_team(team_name)
+            if search_result.get("response"):
+                team_id = search_result["response"][0]["team"]["id"]
+            else:
+                raise HTTPException(status_code=404, detail=f"Takım bulunamadı: {team_name}")
+
+        if not league_id:
+            raise HTTPException(status_code=404, detail=f"Lig bulunamadı: {league}")
+
+        data = await get_team_statistics(team_id, league_id, season)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "team": team_name,
+            "league": league,
+            "season": season,
+            "statistics": data.get("response", {}),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/team/{team_name}/next")
+async def team_next_match(team_name: str):
+    """Takımın bir sonraki maçını getir"""
+    try:
+        team_id = get_team_id(team_name)
+
+        if not team_id:
+            search_result = await search_team(team_name)
+            if search_result.get("response"):
+                team_id = search_result["response"][0]["team"]["id"]
+            else:
+                raise HTTPException(status_code=404, detail=f"Takım bulunamadı: {team_name}")
+
+        data = await get_team_next_match(team_id)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "team": team_name,
+            "next_match": data.get("response", [{}])[0] if data.get("response") else None,
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/team/{team_name}/last")
+async def team_last_matches(team_name: str, count: int = 5):
+    """Takımın son maçlarını getir"""
+    try:
+        team_id = get_team_id(team_name)
+
+        if not team_id:
+            search_result = await search_team(team_name)
+            if search_result.get("response"):
+                team_id = search_result["response"][0]["team"]["id"]
+            else:
+                raise HTTPException(status_code=404, detail=f"Takım bulunamadı: {team_name}")
+
+        data = await get_team_last_matches(team_id, count)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "team": team_name,
+            "matches": data.get("response", []),
+            "count": len(data.get("response", [])),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/h2h")
+async def live_head_to_head(
+    team1: str = Query(..., description="Birinci takım"),
+    team2: str = Query(..., description="İkinci takım"),
+    last: int = 10
+):
+    """İki takım arasındaki son maçlar (API-Football)"""
+    try:
+        team1_id = get_team_id(team1)
+        team2_id = get_team_id(team2)
+
+        if not team1_id:
+            search_result = await search_team(team1)
+            if search_result.get("response"):
+                team1_id = search_result["response"][0]["team"]["id"]
+
+        if not team2_id:
+            search_result = await search_team(team2)
+            if search_result.get("response"):
+                team2_id = search_result["response"][0]["team"]["id"]
+
+        if not team1_id or not team2_id:
+            raise HTTPException(status_code=404, detail="Takımlardan biri bulunamadı")
+
+        data = await apif_get_h2h(team1_id, team2_id, last)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "team1": team1,
+            "team2": team2,
+            "matches": data.get("response", []),
+            "count": len(data.get("response", [])),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/scorers/{league}")
+async def live_top_scorers(league: str, season: int = 2024):
+    """Gol krallığı listesi (API-Football)"""
+    try:
+        league_id = get_league_id(league)
+        if not league_id:
+            raise HTTPException(status_code=404, detail=f"Lig bulunamadı: {league}")
+
+        data = await apif_get_scorers(league_id, season)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "league": league,
+            "season": season,
+            "top_scorers": data.get("response", []),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/assists/{league}")
+async def live_top_assists(league: str, season: int = 2024):
+    """Asist krallığı listesi (API-Football)"""
+    try:
+        league_id = get_league_id(league)
+        if not league_id:
+            raise HTTPException(status_code=404, detail=f"Lig bulunamadı: {league}")
+
+        data = await get_top_assists(league_id, season)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "league": league,
+            "season": season,
+            "top_assists": data.get("response", []),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/live/predictions/{fixture_id}")
+async def live_predictions(fixture_id: int):
+    """Maç tahminlerini getir (API-Football)"""
+    try:
+        data = await get_predictions(fixture_id)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "fixture_id": fixture_id,
+            "predictions": data.get("response", [{}])[0] if data.get("response") else None,
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/search/team")
+async def api_search_team(name: str):
+    """Takım ara"""
+    try:
+        data = await search_team(name)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "query": name,
+            "results": data.get("response", []),
+            "count": len(data.get("response", [])),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/search/player")
+async def api_search_player(name: str):
+    """Oyuncu ara"""
+    try:
+        data = await search_player(name)
+
+        if "error" in data:
+            raise HTTPException(status_code=500, detail=data["error"])
+
+        return {
+            "query": name,
+            "results": data.get("response", []),
+            "count": len(data.get("response", [])),
+            "timestamp": datetime.now().isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 # Sağlık kontrolü
 @app.get("/health")
 async def health_check():
     """API sağlık kontrolü"""
     return {
         "status": "healthy",
-        "timestamp": datetime.now().isoformat()
+        "timestamp": datetime.now().isoformat(),
+        "services": {
+            "soccerdata": "active",
+            "api_football": "active",
+            "grok_ai": "active"
+        }
     }
 
 
