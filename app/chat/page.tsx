@@ -269,5 +269,8 @@ export default function ChatPageClient() {
         </div>
       </div>
     </div>
+      <Suspense fallback={null}>
+      <ChatPageClient />
+    </Suspense>
   )
 }
