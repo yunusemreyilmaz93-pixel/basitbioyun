@@ -1,0 +1,576 @@
+{
+  "featured": {
+    "tag": "Model Insight",
+    "title": "How our algorithm predicts Yamal's €200M valuation",
+    "excerpt": "A league-coefficient surge, elite match ratings, and rising caps are compounding — here is the exact path the Smart Valuation model projects to a €200M ceiling.",
+    "source": "BasitBiOyun Research",
+    "time": "18 min ago",
+    "read": "4 min read",
+    "playerId": "lamine-yamal",
+    "currentValue": 180,
+    "targetValue": 200,
+    "confidence": 87,
+    "signals": [
+      {
+        "label": "League coeff.",
+        "delta": "+12%"
+      },
+      {
+        "label": "Match ratings",
+        "delta": "7.91"
+      },
+      {
+        "label": "Age curve",
+        "delta": "Peak+5y"
+      },
+      {
+        "label": "Caps",
+        "delta": "27"
+      }
+    ]
+  },
+  "news": [
+    {
+      "tag": "Transfer",
+      "title": "Doué medical booked as PSG close €50m Rennes deal",
+      "source": "L’Équipe",
+      "time": "32 min ago"
+    },
+    {
+      "tag": "Injury",
+      "title": "Musiala limps off — Bayern await scan results",
+      "source": "Kicker",
+      "time": "51 min ago"
+    },
+    {
+      "tag": "Contract",
+      "title": "Güler agrees new terms at Madrid through 2029",
+      "source": "MARCA",
+      "time": "1h ago"
+    },
+    {
+      "tag": "Rumor",
+      "title": "Chelsea reopen talks for Juventus’ Yıldız",
+      "source": "Fabrizio Romano",
+      "time": "1h ago"
+    },
+    {
+      "tag": "Market",
+      "title": "Bundesliga wingers see sharpest value spike this window",
+      "source": "BasitBiOyun",
+      "time": "2h ago"
+    },
+    {
+      "tag": "Transfer",
+      "title": "Olise handed Bayern’s No.17 after breakout season",
+      "source": "Sky DE",
+      "time": "3h ago"
+    },
+    {
+      "tag": "Loan",
+      "title": "Endrick loan to Betis nearing completion",
+      "source": "Relevo",
+      "time": "4h ago"
+    },
+    {
+      "tag": "Deal",
+      "title": "City table opening bid for Bayern’s Musiala",
+      "source": "The Athletic",
+      "time": "5h ago"
+    }
+  ],
+  "matches": [
+    {
+      "id": "barcelona-real-madrid",
+      "league": "La Liga",
+      "home": "Barcelona",
+      "hc": "BAR",
+      "away": "Real Madrid",
+      "ac": "RMA",
+      "hs": 2,
+      "as": 1,
+      "status": "live",
+      "clock": "67'"
+    },
+    {
+      "id": "juventus-inter",
+      "league": "Serie A",
+      "home": "Juventus",
+      "hc": "JUV",
+      "away": "Inter",
+      "ac": "INT",
+      "hs": 1,
+      "as": 1,
+      "status": "live",
+      "clock": "54'"
+    },
+    {
+      "id": "chelsea-arsenal",
+      "league": "Premier League",
+      "home": "Chelsea",
+      "hc": "CHE",
+      "away": "Arsenal",
+      "ac": "ARS",
+      "hs": 0,
+      "as": 0,
+      "status": "live",
+      "clock": "23'"
+    },
+    {
+      "id": "bayern-leverkusen",
+      "league": "Bundesliga",
+      "home": "Bayern",
+      "hc": "FCB",
+      "away": "Leverkusen",
+      "ac": "B04",
+      "hs": 3,
+      "as": 2,
+      "status": "ft"
+    },
+    {
+      "id": "psg-monaco",
+      "league": "Ligue 1",
+      "home": "PSG",
+      "hc": "PSG",
+      "away": "Monaco",
+      "ac": "ASM",
+      "hs": 4,
+      "as": 0,
+      "status": "ft"
+    },
+    {
+      "id": "atletico-sevilla",
+      "league": "La Liga",
+      "home": "Atlético",
+      "hc": "ATM",
+      "away": "Sevilla",
+      "ac": "SEV",
+      "kickoff": "21:00",
+      "status": "upcoming"
+    },
+    {
+      "id": "liverpool-man-city",
+      "league": "Premier League",
+      "home": "Liverpool",
+      "hc": "LIV",
+      "away": "Man City",
+      "ac": "MCI",
+      "kickoff": "21:00",
+      "status": "upcoming"
+    }
+  ],
+  "latestTransfers": [
+    {
+      "playerId": "desire-doue",
+      "name": "Désiré Doué",
+      "pos": "AM",
+      "age": 21,
+      "from": "Rennes",
+      "fc": "REN",
+      "to": "Paris SG",
+      "tc": "PSG",
+      "fee": 50
+    },
+    {
+      "playerId": "michael-olise",
+      "name": "Michael Olise",
+      "pos": "RW",
+      "age": 24,
+      "from": "Crystal Palace",
+      "fc": "CRY",
+      "to": "Bayern",
+      "tc": "FCB",
+      "fee": 53
+    },
+    {
+      "playerId": "arda-guler",
+      "name": "Arda Güler",
+      "pos": "AM",
+      "age": 21,
+      "from": "Fenerbahçe",
+      "fc": "FEN",
+      "to": "Real Madrid",
+      "tc": "RMA",
+      "fee": 20
+    },
+    {
+      "playerId": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "pos": "LW",
+      "age": 26,
+      "from": "Flamengo",
+      "fc": "FLA",
+      "to": "Real Madrid",
+      "tc": "RMA",
+      "fee": 45
+    },
+    {
+      "playerId": "kenan-yildiz",
+      "name": "Kenan Yıldız",
+      "pos": "AM",
+      "age": 21,
+      "from": "Bayern U19",
+      "fc": "FCB",
+      "to": "Juventus",
+      "tc": "JUV",
+      "fee": 0
+    },
+    {
+      "playerId": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "pos": "AM",
+      "age": 23,
+      "from": "Chelsea U18",
+      "fc": "CHE",
+      "to": "Bayern",
+      "tc": "FCB",
+      "fee": 0
+    }
+  ],
+  "rumors": [
+    {
+      "playerId": "kenan-yildiz",
+      "player": "Kenan Yıldız",
+      "pos": "AM",
+      "age": 21,
+      "from": "JUV",
+      "to": "CHE",
+      "probability": 68,
+      "fee": 95,
+      "source": "Fabrizio Romano"
+    },
+    {
+      "playerId": "jamal-musiala",
+      "player": "Jamal Musiala",
+      "pos": "AM",
+      "age": 23,
+      "from": "FCB",
+      "to": "MCI",
+      "probability": 31,
+      "fee": 140,
+      "source": "The Athletic"
+    },
+    {
+      "playerId": "vinicius-junior",
+      "player": "Vinícius Júnior",
+      "pos": "LW",
+      "age": 26,
+      "from": "RMA",
+      "to": "RIY",
+      "probability": 22,
+      "fee": 200,
+      "source": "MARCA"
+    },
+    {
+      "playerId": "michael-olise",
+      "player": "Michael Olise",
+      "pos": "RW",
+      "age": 24,
+      "from": "FCB",
+      "to": "RMA",
+      "probability": 14,
+      "fee": 120,
+      "source": "Sky DE"
+    }
+  ],
+  "smartRisers": [
+    {
+      "playerId": "arda-guler",
+      "name": "Arda Güler",
+      "pos": "AM",
+      "age": 21,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 60,
+      "trend": 33.3,
+      "caps": 34,
+      "rating": 7.62
+    },
+    {
+      "playerId": "kenan-yildiz",
+      "name": "Kenan Yıldız",
+      "pos": "AM",
+      "age": 21,
+      "club": "Juventus",
+      "cc": "JUV",
+      "value": 75,
+      "trend": 25,
+      "caps": 22,
+      "rating": 7.48
+    },
+    {
+      "playerId": "desire-doue",
+      "name": "Désiré Doué",
+      "pos": "AM",
+      "age": 21,
+      "club": "Paris SG",
+      "cc": "PSG",
+      "value": 90,
+      "trend": 25,
+      "caps": 9,
+      "rating": 7.55
+    },
+    {
+      "playerId": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "pos": "RW",
+      "age": 18,
+      "club": "FC Barcelona",
+      "cc": "BAR",
+      "value": 180,
+      "trend": 12.5,
+      "caps": 27,
+      "rating": 7.91
+    },
+    {
+      "playerId": "michael-olise",
+      "name": "Michael Olise",
+      "pos": "RW",
+      "age": 24,
+      "club": "Bayern",
+      "cc": "FCB",
+      "value": 110,
+      "trend": 10,
+      "caps": 12,
+      "rating": 7.7
+    }
+  ],
+  "mostSearched": [
+    {
+      "rank": 1,
+      "playerId": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "pos": "RW",
+      "age": 18,
+      "club": "FC Barcelona",
+      "cc": "BAR",
+      "value": 180,
+      "trend": 12.5
+    },
+    {
+      "rank": 2,
+      "playerId": "kenan-yildiz",
+      "name": "Kenan Yıldız",
+      "pos": "AM",
+      "age": 21,
+      "club": "Juventus",
+      "cc": "JUV",
+      "value": 75,
+      "trend": 25
+    },
+    {
+      "rank": 3,
+      "playerId": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "pos": "LW",
+      "age": 26,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 140,
+      "trend": -6.7
+    },
+    {
+      "rank": 4,
+      "playerId": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "pos": "AM",
+      "age": 23,
+      "club": "Bayern",
+      "cc": "FCB",
+      "value": 125,
+      "trend": -3.8
+    },
+    {
+      "rank": 5,
+      "playerId": "arda-guler",
+      "name": "Arda Güler",
+      "pos": "AM",
+      "age": 21,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 60,
+      "trend": 33.3
+    },
+    {
+      "rank": 6,
+      "playerId": "desire-doue",
+      "name": "Désiré Doué",
+      "pos": "AM",
+      "age": 21,
+      "club": "Paris SG",
+      "cc": "PSG",
+      "value": 90,
+      "trend": 25
+    },
+    {
+      "rank": 7,
+      "playerId": "michael-olise",
+      "name": "Michael Olise",
+      "pos": "RW",
+      "age": 24,
+      "club": "Bayern",
+      "cc": "FCB",
+      "value": 110,
+      "trend": 10
+    },
+    {
+      "rank": 8,
+      "playerId": "lamine-yamal",
+      "name": "Pedri",
+      "pos": "CM",
+      "age": 23,
+      "club": "FC Barcelona",
+      "cc": "BAR",
+      "value": 100,
+      "trend": 5.3
+    },
+    {
+      "rank": 9,
+      "playerId": "vinicius-junior",
+      "name": "Rodrygo",
+      "pos": "RW",
+      "age": 25,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 90,
+      "trend": -8.2
+    },
+    {
+      "rank": 10,
+      "playerId": "kenan-yildiz",
+      "name": "Nico Williams",
+      "pos": "LW",
+      "age": 24,
+      "club": "Athletic Club",
+      "cc": "ATH",
+      "value": 80,
+      "trend": 6.7
+    }
+  ],
+  "expiring": [
+    {
+      "playerId": "vinicius-junior",
+      "name": "Rüdiger",
+      "pos": "CB",
+      "age": 33,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 18,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "jamal-musiala",
+      "name": "Kimmich",
+      "pos": "DM",
+      "age": 31,
+      "club": "Bayern",
+      "cc": "FCB",
+      "value": 45,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "kenan-yildiz",
+      "name": "Vlahović",
+      "pos": "ST",
+      "age": 26,
+      "club": "Juventus",
+      "cc": "JUV",
+      "value": 55,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "lamine-yamal",
+      "name": "De Jong",
+      "pos": "CM",
+      "age": 29,
+      "club": "FC Barcelona",
+      "cc": "BAR",
+      "value": 40,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "michael-olise",
+      "name": "Coman",
+      "pos": "LW",
+      "age": 30,
+      "club": "Bayern",
+      "cc": "FCB",
+      "value": 35,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "desire-doue",
+      "name": "Donnarumma",
+      "pos": "GK",
+      "age": 27,
+      "club": "Paris SG",
+      "cc": "PSG",
+      "value": 50,
+      "expires": "Jun 2026",
+      "endDate": "2026-06-30"
+    },
+    {
+      "playerId": "vinicius-junior",
+      "name": "Alexander-Arnold",
+      "pos": "RB",
+      "age": 27,
+      "club": "Real Madrid",
+      "cc": "RMA",
+      "value": 70,
+      "expires": "Jun 2027",
+      "endDate": "2027-06-30"
+    }
+  ],
+  "leagues": [
+    {
+      "name": "Premier League",
+      "code": "ENG",
+      "continent": "Europe",
+      "clubs": 20,
+      "players": 543,
+      "value": 11.24,
+      "trend": 4.2
+    },
+    {
+      "name": "La Liga",
+      "code": "ESP",
+      "continent": "Europe",
+      "clubs": 20,
+      "players": 508,
+      "value": 6.11,
+      "trend": 2.8
+    },
+    {
+      "name": "Bundesliga",
+      "code": "GER",
+      "continent": "Europe",
+      "clubs": 18,
+      "players": 486,
+      "value": 4.02,
+      "trend": 3.6
+    },
+    {
+      "name": "Serie A",
+      "code": "ITA",
+      "continent": "Europe",
+      "clubs": 20,
+      "players": 561,
+      "value": 4.87,
+      "trend": 1.4
+    },
+    {
+      "name": "Ligue 1",
+      "code": "FRA",
+      "continent": "Europe",
+      "clubs": 18,
+      "players": 472,
+      "value": 3.55,
+      "trend": -0.9
+    }
+  ]
+}

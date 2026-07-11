@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------ */
-/*  Single data access point — mock now, swap provider later           */
+/*  Single data access point — mock default; Supabase via hydrate()    */
 /* ------------------------------------------------------------------ */
 
 import {
@@ -15,6 +15,8 @@ import {
   normalizeNation,
   normalizeManager,
 } from './schema.js'
+import { isSupabaseConfigured } from './lib/supabase.js'
+import { fetchSupabaseBundle } from './lib/supabaseData.js'
 
 import { PLAYERS as RAW_PLAYERS, SEARCH_INDEX as RAW_SEARCH } from './data.js'
 import { DETAILS as RAW_DETAILS } from './playerDetails.js'
@@ -104,6 +106,46 @@ export { CLUB_BY_SHORT, LEAGUE_CODE_TO_ID, LEAGUE_NAME_TO_ID, CURRENT_SEASON, CU
 export { matchesForClub, matchesForLeague }
 
 export const SEARCH_INDEX = RAW_SEARCH
+
+/**
+ * Replace in-memory stores from Supabase when VITE_DATA_MODE=supabase.
+ * Call once at app boot before first paint if you need live rows.
+ * Returns true if hydrated from Supabase.
+ */
+export async function hydrateFromSupabase() {
+  if (DATA_SOURCE.mode !== 'supabase' || !isSupabaseConfigured) return false
+  const bundle = await fetchSupabaseBundle()
+  // Mutate exported record objects in place so existing imports keep working
+  for (const k of Object.keys(PLAYERS)) delete PLAYERS[k]
+  Object.assign(PLAYERS, mapRecord(bundle.players, normalizePlayer))
+
+  for (const k of Object.keys(DETAILS)) delete DETAILS[k]
+  Object.assign(
+    DETAILS,
+    Object.fromEntries(
+      Object.entries(bundle.details).map(([id, d]) => [id, normalizePlayerDetails(d, id)]),
+    ),
+  )
+
+  for (const k of Object.keys(CLUBS)) delete CLUBS[k]
+  Object.assign(CLUBS, mapRecord(bundle.clubs, normalizeClub))
+
+  for (const k of Object.keys(LEAGUES_DETAIL)) delete LEAGUES_DETAIL[k]
+  Object.assign(LEAGUES_DETAIL, mapRecord(bundle.leagues, normalizeLeague))
+
+  for (const k of Object.keys(NATIONS)) delete NATIONS[k]
+  Object.assign(NATIONS, mapRecord(bundle.nations, normalizeNation))
+
+  for (const k of Object.keys(MANAGERS)) delete MANAGERS[k]
+  Object.assign(MANAGERS, mapRecord(bundle.managers, normalizeManager))
+
+  for (const k of Object.keys(MATCHES_DETAIL)) delete MATCHES_DETAIL[k]
+  Object.assign(MATCHES_DETAIL, mapRecord(bundle.matches, normalizeMatch))
+
+  DATA_SOURCE.mode = 'supabase'
+  DATA_SOURCE.provider = 'supabase'
+  return true
+}
 
 /* ---- Getters (stable API for UI + future fetchers) ---- */
 

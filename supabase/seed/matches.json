@@ -1,0 +1,8149 @@
+[
+  {
+    "id": "bayern-leverkusen",
+    "league": "Bundesliga",
+    "leagueCode": "BUN",
+    "matchday": 28,
+    "status": "ft",
+    "clock": null,
+    "kickoff": "2026-03-15T17:30:00Z",
+    "home": {
+      "name": "Bayern Munich",
+      "short": "FCB",
+      "clubId": "bayern-munich",
+      "score": 3,
+      "formation": "4-2-3-1",
+      "manager": "Vincent Kompany"
+    },
+    "away": {
+      "name": "Bayer Leverkusen",
+      "short": "B04",
+      "clubId": null,
+      "score": 2,
+      "formation": "3-4-2-1",
+      "manager": "Xabi Alonso"
+    },
+    "venue": {
+      "stadium": "Allianz Arena",
+      "city": "Munich",
+      "attendance": 75000,
+      "capacity": 75024
+    },
+    "referee": {
+      "name": "Felix Zwayer",
+      "nation": "GER"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "Olise",
+          "minute": "44'",
+          "playerId": "michael-olise"
+        },
+        {
+          "name": "Musiala",
+          "minute": "62'",
+          "playerId": "jamal-musiala"
+        },
+        {
+          "name": "Kane",
+          "minute": "78'"
+        }
+      ],
+      "away": [
+        {
+          "name": "Wirtz",
+          "minute": "23'"
+        },
+        {
+          "name": "Boniface",
+          "minute": "55'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "Neuer",
+            "pos": "GK",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 19,
+            "name": "Davies",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "Kim Min-jae",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "Upamecano",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 22,
+            "name": "Guerreiro",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "Kimmich",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 45,
+            "name": "Pavlović",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "Sané",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 42,
+            "name": "Musiala",
+            "pos": "AM",
+            "captain": false,
+            "playerId": "jamal-musiala",
+            "rating": null
+          },
+          {
+            "shirt": 17,
+            "name": "Olise",
+            "pos": "RW",
+            "captain": false,
+            "playerId": "michael-olise",
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Kane",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 26,
+            "name": "Ulreich",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "de Ligt",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Goretzka",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "Gnabry",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "Coman",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 25,
+            "name": "Müller",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 39,
+            "name": "Tel",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "Hrádecký",
+            "pos": "GK",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 12,
+            "name": "Tapsoba",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "Tah",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "Hincapié",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 30,
+            "name": "Frimpong",
+            "pos": "RWB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 20,
+            "name": "Grimaldo",
+            "pos": "LWB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 34,
+            "name": "Xhaka",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Andrich",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "Wirtz",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 21,
+            "name": "Adli",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 22,
+            "name": "Boniface",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 17,
+            "name": "Kovar",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "Kossounou",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "Hofmann",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 14,
+            "name": "Schick",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 19,
+            "name": "Tella",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 25,
+            "name": "Palacios",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Hložek",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 58,
+        "away": 42,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 2.41,
+        "away": 1.68,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 18,
+        "away": 11,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 9,
+        "away": 5,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 14,
+        "away": 11,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 7,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 7,
+        "type": "yellow",
+        "team": "away",
+        "player": "Andrich",
+        "detail": "Tactical foul"
+      },
+      {
+        "minute": 23,
+        "type": "goal",
+        "team": "away",
+        "player": "Wirtz",
+        "assist": "Frimpong",
+        "score": "0-1"
+      },
+      {
+        "minute": 31,
+        "type": "sub",
+        "team": "home",
+        "playerIn": "Gnabry",
+        "playerOut": "Sané"
+      },
+      {
+        "minute": 38,
+        "type": "yellow",
+        "team": "home",
+        "player": "Upamecano",
+        "detail": "Late challenge"
+      },
+      {
+        "minute": 44,
+        "type": "goal",
+        "team": "home",
+        "player": "Olise",
+        "assist": "Musiala",
+        "score": "1-1",
+        "playerId": "michael-olise"
+      },
+      {
+        "minute": 45,
+        "type": "ht",
+        "team": "neutral",
+        "detail": "Half-time"
+      },
+      {
+        "minute": 55,
+        "type": "goal",
+        "team": "away",
+        "player": "Boniface",
+        "assist": "Wirtz",
+        "score": "1-2"
+      },
+      {
+        "minute": 58,
+        "type": "sub",
+        "team": "away",
+        "playerIn": "Schick",
+        "playerOut": "Adli"
+      },
+      {
+        "minute": 62,
+        "type": "goal",
+        "team": "home",
+        "player": "Musiala",
+        "assist": "Olise",
+        "score": "2-2",
+        "playerId": "jamal-musiala"
+      },
+      {
+        "minute": 67,
+        "type": "yellow",
+        "team": "away",
+        "player": "Xhaka",
+        "detail": "Dissent"
+      },
+      {
+        "minute": 71,
+        "type": "sub",
+        "team": "home",
+        "playerIn": "Goretzka",
+        "playerOut": "Pavlović"
+      },
+      {
+        "minute": 74,
+        "type": "sub",
+        "team": "away",
+        "playerIn": "Tella",
+        "playerOut": "Frimpong"
+      },
+      {
+        "minute": 78,
+        "type": "goal",
+        "team": "home",
+        "player": "Kane",
+        "assist": "Davies",
+        "score": "3-2"
+      },
+      {
+        "minute": 82,
+        "type": "yellow",
+        "team": "away",
+        "player": "Tah",
+        "detail": "Handball"
+      },
+      {
+        "minute": 86,
+        "type": "sub",
+        "team": "home",
+        "playerIn": "Coman",
+        "playerOut": "Olise",
+        "playerOutId": "michael-olise"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 3-2"
+      }
+    ]
+  },
+  {
+    "id": "barcelona-real-madrid",
+    "league": "La Liga",
+    "leagueCode": "LAL",
+    "matchday": 30,
+    "status": "live",
+    "clock": "67'",
+    "kickoff": "2026-03-22T20:00:00Z",
+    "home": {
+      "name": "FC Barcelona",
+      "short": "BAR",
+      "clubId": "fc-barcelona",
+      "score": 2,
+      "formation": "4-2-3-1",
+      "manager": "Hansi Flick"
+    },
+    "away": {
+      "name": "Real Madrid",
+      "short": "RMA",
+      "clubId": "real-madrid",
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "Carlo Ancelotti"
+    },
+    "venue": {
+      "stadium": "Spotify Camp Nou",
+      "city": "Barcelona",
+      "attendance": 97218,
+      "capacity": 99354
+    },
+    "referee": {
+      "name": "Jesús Gil Manzano",
+      "nation": "ESP"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "Yamal",
+          "minute": "19'",
+          "playerId": "lamine-yamal"
+        },
+        {
+          "name": "Lewandowski",
+          "minute": "51'"
+        }
+      ],
+      "away": [
+        {
+          "name": "Mbappé",
+          "minute": "34'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ter Stegen",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "Balde",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "Cubarsí",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "Araújo",
+            "pos": "CB",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 23,
+            "name": "Koundé",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 17,
+            "name": "Casadó",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Pedri",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "Raphinha",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 20,
+            "name": "Olmo",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "Yamal",
+            "pos": "RW",
+            "captain": false,
+            "playerId": "lamine-yamal",
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Lewandowski",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 13,
+            "name": "Peña",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "I. Martínez",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 21,
+            "name": "de Jong",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "Gavi",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "F. Torres",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 16,
+            "name": "Fermín",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 19,
+            "name": "P. Víctor",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "Courtois",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 23,
+            "name": "Mendy",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 22,
+            "name": "Rüdiger",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 35,
+            "name": "Asencio",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "Carvajal",
+            "pos": "RB",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 14,
+            "name": "Tchouaméni",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Valverde",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "Bellingham",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "Vinícius",
+            "pos": "LW",
+            "captain": false,
+            "playerId": "vinicius-junior",
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Mbappé",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "Rodrygo",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 13,
+            "name": "Lunin",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "Alaba",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 15,
+            "name": "Güler",
+            "pos": "AM",
+            "captain": false,
+            "playerId": "arda-guler",
+            "rating": null
+          },
+          {
+            "shirt": 19,
+            "name": "Ceballos",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 16,
+            "name": "Endrick",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 21,
+            "name": "Díaz",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 18,
+            "name": "Camavinga",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 61,
+        "away": 39,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.92,
+        "away": 1.14,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 14,
+        "away": 8,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 6,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 4,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 12,
+        "type": "yellow",
+        "team": "away",
+        "player": "Tchouaméni",
+        "detail": "Late tackle"
+      },
+      {
+        "minute": 19,
+        "type": "goal",
+        "team": "home",
+        "player": "Yamal",
+        "assist": "Pedri",
+        "score": "1-0",
+        "playerId": "lamine-yamal"
+      },
+      {
+        "minute": 28,
+        "type": "yellow",
+        "team": "home",
+        "player": "Araújo",
+        "detail": "Foul"
+      },
+      {
+        "minute": 34,
+        "type": "goal",
+        "team": "away",
+        "player": "Mbappé",
+        "assist": "Vinícius",
+        "score": "1-1",
+        "assistId": "vinicius-junior"
+      },
+      {
+        "minute": 41,
+        "type": "yellow",
+        "team": "home",
+        "player": "Casadó",
+        "detail": "Dissent"
+      },
+      {
+        "minute": 45,
+        "type": "ht",
+        "team": "neutral",
+        "detail": "Half-time"
+      },
+      {
+        "minute": 51,
+        "type": "goal",
+        "team": "home",
+        "player": "Lewandowski",
+        "assist": "Yamal",
+        "score": "2-1",
+        "assistId": "lamine-yamal"
+      },
+      {
+        "minute": 58,
+        "type": "sub",
+        "team": "away",
+        "playerIn": "Güler",
+        "playerOut": "Rodrygo",
+        "playerInId": "arda-guler"
+      },
+      {
+        "minute": 63,
+        "type": "yellow",
+        "team": "away",
+        "player": "Rüdiger",
+        "detail": "Tactical foul"
+      },
+      {
+        "minute": 66,
+        "type": "sub",
+        "team": "home",
+        "playerIn": "Gavi",
+        "playerOut": "Casadó"
+      }
+    ]
+  },
+  {
+    "id": "psg-monaco",
+    "league": "Ligue 1",
+    "leagueCode": "LI1",
+    "matchday": 27,
+    "status": "ft",
+    "clock": null,
+    "home": {
+      "name": "Paris Saint-Germain",
+      "short": "PSG",
+      "clubId": "psg",
+      "score": 4,
+      "formation": "4-3-3",
+      "manager": "Luis Enrique"
+    },
+    "away": {
+      "name": "AS Monaco",
+      "short": "ASM",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-2-3-1",
+      "manager": "Adi Hütter"
+    },
+    "venue": {
+      "stadium": "Parc des Princes",
+      "city": "Paris",
+      "attendance": 47122,
+      "capacity": 47929
+    },
+    "referee": {
+      "name": "Clément Turpin",
+      "nation": "FRA"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "Dembélé",
+          "minute": "12'"
+        },
+        {
+          "name": "Doué",
+          "minute": "33'",
+          "playerId": "desire-doue"
+        },
+        {
+          "name": "Ramos",
+          "minute": "61'"
+        },
+        {
+          "name": "Barcola",
+          "minute": "84'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "Donnarumma",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 25,
+            "name": "Mendes",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 51,
+            "name": "Pacho",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "Marquinhos",
+            "pos": "CB",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "Hakimi",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 87,
+            "name": "Neves",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 17,
+            "name": "Vitinha",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 14,
+            "name": "Doué",
+            "pos": "CM",
+            "captain": false,
+            "playerId": "desire-doue",
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "Kvaratskhelia",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Ramos",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "Dembélé",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 80,
+            "name": "Tenas",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Fabián",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 29,
+            "name": "Barcola",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 19,
+            "name": "Lee",
+            "pos": "FW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "Beraldo",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 16,
+            "name": "Köhn",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 12,
+            "name": "Caio Henrique",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "Kehrer",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 22,
+            "name": "Salisu",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "Vanderson",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "Zakaria",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "Camara",
+            "pos": "DM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 18,
+            "name": "Minamino",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "Golovin",
+            "pos": "AM",
+            "captain": true,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "Ben Seghir",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "Embolo",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": [
+          {
+            "shirt": 1,
+            "name": "Majecki",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "Singo",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "Akliouche",
+            "pos": "AM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 14,
+            "name": "Balogun",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 17,
+            "name": "Magassa",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ]
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 67,
+        "away": 33,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 3.12,
+        "away": 0.41,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 22,
+        "away": 5,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 11,
+        "away": 1,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 16,
+        "away": 8,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 9,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 7,
+        "away": 1,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 12,
+        "type": "goal",
+        "team": "home",
+        "player": "Dembélé",
+        "assist": "Hakimi",
+        "score": "1-0"
+      },
+      {
+        "minute": 21,
+        "type": "yellow",
+        "team": "away",
+        "player": "Zakaria",
+        "detail": "Foul"
+      },
+      {
+        "minute": 33,
+        "type": "goal",
+        "team": "home",
+        "player": "Doué",
+        "assist": "Vitinha",
+        "score": "2-0",
+        "playerId": "desire-doue"
+      },
+      {
+        "minute": 45,
+        "type": "ht",
+        "team": "neutral",
+        "detail": "Half-time"
+      },
+      {
+        "minute": 52,
+        "type": "sub",
+        "team": "away",
+        "playerIn": "Balogun",
+        "playerOut": "Embolo"
+      },
+      {
+        "minute": 61,
+        "type": "goal",
+        "team": "home",
+        "player": "Ramos",
+        "assist": "Doué",
+        "score": "3-0",
+        "assistId": "desire-doue"
+      },
+      {
+        "minute": 68,
+        "type": "yellow",
+        "team": "away",
+        "player": "Salisu",
+        "detail": "Tactical foul"
+      },
+      {
+        "minute": 72,
+        "type": "sub",
+        "team": "home",
+        "playerIn": "Barcola",
+        "playerOut": "Kvaratskhelia"
+      },
+      {
+        "minute": 84,
+        "type": "goal",
+        "team": "home",
+        "player": "Barcola",
+        "assist": "Dembélé",
+        "score": "4-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 4-0"
+      }
+    ]
+  },
+  {
+    "id": "juventus-inter",
+    "league": "Serie A",
+    "leagueCode": "SEA",
+    "matchday": 29,
+    "status": "live",
+    "clock": "54'",
+    "kickoff": null,
+    "home": {
+      "name": "Juventus",
+      "short": "JUV",
+      "clubId": "juventus",
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Inter",
+      "short": "INT",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "JUV",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "INT",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "JUV GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "JUV LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "JUV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "JUV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "JUV RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "JUV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "JUV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "JUV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "JUV LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "JUV ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "JUV RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "INT GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "INT LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "INT CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "INT CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "INT RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "INT CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "INT CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "INT CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "INT LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "INT ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "INT RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 1-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "chelsea-arsenal",
+    "league": "Premier League",
+    "leagueCode": "PRL",
+    "matchday": 30,
+    "status": "live",
+    "clock": "23'",
+    "kickoff": null,
+    "home": {
+      "name": "Chelsea",
+      "short": "CHE",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Arsenal",
+      "short": "ARS",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "CHE GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "CHE LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "CHE CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "CHE CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "CHE RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "CHE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "CHE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "CHE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "CHE LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "CHE ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "CHE RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ARS GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ARS LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ARS CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ARS CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ARS RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ARS CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ARS CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ARS CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ARS LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ARS ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ARS RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "0-1"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 0-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "atletico-sevilla",
+    "league": "La Liga",
+    "leagueCode": "LAL",
+    "matchday": 30,
+    "status": "upcoming",
+    "clock": null,
+    "kickoff": "21:00",
+    "home": {
+      "name": "Atlético Madrid",
+      "short": "ATM",
+      "clubId": null,
+      "score": null,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Sevilla",
+      "short": "SEV",
+      "clubId": null,
+      "score": null,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 0,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ATM GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ATM LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ATM CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ATM CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ATM RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ATM CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ATM CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ATM CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ATM LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ATM ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ATM RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "SEV GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "SEV LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "SEV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "SEV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "SEV RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "SEV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "SEV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "SEV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "SEV LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "SEV ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "SEV RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [],
+    "events": [
+      {
+        "minute": 0,
+        "type": "kickoff",
+        "team": "neutral",
+        "detail": "Kick-off pending"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "liverpool-man-city",
+    "league": "Premier League",
+    "leagueCode": "PRL",
+    "matchday": 30,
+    "status": "upcoming",
+    "clock": null,
+    "kickoff": "21:00",
+    "home": {
+      "name": "Liverpool",
+      "short": "LIV",
+      "clubId": null,
+      "score": null,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Man City",
+      "short": "MCI",
+      "clubId": null,
+      "score": null,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 0,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "LIV GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "LIV LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "LIV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "LIV CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "LIV RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "LIV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "LIV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "LIV CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "LIV LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "LIV ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "LIV RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "MCI GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "MCI LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "MCI CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "MCI CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "MCI RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "MCI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "MCI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "MCI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "MCI LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "MCI ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "MCI RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [],
+    "events": [
+      {
+        "minute": 0,
+        "type": "kickoff",
+        "team": "neutral",
+        "detail": "Kick-off pending"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "france-netherlands",
+    "league": "International Friendly",
+    "leagueCode": "INT",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "France",
+      "short": "FRA",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Netherlands",
+      "short": "NED",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stade de France",
+      "city": "Saint-Denis",
+      "attendance": 78000,
+      "capacity": 81338
+    },
+    "referee": {
+      "name": "M. Oliver",
+      "nation": "ENG"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "FRA",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "NED",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "FRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "FRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "FRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "FRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "FRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "FRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "NED GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "NED LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "NED CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "NED CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "NED RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "NED LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "NED ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "NED RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 2-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "italy-france",
+    "league": "UEFA Nations League",
+    "leagueCode": "UNL",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Italy",
+      "short": "ITA",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "France",
+      "short": "FRA",
+      "clubId": null,
+      "score": 3,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "San Siro",
+      "city": "Milan",
+      "attendance": 72000,
+      "capacity": 75923
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "ITA",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "FRA",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ITA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ITA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ITA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ITA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ITA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ITA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ITA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ITA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "FRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "FRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "FRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "FRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "FRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "FRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "away",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 1-3"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "france-israel",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "France",
+      "short": "FRA",
+      "clubId": null,
+      "score": 4,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Israel",
+      "short": "ISR",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "FRA",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "FRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "FRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "FRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "FRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "FRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "FRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ISR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ISR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ISR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ISR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ISR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ISR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ISR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ISR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ISR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ISR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ISR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 4-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "france-ukraine",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "France",
+      "short": "FRA",
+      "clubId": null,
+      "score": 3,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Ukraine",
+      "short": "UKR",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "FRA",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "UKR",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "FRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "FRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "FRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "FRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "FRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "FRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "FRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "FRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "UKR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "UKR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "UKR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "UKR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "UKR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "UKR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "UKR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "UKR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "UKR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "UKR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "UKR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 3-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "turkiye-hungary",
+    "league": "International Friendly",
+    "leagueCode": "INT",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Türkiye",
+      "short": "TUR",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Hungary",
+      "short": "HUN",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "TUR",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "TUR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "TUR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "TUR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "TUR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "TUR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "TUR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "HUN GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "HUN LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "HUN CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "HUN CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "HUN RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "HUN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "HUN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "HUN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "HUN LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "HUN ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "HUN RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 2-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "wales-turkiye",
+    "league": "UEFA Nations League",
+    "leagueCode": "UNL",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Wales",
+      "short": "WAL",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Türkiye",
+      "short": "TUR",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": [
+        {
+          "name": "TUR",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "WAL GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "WAL LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "WAL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "WAL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "WAL RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "WAL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "WAL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "WAL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "WAL LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "WAL ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "WAL RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "TUR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "TUR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "TUR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "TUR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "TUR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "TUR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "away",
+        "player": "Opener",
+        "score": "0-1"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 0-2"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "turkiye-iceland",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Türkiye",
+      "short": "TUR",
+      "clubId": null,
+      "score": 3,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Iceland",
+      "short": "ISL",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "TUR",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "ISL",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "TUR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "TUR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "TUR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "TUR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "TUR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "TUR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ISL GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ISL LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ISL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ISL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ISL RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ISL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ISL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ISL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ISL LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ISL ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ISL RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 3-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "turkiye-montenegro",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Türkiye",
+      "short": "TUR",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Montenegro",
+      "short": "MNE",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "TUR",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "TUR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "TUR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "TUR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "TUR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "TUR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "TUR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "TUR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "TUR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "MNE GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "MNE LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "MNE CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "MNE CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "MNE RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "MNE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "MNE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "MNE CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "MNE LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "MNE ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "MNE RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 1-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "brazil-colombia",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Brazil",
+      "short": "BRA",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Colombia",
+      "short": "COL",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "BRA",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "COL",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "BRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "BRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "BRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "BRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "BRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "BRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "COL GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "COL LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "COL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "COL CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "COL RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "COL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "COL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "COL CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "COL LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "COL ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "COL RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 2-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "argentina-brazil",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Argentina",
+      "short": "ARG",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Brazil",
+      "short": "BRA",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "ARG",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ARG GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ARG LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ARG CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ARG CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ARG RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ARG CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ARG CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ARG CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ARG LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ARG ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ARG RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "BRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "BRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "BRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "BRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "BRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "BRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 1-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "brazil-peru",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Brazil",
+      "short": "BRA",
+      "clubId": null,
+      "score": 3,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Peru",
+      "short": "PER",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "BRA",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "BRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "BRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "BRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "BRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "BRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "BRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "PER GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "PER LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "PER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "PER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "PER RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "PER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "PER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "PER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "PER LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "PER ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "PER RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 3-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "chile-brazil",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Chile",
+      "short": "CHI",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Brazil",
+      "short": "BRA",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": [
+        {
+          "name": "BRA",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "CHI GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "CHI LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "CHI CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "CHI CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "CHI RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "CHI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "CHI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "CHI CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "CHI LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "CHI ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "CHI RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "BRA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "BRA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "BRA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "BRA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "BRA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "BRA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "BRA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "BRA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "away",
+        "player": "Opener",
+        "score": "0-1"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 0-2"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "spain-denmark",
+    "league": "UEFA Nations League",
+    "leagueCode": "UNL",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Spain",
+      "short": "ESP",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Denmark",
+      "short": "DEN",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "ESP",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ESP GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ESP LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ESP RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ESP LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ESP ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ESP RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "DEN GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "DEN LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "DEN CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "DEN CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "DEN RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "DEN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "DEN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "DEN CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "DEN LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "DEN ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "DEN RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 2-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "spain-serbia",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Spain",
+      "short": "ESP",
+      "clubId": null,
+      "score": 3,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Serbia",
+      "short": "SRB",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "ESP",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ESP GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ESP LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ESP RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ESP LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ESP ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ESP RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "SRB GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "SRB LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "SRB CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "SRB CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "SRB RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "SRB CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "SRB CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "SRB CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "SRB LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "SRB ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "SRB RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 3-0"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "georgia-spain",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Georgia",
+      "short": "GEO",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Spain",
+      "short": "ESP",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [],
+      "away": [
+        {
+          "name": "ESP",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "GEO GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "GEO LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "GEO CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "GEO CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "GEO RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "GEO CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "GEO CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "GEO CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "GEO LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "GEO ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "GEO RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ESP GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ESP LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ESP CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ESP RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ESP CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ESP LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ESP ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ESP RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "away",
+        "player": "Opener",
+        "score": "0-1"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 0-2"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "germany-italy",
+    "league": "International Friendly",
+    "leagueCode": "INT",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Germany",
+      "short": "GER",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Italy",
+      "short": "ITA",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "GER",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "ITA",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "GER GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "GER LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "GER RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "GER LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "GER ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "GER RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "ITA GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "ITA LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "ITA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "ITA CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "ITA RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "ITA CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "ITA LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "ITA ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "ITA RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 1-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "germany-netherlands",
+    "league": "UEFA Nations League",
+    "leagueCode": "UNL",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Germany",
+      "short": "GER",
+      "clubId": null,
+      "score": 2,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "Netherlands",
+      "short": "NED",
+      "clubId": null,
+      "score": 1,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "GER",
+          "minute": "1'"
+        }
+      ],
+      "away": [
+        {
+          "name": "NED",
+          "minute": "2'"
+        }
+      ]
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "GER GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "GER LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "GER RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "GER LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "GER ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "GER RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "NED GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "NED LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "NED CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "NED CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "NED RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "NED CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "NED LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "NED ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "NED RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 2-1"
+      }
+    ],
+    "catalogStub": true
+  },
+  {
+    "id": "germany-n-ireland",
+    "league": "WC Qualifier",
+    "leagueCode": "WCQ",
+    "matchday": 1,
+    "status": "ft",
+    "clock": null,
+    "kickoff": null,
+    "home": {
+      "name": "Germany",
+      "short": "GER",
+      "clubId": null,
+      "score": 4,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "away": {
+      "name": "N. Ireland",
+      "short": "NIR",
+      "clubId": null,
+      "score": 0,
+      "formation": "4-3-3",
+      "manager": "—"
+    },
+    "venue": {
+      "stadium": "Stadium",
+      "city": "—",
+      "attendance": 42000,
+      "capacity": 50000
+    },
+    "referee": {
+      "name": "TBD",
+      "nation": "—"
+    },
+    "scorers": {
+      "home": [
+        {
+          "name": "GER",
+          "minute": "1'"
+        }
+      ],
+      "away": []
+    },
+    "lineups": {
+      "home": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "GER GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "GER LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "GER CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "GER RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "GER CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "GER LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "GER ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "GER RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      },
+      "away": {
+        "starting": [
+          {
+            "shirt": 1,
+            "name": "NIR GK",
+            "pos": "GK",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 2,
+            "name": "NIR LB",
+            "pos": "LB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 3,
+            "name": "NIR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 4,
+            "name": "NIR CB",
+            "pos": "CB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 5,
+            "name": "NIR RB",
+            "pos": "RB",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 6,
+            "name": "NIR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 7,
+            "name": "NIR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 8,
+            "name": "NIR CM",
+            "pos": "CM",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 9,
+            "name": "NIR LW",
+            "pos": "LW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 10,
+            "name": "NIR ST",
+            "pos": "ST",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          },
+          {
+            "shirt": 11,
+            "name": "NIR RW",
+            "pos": "RW",
+            "captain": false,
+            "playerId": null,
+            "rating": null
+          }
+        ],
+        "bench": []
+      }
+    },
+    "stats": [
+      {
+        "key": "possession",
+        "label": "Possession %",
+        "home": 54,
+        "away": 46,
+        "unit": "%",
+        "higher": "home"
+      },
+      {
+        "key": "xg",
+        "label": "xG (Expected Goals)",
+        "home": 1.4,
+        "away": 1.1,
+        "unit": "",
+        "higher": "home",
+        "decimals": 2
+      },
+      {
+        "key": "shots",
+        "label": "Total Shots",
+        "home": 12,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "sot",
+        "label": "Shots on Target",
+        "home": 5,
+        "away": 3,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "freekicks",
+        "label": "Freekicks",
+        "home": 10,
+        "away": 9,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "corners",
+        "label": "Corners",
+        "home": 6,
+        "away": 4,
+        "unit": "",
+        "higher": "home"
+      },
+      {
+        "key": "bigChances",
+        "label": "Big Chances Created",
+        "home": 3,
+        "away": 2,
+        "unit": "",
+        "higher": "home"
+      }
+    ],
+    "events": [
+      {
+        "minute": 1,
+        "type": "goal",
+        "team": "home",
+        "player": "Opener",
+        "score": "1-0"
+      },
+      {
+        "minute": 90,
+        "type": "ft",
+        "team": "neutral",
+        "detail": "Full time · 4-0"
+      }
+    ],
+    "catalogStub": true
+  }
+]

@@ -19,14 +19,25 @@ export const CURRENT_WINDOW = {
   closes: '2026-09-01',
 }
 
-/** Data layer status — flip provider when API lands */
+/** Data layer status — mock | supabase | api */
+const envMode = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_DATA_MODE) || 'mock'
+const hasSupabase =
+  typeof import.meta !== 'undefined' &&
+  Boolean(import.meta.env?.VITE_SUPABASE_URL && import.meta.env?.VITE_SUPABASE_ANON_KEY)
+
 export const DATA_SOURCE = {
-  mode: 'mock', // 'mock' | 'api'
-  provider: null, // 'api-football' | 'sportmonks' | null
+  mode: envMode === 'supabase' && hasSupabase ? 'supabase' : envMode === 'api' ? 'api' : 'mock',
+  provider:
+    envMode === 'supabase' && hasSupabase
+      ? 'supabase'
+      : envMode === 'api'
+        ? null
+        : null, // later: 'api-football' | 'sportmonks'
   season: CURRENT_SEASON,
   window: CURRENT_WINDOW,
   asOf: '2026-07-11',
   readyForApi: true,
+  supabaseConfigured: hasSupabase,
 }
 
 export function emptyExternalIds(partial = {}) {

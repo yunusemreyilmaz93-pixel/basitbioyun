@@ -1,0 +1,2338 @@
+{
+  "lamine-yamal": {
+    "height": "1.80m",
+    "agent": "Jorge Mendes (Gestifute)",
+    "joined": "Jul 1, 2023",
+    "outfitter": "Adidas",
+    "positions": {
+      "main": "RW",
+      "others": [
+        "CF",
+        "LW",
+        "AM"
+      ]
+    },
+    "highest": {
+      "value": 180,
+      "date": "Jun 2026"
+    },
+    "competitions": [
+      {
+        "comp": "La Liga",
+        "code": "LAL",
+        "matches": 34,
+        "goals": 12,
+        "assists": 15,
+        "minutes": 2680,
+        "yellow": 4,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 5,
+        "goals": 4,
+        "assists": 5,
+        "minutes": 512,
+        "yellow": 1,
+        "red": 0
+      },
+      {
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "matches": 2,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 220,
+        "yellow": 0,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 34,
+        "g": 12,
+        "a": 15,
+        "y": 4,
+        "r": 0,
+        "min": 2680
+      },
+      {
+        "season": "25/26",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 5,
+        "g": 4,
+        "a": 5,
+        "y": 1,
+        "r": 0,
+        "min": 512
+      },
+      {
+        "season": "25/26",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "mp": 2,
+        "g": 2,
+        "a": 2,
+        "y": 0,
+        "r": 0,
+        "min": 220
+      },
+      {
+        "season": "24/25",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 35,
+        "g": 9,
+        "a": 13,
+        "y": 5,
+        "r": 0,
+        "min": 2960
+      },
+      {
+        "season": "24/25",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 12,
+        "g": 5,
+        "a": 6,
+        "y": 2,
+        "r": 0,
+        "min": 980
+      },
+      {
+        "season": "24/25",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "mp": 4,
+        "g": 2,
+        "a": 3,
+        "y": 0,
+        "r": 0,
+        "min": 340
+      },
+      {
+        "season": "23/24",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 28,
+        "g": 5,
+        "a": 5,
+        "y": 3,
+        "r": 0,
+        "min": 2010
+      },
+      {
+        "season": "23/24",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 8,
+        "g": 2,
+        "a": 3,
+        "y": 1,
+        "r": 0,
+        "min": 620
+      },
+      {
+        "season": "23/24",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "mp": 3,
+        "g": 1,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 210
+      },
+      {
+        "season": "22/23",
+        "club": "FC Barcelona",
+        "cc": "BAR",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 1,
+        "g": 0,
+        "a": 0,
+        "y": 0,
+        "r": 0,
+        "min": 8
+      },
+      {
+        "season": "22/23",
+        "club": "Barça Atlètic",
+        "cc": "BAT",
+        "comp": "Primera Fed.",
+        "code": "P1F",
+        "mp": 2,
+        "g": 0,
+        "a": 0,
+        "y": 0,
+        "r": 0,
+        "min": 96
+      }
+    ],
+    "nationalTeam": {
+      "code": "ESP",
+      "name": "Spain",
+      "caps": 27,
+      "goals": 8,
+      "assists": 11,
+      "minutes": 2140,
+      "debut": "Sep 8, 2023",
+      "coach": "Luis de la Fuente",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 8,
+          "goals": 3,
+          "assists": 4,
+          "minutes": 680
+        },
+        {
+          "season": "24/25",
+          "caps": 12,
+          "goals": 4,
+          "assists": 5,
+          "minutes": 980
+        },
+        {
+          "season": "23/24",
+          "caps": 7,
+          "goals": 1,
+          "assists": 2,
+          "minutes": 480
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "UEFA EURO 2024",
+          "result": "Winner",
+          "caps": 7,
+          "goals": 1,
+          "assists": 4
+        },
+        {
+          "name": "Nations League 24/25",
+          "result": "Semi-final",
+          "caps": 4,
+          "goals": 2,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "La Liga",
+        "mult": 1.28,
+        "pct": 84,
+        "weight": 34,
+        "note": "Top-3 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.91,
+        "pct": 94,
+        "weight": 28,
+        "note": "Elite rolling match rating"
+      },
+      "age": {
+        "label": "Pre-peak upside (18)",
+        "pct": 98,
+        "weight": 26,
+        "note": "Steepest part of the age curve"
+      },
+      "nt": {
+        "label": "27 Spain caps",
+        "pct": 72,
+        "weight": 12,
+        "note": "European champion at 17"
+      }
+    },
+    "injuries": [
+      {
+        "season": "24/25",
+        "type": "Ankle sprain",
+        "kind": "injury",
+        "from": "Feb 3, 2025",
+        "to": "Feb 18, 2025",
+        "days": 15,
+        "matches": 3
+      },
+      {
+        "season": "23/24",
+        "type": "Muscle fatigue",
+        "kind": "injury",
+        "from": "Apr 10, 2024",
+        "to": "Apr 21, 2024",
+        "days": 11,
+        "matches": 2
+      },
+      {
+        "season": "23/24",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Jan 14, 2024",
+        "to": "Jan 21, 2024",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 2,
+        "name": "La Liga",
+        "code": "LAL",
+        "years": [
+          "2022/23",
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Copa del Rey",
+        "code": "CDR",
+        "years": [
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "UEFA EURO",
+        "code": "EUR",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Supercopa",
+        "code": "SUP",
+        "years": [
+          "2024/25"
+        ]
+      }
+    ]
+  },
+  "vinicius-junior": {
+    "height": "1.76m",
+    "agent": "TFM Agency",
+    "joined": "Jul 12, 2018",
+    "outfitter": "Nike",
+    "positions": {
+      "main": "LW",
+      "others": [
+        "CF",
+        "RW"
+      ]
+    },
+    "highest": {
+      "value": 150,
+      "date": "Jun 2024"
+    },
+    "competitions": [
+      {
+        "comp": "La Liga",
+        "code": "LAL",
+        "matches": 32,
+        "goals": 16,
+        "assists": 7,
+        "minutes": 2560,
+        "yellow": 6,
+        "red": 1
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 10,
+        "goals": 6,
+        "assists": 3,
+        "minutes": 840,
+        "yellow": 2,
+        "red": 0
+      },
+      {
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "matches": 2,
+        "goals": 2,
+        "assists": 1,
+        "minutes": 218,
+        "yellow": 0,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 32,
+        "g": 16,
+        "a": 7,
+        "y": 6,
+        "r": 1,
+        "min": 2560
+      },
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 10,
+        "g": 6,
+        "a": 3,
+        "y": 2,
+        "r": 0,
+        "min": 840
+      },
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "mp": 2,
+        "g": 2,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 218
+      },
+      {
+        "season": "24/25",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 30,
+        "g": 15,
+        "a": 9,
+        "y": 5,
+        "r": 0,
+        "min": 2510
+      },
+      {
+        "season": "24/25",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 12,
+        "g": 7,
+        "a": 4,
+        "y": 3,
+        "r": 0,
+        "min": 1020
+      },
+      {
+        "season": "23/24",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 26,
+        "g": 15,
+        "a": 6,
+        "y": 4,
+        "r": 0,
+        "min": 2180
+      },
+      {
+        "season": "23/24",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 12,
+        "g": 6,
+        "a": 5,
+        "y": 2,
+        "r": 0,
+        "min": 1080
+      },
+      {
+        "season": "22/23",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 33,
+        "g": 10,
+        "a": 9,
+        "y": 7,
+        "r": 1,
+        "min": 2760
+      },
+      {
+        "season": "22/23",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 12,
+        "g": 7,
+        "a": 5,
+        "y": 3,
+        "r": 0,
+        "min": 1050
+      },
+      {
+        "season": "21/22",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 35,
+        "g": 17,
+        "a": 10,
+        "y": 3,
+        "r": 0,
+        "min": 3010
+      },
+      {
+        "season": "21/22",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 13,
+        "g": 4,
+        "a": 6,
+        "y": 2,
+        "r": 0,
+        "min": 1120
+      },
+      {
+        "season": "20/21",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 34,
+        "g": 6,
+        "a": 4,
+        "y": 2,
+        "r": 0,
+        "min": 2340
+      },
+      {
+        "season": "20/21",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 12,
+        "g": 3,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 780
+      },
+      {
+        "season": "19/20",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 34,
+        "g": 3,
+        "a": 5,
+        "y": 3,
+        "r": 0,
+        "min": 2010
+      },
+      {
+        "season": "18/19",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 31,
+        "g": 4,
+        "a": 5,
+        "y": 4,
+        "r": 0,
+        "min": 1980
+      },
+      {
+        "season": "17/18",
+        "club": "Flamengo",
+        "cc": "FLA",
+        "comp": "Série A",
+        "code": "BRA",
+        "mp": 15,
+        "g": 2,
+        "a": 1,
+        "y": 2,
+        "r": 0,
+        "min": 760
+      },
+      {
+        "season": "17/18",
+        "club": "Flamengo",
+        "cc": "FLA",
+        "comp": "Copa Libertadores",
+        "code": "LIB",
+        "mp": 5,
+        "g": 1,
+        "a": 0,
+        "y": 0,
+        "r": 0,
+        "min": 280
+      }
+    ],
+    "nationalTeam": {
+      "code": "BRA",
+      "name": "Brazil",
+      "caps": 40,
+      "goals": 6,
+      "assists": 9,
+      "minutes": 2680,
+      "debut": "Nov 14, 2019",
+      "coach": "Carlo Ancelotti",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 6,
+          "goals": 1,
+          "assists": 2,
+          "minutes": 480
+        },
+        {
+          "season": "24/25",
+          "caps": 8,
+          "goals": 2,
+          "assists": 2,
+          "minutes": 620
+        },
+        {
+          "season": "23/24",
+          "caps": 9,
+          "goals": 1,
+          "assists": 3,
+          "minutes": 710
+        },
+        {
+          "season": "22/23",
+          "caps": 10,
+          "goals": 2,
+          "assists": 1,
+          "minutes": 580
+        },
+        {
+          "season": "19–22",
+          "caps": 7,
+          "goals": 0,
+          "assists": 1,
+          "minutes": 290
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "Copa América 2021",
+          "result": "Runner-up",
+          "caps": 5,
+          "goals": 0,
+          "assists": 1
+        },
+        {
+          "name": "World Cup 2022",
+          "result": "QF",
+          "caps": 4,
+          "goals": 1,
+          "assists": 0
+        },
+        {
+          "name": "Copa América 2024",
+          "result": "QF",
+          "caps": 4,
+          "goals": 2,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "La Liga",
+        "mult": 1.28,
+        "pct": 84,
+        "weight": 34,
+        "note": "Top-3 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.55,
+        "pct": 80,
+        "weight": 28,
+        "note": "Consistent elite output"
+      },
+      "age": {
+        "label": "At peak (26)",
+        "pct": 62,
+        "weight": 26,
+        "note": "Value plateau on the age curve"
+      },
+      "nt": {
+        "label": "40 Brazil caps",
+        "pct": 84,
+        "weight": 12,
+        "note": "Established senior international"
+      }
+    },
+    "injuries": [
+      {
+        "season": "25/26",
+        "type": "Hamstring",
+        "kind": "injury",
+        "from": "Sep 18, 2025",
+        "to": "Oct 12, 2025",
+        "days": 24,
+        "matches": 5
+      },
+      {
+        "season": "24/25",
+        "type": "Thigh strain",
+        "kind": "injury",
+        "from": "Mar 2, 2025",
+        "to": "Mar 22, 2025",
+        "days": 20,
+        "matches": 4
+      },
+      {
+        "season": "23/24",
+        "type": "Red card suspension",
+        "kind": "suspension",
+        "from": "May 12, 2024",
+        "to": "May 26, 2024",
+        "days": 14,
+        "matches": 2
+      },
+      {
+        "season": "22/23",
+        "type": "Ankle knock",
+        "kind": "injury",
+        "from": "Nov 8, 2022",
+        "to": "Nov 20, 2022",
+        "days": 12,
+        "matches": 2
+      },
+      {
+        "season": "21/22",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Feb 5, 2022",
+        "to": "Feb 12, 2022",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 3,
+        "name": "Champions League",
+        "code": "UCL",
+        "years": [
+          "2021/22",
+          "2023/24",
+          "2024/25"
+        ]
+      },
+      {
+        "count": 2,
+        "name": "La Liga",
+        "code": "LAL",
+        "years": [
+          "2019/20",
+          "2023/24"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Club World Cup",
+        "code": "CWC",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "count": 2,
+        "name": "Supercopa",
+        "code": "SUP",
+        "years": [
+          "2019/20",
+          "2023/24"
+        ]
+      }
+    ]
+  },
+  "kenan-yildiz": {
+    "height": "1.85m",
+    "agent": "Family / U. Aytaçoğlu",
+    "joined": "Jul 1, 2022",
+    "outfitter": "Nike",
+    "positions": {
+      "main": "AM",
+      "others": [
+        "LW",
+        "SS"
+      ]
+    },
+    "highest": {
+      "value": 75,
+      "date": "Jun 2026"
+    },
+    "competitions": [
+      {
+        "comp": "Serie A",
+        "code": "SEA",
+        "matches": 30,
+        "goals": 10,
+        "assists": 7,
+        "minutes": 2450,
+        "yellow": 5,
+        "red": 0
+      },
+      {
+        "comp": "Coppa Italia",
+        "code": "CIT",
+        "matches": 4,
+        "goals": 2,
+        "assists": 1,
+        "minutes": 380,
+        "yellow": 0,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 5,
+        "goals": 2,
+        "assists": 1,
+        "minutes": 275,
+        "yellow": 1,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Serie A",
+        "code": "SEA",
+        "mp": 30,
+        "g": 10,
+        "a": 7,
+        "y": 5,
+        "r": 0,
+        "min": 2450
+      },
+      {
+        "season": "25/26",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 5,
+        "g": 2,
+        "a": 1,
+        "y": 1,
+        "r": 0,
+        "min": 275
+      },
+      {
+        "season": "25/26",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Coppa Italia",
+        "code": "CIT",
+        "mp": 4,
+        "g": 2,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 380
+      },
+      {
+        "season": "24/25",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Serie A",
+        "code": "SEA",
+        "mp": 24,
+        "g": 6,
+        "a": 5,
+        "y": 4,
+        "r": 0,
+        "min": 1780
+      },
+      {
+        "season": "24/25",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 6,
+        "g": 1,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 420
+      },
+      {
+        "season": "23/24",
+        "club": "Juventus",
+        "cc": "JUV",
+        "comp": "Serie A",
+        "code": "SEA",
+        "mp": 12,
+        "g": 3,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 640
+      },
+      {
+        "season": "23/24",
+        "club": "Juventus Next Gen",
+        "cc": "JNG",
+        "comp": "Serie C",
+        "code": "SEC",
+        "mp": 20,
+        "g": 4,
+        "a": 3,
+        "y": 3,
+        "r": 0,
+        "min": 1520
+      },
+      {
+        "season": "21/22",
+        "club": "Bayern II",
+        "cc": "FC2",
+        "comp": "Regionalliga",
+        "code": "RGL",
+        "mp": 18,
+        "g": 9,
+        "a": 5,
+        "y": 2,
+        "r": 0,
+        "min": 1440
+      }
+    ],
+    "nationalTeam": {
+      "code": "TUR",
+      "name": "Türkiye",
+      "caps": 22,
+      "goals": 6,
+      "assists": 5,
+      "minutes": 1540,
+      "debut": "Nov 16, 2023",
+      "coach": "Vincenzo Montella",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 6,
+          "goals": 2,
+          "assists": 2,
+          "minutes": 480
+        },
+        {
+          "season": "24/25",
+          "caps": 10,
+          "goals": 3,
+          "assists": 2,
+          "minutes": 720
+        },
+        {
+          "season": "23/24",
+          "caps": 6,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 340
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "UEFA EURO 2024",
+          "result": "QF",
+          "caps": 5,
+          "goals": 1,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "Serie A",
+        "mult": 1.18,
+        "pct": 74,
+        "weight": 34,
+        "note": "Top-5 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.48,
+        "pct": 78,
+        "weight": 28,
+        "note": "Rising rolling match rating"
+      },
+      "age": {
+        "label": "Pre-peak upside (21)",
+        "pct": 90,
+        "weight": 26,
+        "note": "High projection on the age curve"
+      },
+      "nt": {
+        "label": "22 Türkiye caps",
+        "pct": 66,
+        "weight": 12,
+        "note": "Regular senior starter"
+      }
+    },
+    "injuries": [
+      {
+        "season": "24/25",
+        "type": "Knee contusion",
+        "kind": "injury",
+        "from": "Dec 1, 2024",
+        "to": "Dec 18, 2024",
+        "days": 17,
+        "matches": 3
+      },
+      {
+        "season": "23/24",
+        "type": "Hamstring",
+        "kind": "injury",
+        "from": "Mar 15, 2024",
+        "to": "Apr 5, 2024",
+        "days": 21,
+        "matches": 4
+      },
+      {
+        "season": "23/24",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Oct 22, 2023",
+        "to": "Oct 29, 2023",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 1,
+        "name": "Coppa Italia",
+        "code": "CIT",
+        "years": [
+          "2023/24"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Regionalliga",
+        "code": "RGL",
+        "years": [
+          "2021/22"
+        ]
+      }
+    ]
+  },
+  "arda-guler": {
+    "height": "1.76m",
+    "agent": "AAA Sports Mgmt",
+    "joined": "Jul 6, 2023",
+    "outfitter": "Nike",
+    "positions": {
+      "main": "AM",
+      "others": [
+        "RW",
+        "CM"
+      ]
+    },
+    "highest": {
+      "value": 60,
+      "date": "Jun 2026"
+    },
+    "competitions": [
+      {
+        "comp": "La Liga",
+        "code": "LAL",
+        "matches": 26,
+        "goals": 6,
+        "assists": 9,
+        "minutes": 1720,
+        "yellow": 3,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 6,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 360,
+        "yellow": 1,
+        "red": 0
+      },
+      {
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "matches": 3,
+        "goals": 1,
+        "assists": 1,
+        "minutes": 200,
+        "yellow": 0,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 26,
+        "g": 6,
+        "a": 9,
+        "y": 3,
+        "r": 0,
+        "min": 1720
+      },
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 6,
+        "g": 2,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 360
+      },
+      {
+        "season": "25/26",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Copa del Rey",
+        "code": "CDR",
+        "mp": 3,
+        "g": 1,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 200
+      },
+      {
+        "season": "24/25",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 20,
+        "g": 4,
+        "a": 5,
+        "y": 2,
+        "r": 0,
+        "min": 1180
+      },
+      {
+        "season": "24/25",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 8,
+        "g": 2,
+        "a": 3,
+        "y": 1,
+        "r": 0,
+        "min": 480
+      },
+      {
+        "season": "23/24",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "La Liga",
+        "code": "LAL",
+        "mp": 8,
+        "g": 2,
+        "a": 1,
+        "y": 1,
+        "r": 0,
+        "min": 410
+      },
+      {
+        "season": "23/24",
+        "club": "Real Madrid",
+        "cc": "RMA",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 4,
+        "g": 1,
+        "a": 0,
+        "y": 0,
+        "r": 0,
+        "min": 120
+      },
+      {
+        "season": "22/23",
+        "club": "Fenerbahçe",
+        "cc": "FEN",
+        "comp": "Süper Lig",
+        "code": "SÜP",
+        "mp": 16,
+        "g": 6,
+        "a": 4,
+        "y": 2,
+        "r": 0,
+        "min": 980
+      },
+      {
+        "season": "22/23",
+        "club": "Fenerbahçe",
+        "cc": "FEN",
+        "comp": "Europa League",
+        "code": "UEL",
+        "mp": 6,
+        "g": 2,
+        "a": 1,
+        "y": 1,
+        "r": 0,
+        "min": 420
+      },
+      {
+        "season": "21/22",
+        "club": "Fenerbahçe",
+        "cc": "FEN",
+        "comp": "Süper Lig",
+        "code": "SÜP",
+        "mp": 9,
+        "g": 1,
+        "a": 1,
+        "y": 1,
+        "r": 0,
+        "min": 420
+      }
+    ],
+    "nationalTeam": {
+      "code": "TUR",
+      "name": "Türkiye",
+      "caps": 34,
+      "goals": 8,
+      "assists": 7,
+      "minutes": 2280,
+      "debut": "Mar 28, 2023",
+      "coach": "Vincenzo Montella",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 7,
+          "goals": 2,
+          "assists": 2,
+          "minutes": 560
+        },
+        {
+          "season": "24/25",
+          "caps": 12,
+          "goals": 3,
+          "assists": 3,
+          "minutes": 890
+        },
+        {
+          "season": "23/24",
+          "caps": 11,
+          "goals": 2,
+          "assists": 2,
+          "minutes": 640
+        },
+        {
+          "season": "22/23",
+          "caps": 4,
+          "goals": 1,
+          "assists": 0,
+          "minutes": 190
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "UEFA EURO 2024",
+          "result": "QF",
+          "caps": 5,
+          "goals": 1,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "La Liga",
+        "mult": 1.28,
+        "pct": 84,
+        "weight": 34,
+        "note": "Top-3 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.62,
+        "pct": 82,
+        "weight": 28,
+        "note": "Strong creative output per 90"
+      },
+      "age": {
+        "label": "Pre-peak upside (21)",
+        "pct": 90,
+        "weight": 26,
+        "note": "High projection on the age curve"
+      },
+      "nt": {
+        "label": "34 Türkiye caps",
+        "pct": 78,
+        "weight": 12,
+        "note": "Nailed-on international starter"
+      }
+    },
+    "injuries": [
+      {
+        "season": "23/24",
+        "type": "Meniscus injury",
+        "kind": "injury",
+        "from": "Aug 12, 2023",
+        "to": "Jan 5, 2024",
+        "days": 146,
+        "matches": 18
+      },
+      {
+        "season": "24/25",
+        "type": "Adductor strain",
+        "kind": "injury",
+        "from": "Nov 10, 2024",
+        "to": "Nov 28, 2024",
+        "days": 18,
+        "matches": 3
+      },
+      {
+        "season": "25/26",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Jan 8, 2026",
+        "to": "Jan 15, 2026",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 1,
+        "name": "La Liga",
+        "code": "LAL",
+        "years": [
+          "2023/24"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Champions League",
+        "code": "UCL",
+        "years": [
+          "2023/24"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Copa del Rey",
+        "code": "CDR",
+        "years": [
+          "2022/23"
+        ]
+      }
+    ]
+  },
+  "desire-doue": {
+    "height": "1.81m",
+    "agent": "Family",
+    "joined": "Aug 24, 2024",
+    "outfitter": "Nike",
+    "positions": {
+      "main": "AM",
+      "others": [
+        "RW",
+        "LW"
+      ]
+    },
+    "highest": {
+      "value": 90,
+      "date": "Jun 2026"
+    },
+    "competitions": [
+      {
+        "comp": "Ligue 1",
+        "code": "LI1",
+        "matches": 30,
+        "goals": 9,
+        "assists": 11,
+        "minutes": 2260,
+        "yellow": 4,
+        "red": 0
+      },
+      {
+        "comp": "Coupe de France",
+        "code": "CDF",
+        "matches": 4,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 300,
+        "yellow": 0,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 8,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 450,
+        "yellow": 1,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Paris SG",
+        "cc": "PSG",
+        "comp": "Ligue 1",
+        "code": "LI1",
+        "mp": 30,
+        "g": 9,
+        "a": 11,
+        "y": 4,
+        "r": 0,
+        "min": 2260
+      },
+      {
+        "season": "25/26",
+        "club": "Paris SG",
+        "cc": "PSG",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 8,
+        "g": 2,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 450
+      },
+      {
+        "season": "25/26",
+        "club": "Paris SG",
+        "cc": "PSG",
+        "comp": "Coupe de France",
+        "code": "CDF",
+        "mp": 4,
+        "g": 2,
+        "a": 2,
+        "y": 0,
+        "r": 0,
+        "min": 300
+      },
+      {
+        "season": "24/25",
+        "club": "Paris SG",
+        "cc": "PSG",
+        "comp": "Ligue 1",
+        "code": "LI1",
+        "mp": 28,
+        "g": 5,
+        "a": 7,
+        "y": 3,
+        "r": 0,
+        "min": 1980
+      },
+      {
+        "season": "24/25",
+        "club": "Paris SG",
+        "cc": "PSG",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 10,
+        "g": 3,
+        "a": 4,
+        "y": 1,
+        "r": 0,
+        "min": 720
+      },
+      {
+        "season": "23/24",
+        "club": "Stade Rennais",
+        "cc": "REN",
+        "comp": "Ligue 1",
+        "code": "LI1",
+        "mp": 25,
+        "g": 4,
+        "a": 5,
+        "y": 2,
+        "r": 0,
+        "min": 1610
+      },
+      {
+        "season": "23/24",
+        "club": "Stade Rennais",
+        "cc": "REN",
+        "comp": "Europa League",
+        "code": "UEL",
+        "mp": 6,
+        "g": 1,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 380
+      },
+      {
+        "season": "22/23",
+        "club": "Stade Rennais",
+        "cc": "REN",
+        "comp": "Ligue 1",
+        "code": "LI1",
+        "mp": 20,
+        "g": 2,
+        "a": 3,
+        "y": 1,
+        "r": 0,
+        "min": 980
+      },
+      {
+        "season": "21/22",
+        "club": "Rennes II",
+        "cc": "RE2",
+        "comp": "National 2",
+        "code": "N2",
+        "mp": 12,
+        "g": 1,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 860
+      }
+    ],
+    "nationalTeam": {
+      "code": "FRA",
+      "name": "France",
+      "caps": 9,
+      "goals": 1,
+      "assists": 2,
+      "minutes": 480,
+      "debut": "Nov 14, 2024",
+      "coach": "Didier Deschamps",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 5,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 280
+        },
+        {
+          "season": "24/25",
+          "caps": 4,
+          "goals": 0,
+          "assists": 1,
+          "minutes": 200
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "Nations League 24/25",
+          "result": "Group",
+          "caps": 3,
+          "goals": 0,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "Ligue 1",
+        "mult": 1.14,
+        "pct": 70,
+        "weight": 34,
+        "note": "Top-5 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.55,
+        "pct": 80,
+        "weight": 28,
+        "note": "High chance creation volume"
+      },
+      "age": {
+        "label": "Pre-peak upside (21)",
+        "pct": 90,
+        "weight": 26,
+        "note": "High projection on the age curve"
+      },
+      "nt": {
+        "label": "9 France caps",
+        "pct": 52,
+        "weight": 12,
+        "note": "Breaking into a deep squad"
+      }
+    },
+    "injuries": [
+      {
+        "season": "24/25",
+        "type": "Groin strain",
+        "kind": "injury",
+        "from": "Jan 20, 2025",
+        "to": "Feb 8, 2025",
+        "days": 19,
+        "matches": 4
+      },
+      {
+        "season": "23/24",
+        "type": "Ankle sprain",
+        "kind": "injury",
+        "from": "Sep 3, 2023",
+        "to": "Sep 20, 2023",
+        "days": 17,
+        "matches": 3
+      },
+      {
+        "season": "22/23",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Apr 2, 2023",
+        "to": "Apr 9, 2023",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 1,
+        "name": "Ligue 1",
+        "code": "LI1",
+        "years": [
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Coupe de France",
+        "code": "CDF",
+        "years": [
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Champions League",
+        "code": "UCL",
+        "years": [
+          "2024/25"
+        ]
+      }
+    ]
+  },
+  "michael-olise": {
+    "height": "1.81m",
+    "agent": "ARfootball",
+    "joined": "Jul 1, 2024",
+    "outfitter": "Nike",
+    "positions": {
+      "main": "RW",
+      "others": [
+        "AM",
+        "LW"
+      ]
+    },
+    "highest": {
+      "value": 110,
+      "date": "Jun 2026"
+    },
+    "competitions": [
+      {
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "matches": 30,
+        "goals": 13,
+        "assists": 10,
+        "minutes": 2600,
+        "yellow": 3,
+        "red": 0
+      },
+      {
+        "comp": "DFB-Pokal",
+        "code": "DFB",
+        "matches": 3,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 250,
+        "yellow": 0,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 7,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 540,
+        "yellow": 1,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 30,
+        "g": 13,
+        "a": 10,
+        "y": 3,
+        "r": 0,
+        "min": 2600
+      },
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 7,
+        "g": 2,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 540
+      },
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "DFB-Pokal",
+        "code": "DFB",
+        "mp": 3,
+        "g": 2,
+        "a": 2,
+        "y": 0,
+        "r": 0,
+        "min": 250
+      },
+      {
+        "season": "24/25",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 29,
+        "g": 12,
+        "a": 11,
+        "y": 4,
+        "r": 0,
+        "min": 2510
+      },
+      {
+        "season": "24/25",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 10,
+        "g": 4,
+        "a": 5,
+        "y": 1,
+        "r": 0,
+        "min": 820
+      },
+      {
+        "season": "23/24",
+        "club": "Crystal Palace",
+        "cc": "CRY",
+        "comp": "Premier League",
+        "code": "PRL",
+        "mp": 19,
+        "g": 10,
+        "a": 6,
+        "y": 2,
+        "r": 0,
+        "min": 1620
+      },
+      {
+        "season": "23/24",
+        "club": "Crystal Palace",
+        "cc": "CRY",
+        "comp": "FA Cup",
+        "code": "FAC",
+        "mp": 2,
+        "g": 1,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 180
+      },
+      {
+        "season": "22/23",
+        "club": "Crystal Palace",
+        "cc": "CRY",
+        "comp": "Premier League",
+        "code": "PRL",
+        "mp": 37,
+        "g": 2,
+        "a": 11,
+        "y": 5,
+        "r": 0,
+        "min": 2900
+      },
+      {
+        "season": "21/22",
+        "club": "Crystal Palace",
+        "cc": "CRY",
+        "comp": "Premier League",
+        "code": "PRL",
+        "mp": 32,
+        "g": 2,
+        "a": 7,
+        "y": 3,
+        "r": 1,
+        "min": 2100
+      },
+      {
+        "season": "20/21",
+        "club": "Reading",
+        "cc": "RDG",
+        "comp": "Championship",
+        "code": "CHP",
+        "mp": 45,
+        "g": 7,
+        "a": 12,
+        "y": 6,
+        "r": 0,
+        "min": 3800
+      },
+      {
+        "season": "19/20",
+        "club": "Reading",
+        "cc": "RDG",
+        "comp": "Championship",
+        "code": "CHP",
+        "mp": 16,
+        "g": 0,
+        "a": 1,
+        "y": 1,
+        "r": 0,
+        "min": 720
+      }
+    ],
+    "nationalTeam": {
+      "code": "FRA",
+      "name": "France",
+      "caps": 12,
+      "goals": 3,
+      "assists": 2,
+      "minutes": 720,
+      "debut": "Sep 6, 2024",
+      "coach": "Didier Deschamps",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 6,
+          "goals": 2,
+          "assists": 1,
+          "minutes": 400
+        },
+        {
+          "season": "24/25",
+          "caps": 6,
+          "goals": 1,
+          "assists": 1,
+          "minutes": 320
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "Nations League 24/25",
+          "result": "Semi-final",
+          "caps": 4,
+          "goals": 1,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "Bundesliga",
+        "mult": 1.24,
+        "pct": 80,
+        "weight": 34,
+        "note": "Top-4 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.7,
+        "pct": 86,
+        "weight": 28,
+        "note": "Elite goal + assist involvement"
+      },
+      "age": {
+        "label": "Approaching peak (24)",
+        "pct": 78,
+        "weight": 26,
+        "note": "Rising leg of the age curve"
+      },
+      "nt": {
+        "label": "12 France caps",
+        "pct": 58,
+        "weight": 12,
+        "note": "Emerging senior international"
+      }
+    },
+    "injuries": [
+      {
+        "season": "23/24",
+        "type": "Hamstring",
+        "kind": "injury",
+        "from": "Aug 20, 2023",
+        "to": "Dec 15, 2023",
+        "days": 117,
+        "matches": 14
+      },
+      {
+        "season": "22/23",
+        "type": "Calf injury",
+        "kind": "injury",
+        "from": "Feb 11, 2023",
+        "to": "Mar 1, 2023",
+        "days": 18,
+        "matches": 3
+      },
+      {
+        "season": "25/26",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Oct 5, 2025",
+        "to": "Oct 12, 2025",
+        "days": 7,
+        "matches": 1
+      },
+      {
+        "season": "21/22",
+        "type": "Shoulder injury",
+        "kind": "injury",
+        "from": "Apr 16, 2022",
+        "to": "May 5, 2022",
+        "days": 19,
+        "matches": 3
+      }
+    ],
+    "trophies": [
+      {
+        "count": 1,
+        "name": "Bundesliga",
+        "code": "BUN",
+        "years": [
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "DFB-Pokal",
+        "code": "DFB",
+        "years": [
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "UEFA Super Cup",
+        "code": "USC",
+        "years": [
+          "2025"
+        ]
+      }
+    ]
+  },
+  "jamal-musiala": {
+    "height": "1.84m",
+    "agent": "Family",
+    "joined": "Jul 1, 2019",
+    "outfitter": "Adidas",
+    "positions": {
+      "main": "AM",
+      "others": [
+        "LW",
+        "CM",
+        "SS"
+      ]
+    },
+    "highest": {
+      "value": 130,
+      "date": "Jun 2025"
+    },
+    "competitions": [
+      {
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "matches": 26,
+        "goals": 9,
+        "assists": 7,
+        "minutes": 2050,
+        "yellow": 2,
+        "red": 0
+      },
+      {
+        "comp": "DFB-Pokal",
+        "code": "DFB",
+        "matches": 2,
+        "goals": 1,
+        "assists": 1,
+        "minutes": 160,
+        "yellow": 0,
+        "red": 0
+      },
+      {
+        "comp": "Champions League",
+        "code": "UCL",
+        "matches": 5,
+        "goals": 2,
+        "assists": 2,
+        "minutes": 344,
+        "yellow": 1,
+        "red": 0
+      }
+    ],
+    "career": [
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 26,
+        "g": 9,
+        "a": 7,
+        "y": 2,
+        "r": 0,
+        "min": 2050
+      },
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 5,
+        "g": 2,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 344
+      },
+      {
+        "season": "25/26",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "DFB-Pokal",
+        "code": "DFB",
+        "mp": 2,
+        "g": 1,
+        "a": 1,
+        "y": 0,
+        "r": 0,
+        "min": 160
+      },
+      {
+        "season": "24/25",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 28,
+        "g": 12,
+        "a": 8,
+        "y": 3,
+        "r": 0,
+        "min": 2320
+      },
+      {
+        "season": "24/25",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 10,
+        "g": 5,
+        "a": 4,
+        "y": 1,
+        "r": 0,
+        "min": 810
+      },
+      {
+        "season": "23/24",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 29,
+        "g": 10,
+        "a": 9,
+        "y": 2,
+        "r": 0,
+        "min": 2410
+      },
+      {
+        "season": "23/24",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 10,
+        "g": 3,
+        "a": 4,
+        "y": 1,
+        "r": 0,
+        "min": 780
+      },
+      {
+        "season": "22/23",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 30,
+        "g": 12,
+        "a": 10,
+        "y": 3,
+        "r": 0,
+        "min": 2480
+      },
+      {
+        "season": "22/23",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 9,
+        "g": 1,
+        "a": 3,
+        "y": 1,
+        "r": 0,
+        "min": 620
+      },
+      {
+        "season": "21/22",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 33,
+        "g": 5,
+        "a": 7,
+        "y": 2,
+        "r": 0,
+        "min": 1990
+      },
+      {
+        "season": "21/22",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Champions League",
+        "code": "UCL",
+        "mp": 8,
+        "g": 1,
+        "a": 2,
+        "y": 0,
+        "r": 0,
+        "min": 410
+      },
+      {
+        "season": "20/21",
+        "club": "Bayern Munich",
+        "cc": "FCB",
+        "comp": "Bundesliga",
+        "code": "BUN",
+        "mp": 26,
+        "g": 4,
+        "a": 2,
+        "y": 1,
+        "r": 0,
+        "min": 980
+      }
+    ],
+    "nationalTeam": {
+      "code": "GER",
+      "name": "Germany",
+      "caps": 42,
+      "goals": 8,
+      "assists": 10,
+      "minutes": 2890,
+      "debut": "Mar 25, 2021",
+      "coach": "Julian Nagelsmann",
+      "seasons": [
+        {
+          "season": "25/26",
+          "caps": 6,
+          "goals": 1,
+          "assists": 2,
+          "minutes": 420
+        },
+        {
+          "season": "24/25",
+          "caps": 10,
+          "goals": 2,
+          "assists": 3,
+          "minutes": 720
+        },
+        {
+          "season": "23/24",
+          "caps": 12,
+          "goals": 3,
+          "assists": 3,
+          "minutes": 890
+        },
+        {
+          "season": "21–23",
+          "caps": 14,
+          "goals": 2,
+          "assists": 2,
+          "minutes": 860
+        }
+      ],
+      "tournaments": [
+        {
+          "name": "UEFA EURO 2024",
+          "result": "QF",
+          "caps": 5,
+          "goals": 3,
+          "assists": 0
+        },
+        {
+          "name": "World Cup 2022",
+          "result": "Group",
+          "caps": 3,
+          "goals": 0,
+          "assists": 1
+        }
+      ]
+    },
+    "smart": {
+      "league": {
+        "name": "Bundesliga",
+        "mult": 1.24,
+        "pct": 80,
+        "weight": 34,
+        "note": "Top-4 UEFA coefficient league"
+      },
+      "form": {
+        "rating": 7.66,
+        "pct": 84,
+        "weight": 28,
+        "note": "High progressive carry volume"
+      },
+      "age": {
+        "label": "Approaching peak (23)",
+        "pct": 84,
+        "weight": 26,
+        "note": "Rising leg of the age curve"
+      },
+      "nt": {
+        "label": "42 Germany caps",
+        "pct": 86,
+        "weight": 12,
+        "note": "Core national-team creator"
+      }
+    },
+    "injuries": [
+      {
+        "season": "25/26",
+        "type": "Hamstring",
+        "kind": "injury",
+        "from": "Jul 5, 2026",
+        "to": "Aug 20, 2026",
+        "days": 46,
+        "matches": 6
+      },
+      {
+        "season": "24/25",
+        "type": "Thigh problems",
+        "kind": "injury",
+        "from": "Mar 8, 2025",
+        "to": "Mar 28, 2025",
+        "days": 20,
+        "matches": 4
+      },
+      {
+        "season": "22/23",
+        "type": "Knee injury",
+        "kind": "injury",
+        "from": "Oct 1, 2022",
+        "to": "Oct 22, 2022",
+        "days": 21,
+        "matches": 3
+      },
+      {
+        "season": "21/22",
+        "type": "Yellow card suspension",
+        "kind": "suspension",
+        "from": "Dec 11, 2021",
+        "to": "Dec 18, 2021",
+        "days": 7,
+        "matches": 1
+      }
+    ],
+    "trophies": [
+      {
+        "count": 4,
+        "name": "Bundesliga",
+        "code": "BUN",
+        "years": [
+          "2019/20",
+          "2020/21",
+          "2021/22",
+          "2022/23"
+        ]
+      },
+      {
+        "count": 2,
+        "name": "DFB-Pokal",
+        "code": "DFB",
+        "years": [
+          "2019/20",
+          "2024/25"
+        ]
+      },
+      {
+        "count": 1,
+        "name": "Champions League",
+        "code": "UCL",
+        "years": [
+          "2019/20"
+        ]
+      }
+    ]
+  }
+}

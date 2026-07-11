@@ -1,0 +1,17 @@
+{
+  "transfers": [],
+  "rumors": [],
+  "movers": [],
+  "rawKeys": [
+    "DOMINANT_AGENCIES",
+    "MARKET_LEAGUES",
+    "POS_GROUPS",
+    "RUMOR_MILL",
+    "TOP_SPENDING_LEAGUES",
+    "TRANSFER_LEDGER",
+    "TRANSFER_TYPES",
+    "VALUE_DROPPERS",
+    "VALUE_RISERS",
+    "matchesMarketFilters"
+  ]
+}

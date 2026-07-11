@@ -1,0 +1,2668 @@
+[
+  {
+    "id": "france",
+    "name": "France",
+    "code": "FRA",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Fédération Française de Football",
+      "short": "FFF",
+      "founded": 1919,
+      "address": "87 Boulevard de Grenelle, 75015 Paris, France",
+      "colors": {
+        "primary": "#002395",
+        "secondary": "#ED2939",
+        "tertiary": "#FFFFFF"
+      }
+    },
+    "fifaRank": 2,
+    "rankingHistory": [
+      {
+        "year": 2021,
+        "rank": 3
+      },
+      {
+        "year": 2022,
+        "rank": 4
+      },
+      {
+        "year": 2023,
+        "rank": 2
+      },
+      {
+        "year": 2024,
+        "rank": 2
+      },
+      {
+        "year": 2025,
+        "rank": 2
+      },
+      {
+        "year": 2026,
+        "rank": 2
+      }
+    ],
+    "squadValue": 1.23,
+    "stadium": {
+      "name": "Stade de France",
+      "capacity": 81338,
+      "city": "Saint-Denis"
+    },
+    "coach": {
+      "name": "Didier Deschamps",
+      "managerId": "deschamps",
+      "since": 2012
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Mike Maignan",
+          "age": 30,
+          "club": "Milan",
+          "clubCode": "MIL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 16,
+          "name": "Brice Samba",
+          "age": 32,
+          "club": "Lens",
+          "clubCode": "RCL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 23,
+          "name": "Alphonse Areola",
+          "age": 33,
+          "club": "West Ham",
+          "clubCode": "WHU",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Benjamin Pavard",
+          "age": 30,
+          "club": "Inter",
+          "clubCode": "INT",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 3,
+          "name": "Lucas Hernández",
+          "age": 30,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 4,
+          "name": "William Saliba",
+          "age": 25,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 5,
+          "name": "Jules Koundé",
+          "age": 27,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 17,
+          "name": "Dayot Upamecano",
+          "age": 27,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 21,
+          "name": "Theo Hernández",
+          "age": 28,
+          "club": "Milan",
+          "clubCode": "MIL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 22,
+          "name": "Ibrahima Konaté",
+          "age": 27,
+          "club": "Liverpool",
+          "clubCode": "LIV",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 6,
+          "name": "Aurélien Tchouaméni",
+          "age": 26,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 8,
+          "name": "Aurélien Nkunku",
+          "age": 28,
+          "club": "Chelsea",
+          "clubCode": "CHE",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 13,
+          "name": "N’Golo Kanté",
+          "age": 35,
+          "club": "Al-Ittihad",
+          "clubCode": "ITT",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 14,
+          "name": "Adrien Rabiot",
+          "age": 31,
+          "club": "Marseille",
+          "clubCode": "OM",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 18,
+          "name": "Warren Zaïre-Emery",
+          "age": 20,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 19,
+          "name": "Youssouf Fofana",
+          "age": 27,
+          "club": "Milan",
+          "clubCode": "MIL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Antoine Griezmann",
+          "age": 35,
+          "club": "Atlético",
+          "clubCode": "ATM",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 9,
+          "name": "Olivier Giroud",
+          "age": 39,
+          "club": "LAFC",
+          "clubCode": "LAFC",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Dec 2025"
+        },
+        {
+          "shirt": 10,
+          "name": "Kylian Mbappé",
+          "age": 27,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 11,
+          "name": "Ousmane Dembélé",
+          "age": 28,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 12,
+          "name": "Randal Kolo Muani",
+          "age": 27,
+          "club": "Juventus",
+          "clubCode": "JUV",
+          "clubId": "juventus",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 15,
+          "name": "Michael Olise",
+          "age": 24,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": "michael-olise",
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 20,
+          "name": "Désiré Doué",
+          "age": 21,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": "desire-doue",
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 25,
+          "name": "Bradley Barcola",
+          "age": 23,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        }
+      ]
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Hugo Lloris",
+          "value": 145,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Lilian Thuram",
+          "value": 142,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Olivier Giroud",
+          "value": 137,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Thierry Henry",
+          "value": 123,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Marcel Desailly",
+          "value": 116,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Olivier Giroud",
+          "value": 57,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Thierry Henry",
+          "value": 51,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Kylian Mbappé",
+          "value": 48,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Antoine Griezmann",
+          "value": 44,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Michel Platini",
+          "value": 41,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Eduardo Camavinga",
+        "age": "17y 290d",
+        "year": 2020
+      },
+      "oldestPlayer": {
+        "name": "Larbi Benbarek",
+        "age": "41y 0d",
+        "year": 1954
+      }
+    },
+    "fixtures": [
+      {
+        "date": "Mar 21, 2026",
+        "competition": "Friendly",
+        "home": "France",
+        "away": "Netherlands",
+        "score": "2–1",
+        "venue": "Stade de France",
+        "referee": "M. Oliver",
+        "status": "ft",
+        "matchId": "france-netherlands"
+      },
+      {
+        "date": "Nov 14, 2025",
+        "competition": "Nations League",
+        "home": "Italy",
+        "away": "France",
+        "score": "1–3",
+        "venue": "San Siro",
+        "referee": "F. Zwayer",
+        "status": "ft",
+        "matchId": "italy-france"
+      },
+      {
+        "date": "Oct 10, 2025",
+        "competition": "WC Qualifier",
+        "home": "France",
+        "away": "Israel",
+        "score": "4–0",
+        "venue": "Stade de France",
+        "referee": "C. Turpin",
+        "status": "ft",
+        "matchId": "france-israel"
+      },
+      {
+        "date": "Sep 6, 2025",
+        "competition": "WC Qualifier",
+        "home": "France",
+        "away": "Ukraine",
+        "score": "3–1",
+        "venue": "Groupama Stadium",
+        "referee": "A. Taylor",
+        "status": "ft",
+        "matchId": "france-ukraine"
+      },
+      {
+        "date": "Jun 5, 2026",
+        "competition": "Friendly",
+        "home": "France",
+        "away": "Spain",
+        "score": null,
+        "venue": "Stade Vélodrome",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Jun 15, 2026",
+        "competition": "World Cup",
+        "home": "France",
+        "away": "TBD",
+        "score": null,
+        "venue": "MetLife Stadium",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      }
+    ],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "1998",
+          "2018"
+        ],
+        "code": "WC",
+        "count": 2
+      },
+      {
+        "name": "UEFA EURO",
+        "years": [
+          "1984",
+          "2000"
+        ],
+        "code": "EUR",
+        "count": 2
+      },
+      {
+        "name": "UEFA Nations League",
+        "years": [
+          "2021"
+        ],
+        "code": "UNL",
+        "count": 1
+      },
+      {
+        "name": "Olympic Gold",
+        "years": [
+          "1984"
+        ],
+        "code": "OLY",
+        "count": 1
+      },
+      {
+        "name": "Confederations Cup",
+        "years": [
+          "2001",
+          "2003"
+        ],
+        "code": "CC",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "turkiye",
+    "name": "Türkiye",
+    "code": "TUR",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Türkiye Futbol Federasyonu",
+      "short": "TFF",
+      "founded": 1923,
+      "address": "Hasan Doğan Milli Takımlar Kampı, Riva, İstanbul",
+      "colors": {
+        "primary": "#E30A17",
+        "secondary": "#FFFFFF",
+        "tertiary": "#000000"
+      }
+    },
+    "fifaRank": 26,
+    "rankingHistory": [
+      {
+        "year": 2021,
+        "rank": 39
+      },
+      {
+        "year": 2022,
+        "rank": 42
+      },
+      {
+        "year": 2023,
+        "rank": 38
+      },
+      {
+        "year": 2024,
+        "rank": 28
+      },
+      {
+        "year": 2025,
+        "rank": 27
+      },
+      {
+        "year": 2026,
+        "rank": 26
+      }
+    ],
+    "squadValue": 0.42,
+    "stadium": {
+      "name": "Atatürk Olimpiyat Stadı",
+      "capacity": 74753,
+      "city": "İstanbul"
+    },
+    "coach": {
+      "name": "Vincenzo Montella",
+      "managerId": "montella",
+      "since": 2023
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Uğurcan Çakır",
+          "age": 30,
+          "club": "Trabzonspor",
+          "clubCode": "TS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 12,
+          "name": "Mert Günok",
+          "age": 37,
+          "club": "Beşiktaş",
+          "clubCode": "BJK",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 23,
+          "name": "Altay Bayındır",
+          "age": 28,
+          "club": "Man United",
+          "clubCode": "MUN",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Zeki Çelik",
+          "age": 29,
+          "club": "Roma",
+          "clubCode": "ROM",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 3,
+          "name": "Merih Demiral",
+          "age": 28,
+          "club": "Al-Ahli",
+          "clubCode": "AHL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 4,
+          "name": "Çağlar Söyüncü",
+          "age": 30,
+          "club": "Fenerbahçe",
+          "clubCode": "FB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 13,
+          "name": "Abdülkerim Bardakcı",
+          "age": 31,
+          "club": "Galatasaray",
+          "clubCode": "GS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 18,
+          "name": "Ferdi Kadıoğlu",
+          "age": 26,
+          "club": "Brighton",
+          "clubCode": "BHA",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 20,
+          "name": "Samet Akaydın",
+          "age": 32,
+          "club": "Panathinaikos",
+          "clubCode": "PAO",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 5,
+          "name": "Salih Özcan",
+          "age": 28,
+          "club": "Trabzonspor",
+          "clubCode": "TS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 6,
+          "name": "Orkun Kökçü",
+          "age": 25,
+          "club": "Benfica",
+          "clubCode": "SLB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 8,
+          "name": "Hakan Çalhanoğlu",
+          "age": 32,
+          "club": "Inter",
+          "clubCode": "INT",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 10,
+          "name": "Kenan Yıldız",
+          "age": 21,
+          "club": "Juventus",
+          "clubCode": "JUV",
+          "clubId": "juventus",
+          "playerId": "kenan-yildiz",
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 15,
+          "name": "İsmail Yüksek",
+          "age": 27,
+          "club": "Fenerbahçe",
+          "clubCode": "FB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 16,
+          "name": "Kaan Ayhan",
+          "age": 31,
+          "club": "Galatasaray",
+          "clubCode": "GS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Kerem Aktürkoğlu",
+          "age": 27,
+          "club": "Benfica",
+          "clubCode": "SLB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 9,
+          "name": "Cenk Tosun",
+          "age": 34,
+          "club": "Fenerbahçe",
+          "clubCode": "FB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 11,
+          "name": "Yunus Akgün",
+          "age": 25,
+          "club": "Galatasaray",
+          "clubCode": "GS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 14,
+          "name": "Arda Güler",
+          "age": 21,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": "arda-guler",
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 17,
+          "name": "Barış Alper Yılmaz",
+          "age": 26,
+          "club": "Galatasaray",
+          "clubCode": "GS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 19,
+          "name": "Enes Ünal",
+          "age": 28,
+          "club": "Bournemouth",
+          "clubCode": "BOU",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        }
+      ]
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Rüştü Reçber",
+          "value": 120,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Hakan Şükür",
+          "value": 112,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Bülent Korkmaz",
+          "value": 102,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Tugay Kerimoğlu",
+          "value": 94,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Arda Turan",
+          "value": 100,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Hakan Şükür",
+          "value": 51,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Tuncay Şanlı",
+          "value": 22,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Lefter Küçükandonyadis",
+          "value": 21,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Cenk Tosun",
+          "value": 20,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Burak Yılmaz",
+          "value": 31,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Emre Mor",
+        "age": "18y 289d",
+        "year": 2016
+      },
+      "oldestPlayer": {
+        "name": "Rüştü Reçber",
+        "age": "39y 134d",
+        "year": 2012
+      }
+    },
+    "fixtures": [
+      {
+        "date": "Mar 23, 2026",
+        "competition": "Friendly",
+        "home": "Türkiye",
+        "away": "Hungary",
+        "score": "2–0",
+        "venue": "Atatürk Olimpiyat",
+        "referee": "S. Marciniak",
+        "status": "ft",
+        "matchId": "turkiye-hungary"
+      },
+      {
+        "date": "Nov 16, 2025",
+        "competition": "Nations League",
+        "home": "Wales",
+        "away": "Türkiye",
+        "score": "0–2",
+        "venue": "Cardiff City Stadium",
+        "referee": "A. Taylor",
+        "status": "ft",
+        "matchId": "wales-turkiye"
+      },
+      {
+        "date": "Oct 11, 2025",
+        "competition": "WC Qualifier",
+        "home": "Türkiye",
+        "away": "Iceland",
+        "score": "3–1",
+        "venue": "Konya Büyükşehir",
+        "referee": "D. Orsato",
+        "status": "ft",
+        "matchId": "turkiye-iceland"
+      },
+      {
+        "date": "Sep 7, 2025",
+        "competition": "WC Qualifier",
+        "home": "Türkiye",
+        "away": "Montenegro",
+        "score": "1–0",
+        "venue": "Başakşehir Fatih Terim",
+        "referee": "C. Turpin",
+        "status": "ft",
+        "matchId": "turkiye-montenegro"
+      },
+      {
+        "date": "Jun 8, 2026",
+        "competition": "Friendly",
+        "home": "Türkiye",
+        "away": "Italy",
+        "score": null,
+        "venue": "Rams Park",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Jun 18, 2026",
+        "competition": "World Cup",
+        "home": "Türkiye",
+        "away": "TBD",
+        "score": null,
+        "venue": "TBD",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      }
+    ],
+    "trophies": [
+      {
+        "name": "UEFA EURO (semi-final)",
+        "years": [
+          "2008"
+        ],
+        "code": "EUR",
+        "count": 1
+      },
+      {
+        "name": "FIFA World Cup (3rd)",
+        "years": [
+          "2002"
+        ],
+        "code": "WC",
+        "count": 1
+      },
+      {
+        "name": "Mediterranean Games Gold",
+        "years": [
+          "1987",
+          "1993",
+          "2013"
+        ],
+        "code": "MED",
+        "count": 3
+      },
+      {
+        "name": "U21 Toulon Tournament",
+        "years": [
+          "2012"
+        ],
+        "code": "U21",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "code": "BRA",
+    "confederation": "CONMEBOL",
+    "association": {
+      "name": "Confederação Brasileira de Futebol",
+      "short": "CBF",
+      "founded": 1914,
+      "address": "Avenida Luís Carlos Prestes 130, Barra da Tijuca, Rio de Janeiro",
+      "colors": {
+        "primary": "#009C3B",
+        "secondary": "#FFDF00",
+        "tertiary": "#002776"
+      }
+    },
+    "fifaRank": 5,
+    "rankingHistory": [
+      {
+        "year": 2021,
+        "rank": 2
+      },
+      {
+        "year": 2022,
+        "rank": 1
+      },
+      {
+        "year": 2023,
+        "rank": 3
+      },
+      {
+        "year": 2024,
+        "rank": 4
+      },
+      {
+        "year": 2025,
+        "rank": 5
+      },
+      {
+        "year": 2026,
+        "rank": 5
+      }
+    ],
+    "squadValue": 1.48,
+    "stadium": {
+      "name": "Maracanã",
+      "capacity": 78838,
+      "city": "Rio de Janeiro"
+    },
+    "coach": {
+      "name": "Carlo Ancelotti",
+      "managerId": "ancelotti-bra",
+      "since": 2025
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Alisson",
+          "age": 33,
+          "club": "Liverpool",
+          "clubCode": "LIV",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 12,
+          "name": "Ederson",
+          "age": 32,
+          "club": "Man City",
+          "clubCode": "MCI",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 23,
+          "name": "Bento",
+          "age": 27,
+          "club": "Al-Nassr",
+          "clubCode": "NAS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Danilo",
+          "age": 34,
+          "club": "Juventus",
+          "clubCode": "JUV",
+          "clubId": "juventus",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 3,
+          "name": "Marquinhos",
+          "age": 31,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 4,
+          "name": "Gabriel Magalhães",
+          "age": 28,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 6,
+          "name": "Alex Sandro",
+          "age": 35,
+          "club": "Flamengo",
+          "clubCode": "FLA",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Dec 2026"
+        },
+        {
+          "shirt": 13,
+          "name": "Éder Militão",
+          "age": 28,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 16,
+          "name": "Guilherme Arana",
+          "age": 28,
+          "club": "Atlético-MG",
+          "clubCode": "CAM",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Dec 2027"
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 5,
+          "name": "Casemiro",
+          "age": 34,
+          "club": "Man United",
+          "clubCode": "MUN",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 8,
+          "name": "Bruno Guimarães",
+          "age": 28,
+          "club": "Newcastle",
+          "clubCode": "NEW",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 15,
+          "name": "João Gomes",
+          "age": 25,
+          "club": "Wolves",
+          "clubCode": "WOL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 17,
+          "name": "Andreas Pereira",
+          "age": 30,
+          "club": "Fulham",
+          "clubCode": "FUL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 18,
+          "name": "Lucas Paquetá",
+          "age": 28,
+          "club": "West Ham",
+          "clubCode": "WHU",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Vinícius Júnior",
+          "age": 26,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": "vinicius-junior",
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 9,
+          "name": "Richarlison",
+          "age": 29,
+          "club": "Tottenham",
+          "clubCode": "TOT",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 10,
+          "name": "Rodrygo",
+          "age": 25,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 11,
+          "name": "Raphinha",
+          "age": 29,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 19,
+          "name": "Endrick",
+          "age": 19,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2030"
+        },
+        {
+          "shirt": 20,
+          "name": "Savinho",
+          "age": 22,
+          "club": "Man City",
+          "clubCode": "MCI",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 21,
+          "name": "Gabriel Martinelli",
+          "age": 24,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        }
+      ]
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Cafu",
+          "value": 142,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Roberto Carlos",
+          "value": 125,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Dani Alves",
+          "value": 126,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Neymar",
+          "value": 128,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Lúcio",
+          "value": 105,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Neymar",
+          "value": 79,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Pelé",
+          "value": 77,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Ronaldo",
+          "value": 62,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Romário",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Zico",
+          "value": 48,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Pelé",
+        "age": "16y 257d",
+        "year": 1957
+      },
+      "oldestPlayer": {
+        "name": "Djalma Santos",
+        "age": "39y 289d",
+        "year": 1968
+      }
+    },
+    "fixtures": [
+      {
+        "date": "Mar 20, 2026",
+        "competition": "WC Qualifier",
+        "home": "Brazil",
+        "away": "Colombia",
+        "score": "2–1",
+        "venue": "Maracanã",
+        "referee": "W. Roldán",
+        "status": "ft",
+        "matchId": "brazil-colombia"
+      },
+      {
+        "date": "Nov 19, 2025",
+        "competition": "WC Qualifier",
+        "home": "Argentina",
+        "away": "Brazil",
+        "score": "1–0",
+        "venue": "Monumental",
+        "referee": "A. Matonte",
+        "status": "ft",
+        "matchId": "argentina-brazil"
+      },
+      {
+        "date": "Oct 15, 2025",
+        "competition": "WC Qualifier",
+        "home": "Brazil",
+        "away": "Peru",
+        "score": "3–0",
+        "venue": "Neo Química Arena",
+        "referee": "J. Valenzuela",
+        "status": "ft",
+        "matchId": "brazil-peru"
+      },
+      {
+        "date": "Sep 10, 2025",
+        "competition": "WC Qualifier",
+        "home": "Chile",
+        "away": "Brazil",
+        "score": "0–2",
+        "venue": "Nacional",
+        "referee": "F. Tello",
+        "status": "ft",
+        "matchId": "chile-brazil"
+      },
+      {
+        "date": "Jun 3, 2026",
+        "competition": "Friendly",
+        "home": "Brazil",
+        "away": "Spain",
+        "score": null,
+        "venue": "Hard Rock Stadium",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Jun 14, 2026",
+        "competition": "World Cup",
+        "home": "Brazil",
+        "away": "TBD",
+        "score": null,
+        "venue": "TBD",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      }
+    ],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "1958",
+          "1962",
+          "1970",
+          "1994",
+          "2002"
+        ],
+        "code": "WC",
+        "count": 5
+      },
+      {
+        "name": "Copa América",
+        "years": [
+          "1919",
+          "1922",
+          "1949",
+          "1989",
+          "1997",
+          "1999",
+          "2004",
+          "2007",
+          "2019"
+        ],
+        "code": "CA",
+        "count": 9
+      },
+      {
+        "name": "Confederations Cup",
+        "years": [
+          "1997",
+          "2005",
+          "2009",
+          "2013"
+        ],
+        "code": "CC",
+        "count": 4
+      },
+      {
+        "name": "Olympic Gold",
+        "years": [
+          "2016",
+          "2020"
+        ],
+        "code": "OLY",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "code": "ESP",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Real Federación Española de Fútbol",
+      "short": "RFEF",
+      "founded": 1909,
+      "address": "Ramón y Cajal s/n, 28230 Las Rozas, Madrid",
+      "colors": {
+        "primary": "#AA151B",
+        "secondary": "#F1BF00",
+        "tertiary": "#FFFFFF"
+      }
+    },
+    "fifaRank": 3,
+    "rankingHistory": [
+      {
+        "year": 2021,
+        "rank": 7
+      },
+      {
+        "year": 2022,
+        "rank": 6
+      },
+      {
+        "year": 2023,
+        "rank": 8
+      },
+      {
+        "year": 2024,
+        "rank": 3
+      },
+      {
+        "year": 2025,
+        "rank": 3
+      },
+      {
+        "year": 2026,
+        "rank": 3
+      }
+    ],
+    "squadValue": 1.35,
+    "stadium": {
+      "name": "Santiago Bernabéu",
+      "capacity": 81044,
+      "city": "Madrid"
+    },
+    "coach": {
+      "name": "Luis de la Fuente",
+      "managerId": "de-la-fuente",
+      "since": 2022
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Unai Simón",
+          "age": 28,
+          "club": "Athletic",
+          "clubCode": "ATH",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 13,
+          "name": "David Raya",
+          "age": 30,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 23,
+          "name": "Álex Remiro",
+          "age": 31,
+          "club": "Real Sociedad",
+          "clubCode": "RSO",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Dani Carvajal",
+          "age": 34,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 3,
+          "name": "Alejandro Balde",
+          "age": 22,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 4,
+          "name": "Aymeric Laporte",
+          "age": 32,
+          "club": "Al-Nassr",
+          "clubCode": "NAS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 5,
+          "name": "Pau Cubarsí",
+          "age": 19,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 14,
+          "name": "Aymeric",
+          "age": 27,
+          "club": "Atlético",
+          "clubCode": "ATM",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 24,
+          "name": "Marc Cucurella",
+          "age": 27,
+          "club": "Chelsea",
+          "clubCode": "CHE",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 6,
+          "name": "Mikel Merino",
+          "age": 29,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 8,
+          "name": "Fabián Ruiz",
+          "age": 29,
+          "club": "PSG",
+          "clubCode": "PSG",
+          "clubId": "psg",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 16,
+          "name": "Rodri",
+          "age": 29,
+          "club": "Man City",
+          "clubCode": "MCI",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 18,
+          "name": "Martín Zubimendi",
+          "age": 27,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 20,
+          "name": "Pedri",
+          "age": 23,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2030"
+        },
+        {
+          "shirt": 22,
+          "name": "Gavi",
+          "age": 21,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2030"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Álvaro Morata",
+          "age": 33,
+          "club": "Milan",
+          "clubCode": "MIL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 9,
+          "name": "Joselu",
+          "age": 36,
+          "club": "Al-Gharafa",
+          "clubCode": "GHF",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 10,
+          "name": "Lamine Yamal",
+          "age": 18,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": "lamine-yamal",
+          "foreign": false,
+          "contract": "Jun 2031"
+        },
+        {
+          "shirt": 11,
+          "name": "Ferran Torres",
+          "age": 26,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 17,
+          "name": "Nico Williams",
+          "age": 23,
+          "club": "Athletic",
+          "clubCode": "ATH",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 19,
+          "name": "Dani Olmo",
+          "age": 27,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2030"
+        }
+      ]
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Sergio Ramos",
+          "value": 180,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Iker Casillas",
+          "value": 167,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Xavi Hernández",
+          "value": 133,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Andrés Iniesta",
+          "value": 131,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Sergio Busquets",
+          "value": 143,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "David Villa",
+          "value": 59,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Raúl",
+          "value": 44,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Fernando Torres",
+          "value": 38,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Fernando Hierro",
+          "value": 29,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Álvaro Morata",
+          "value": 36,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Lamine Yamal",
+        "age": "16y 57d",
+        "year": 2023,
+        "playerId": "lamine-yamal"
+      },
+      "oldestPlayer": {
+        "name": "Jesús Navas",
+        "age": "38y 0d",
+        "year": 2024
+      }
+    },
+    "fixtures": [
+      {
+        "date": "Mar 20, 2026",
+        "competition": "Friendly",
+        "home": "Spain",
+        "away": "Brazil",
+        "score": null,
+        "venue": "Metropolitano",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Nov 15, 2025",
+        "competition": "Nations League",
+        "home": "Spain",
+        "away": "Denmark",
+        "score": "2–0",
+        "venue": "Benito Villamarín",
+        "referee": "F. Zwayer",
+        "status": "ft",
+        "matchId": "spain-denmark"
+      },
+      {
+        "date": "Oct 12, 2025",
+        "competition": "WC Qualifier",
+        "home": "Spain",
+        "away": "Serbia",
+        "score": "3–0",
+        "venue": "Carlos Tartiere",
+        "referee": "M. Oliver",
+        "status": "ft",
+        "matchId": "spain-serbia"
+      },
+      {
+        "date": "Sep 5, 2025",
+        "competition": "WC Qualifier",
+        "home": "Georgia",
+        "away": "Spain",
+        "score": "0–2",
+        "venue": "Batumi",
+        "referee": "D. Siebert",
+        "status": "ft",
+        "matchId": "georgia-spain"
+      },
+      {
+        "date": "Jun 5, 2026",
+        "competition": "Friendly",
+        "home": "France",
+        "away": "Spain",
+        "score": null,
+        "venue": "Stade Vélodrome",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Jun 16, 2026",
+        "competition": "World Cup",
+        "home": "Spain",
+        "away": "TBD",
+        "score": null,
+        "venue": "TBD",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      }
+    ],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "2010"
+        ],
+        "code": "WC",
+        "count": 1
+      },
+      {
+        "name": "UEFA EURO",
+        "years": [
+          "1964",
+          "2008",
+          "2012",
+          "2024"
+        ],
+        "code": "EUR",
+        "count": 4
+      },
+      {
+        "name": "UEFA Nations League",
+        "years": [
+          "2023"
+        ],
+        "code": "UNL",
+        "count": 1
+      },
+      {
+        "name": "Olympic Gold",
+        "years": [
+          "1992"
+        ],
+        "code": "OLY",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "code": "GER",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Deutscher Fußball-Bund",
+      "short": "DFB",
+      "founded": 1900,
+      "address": "Otto-Fleck-Schneise 6, 60528 Frankfurt am Main",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#DD0000",
+        "tertiary": "#FFCE00"
+      }
+    },
+    "fifaRank": 5,
+    "rankingHistory": [
+      {
+        "year": 2021,
+        "rank": 12
+      },
+      {
+        "year": 2022,
+        "rank": 11
+      },
+      {
+        "year": 2023,
+        "rank": 16
+      },
+      {
+        "year": 2024,
+        "rank": 10
+      },
+      {
+        "year": 2025,
+        "rank": 6
+      },
+      {
+        "year": 2026,
+        "rank": 5
+      }
+    ],
+    "squadValue": 1.05,
+    "stadium": {
+      "name": "Olympiastadion Berlin",
+      "capacity": 74475,
+      "city": "Berlin"
+    },
+    "coach": {
+      "name": "Julian Nagelsmann",
+      "managerId": "nagelsmann",
+      "since": 2023
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Manuel Neuer",
+          "age": 39,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 12,
+          "name": "Marc-André ter Stegen",
+          "age": 34,
+          "club": "Barcelona",
+          "clubCode": "BAR",
+          "clubId": "fc-barcelona",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 22,
+          "name": "Alexander Nübel",
+          "age": 29,
+          "club": "Stuttgart",
+          "clubCode": "VFB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Antonio Rüdiger",
+          "age": 33,
+          "club": "Real Madrid",
+          "clubCode": "RMA",
+          "clubId": "real-madrid",
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 3,
+          "name": "David Raum",
+          "age": 28,
+          "club": "RB Leipzig",
+          "clubCode": "RBL",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 4,
+          "name": "Jonathan Tah",
+          "age": 29,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 15,
+          "name": "Nico Schlotterbeck",
+          "age": 26,
+          "club": "Dortmund",
+          "clubCode": "BVB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 16,
+          "name": "Waldemar Anton",
+          "age": 28,
+          "club": "Dortmund",
+          "clubCode": "BVB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 6,
+          "name": "Joshua Kimmich",
+          "age": 31,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 8,
+          "name": "Toni Kroos",
+          "age": 36,
+          "club": "Retired",
+          "clubCode": "—",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "—"
+        },
+        {
+          "shirt": 17,
+          "name": "Florian Wirtz",
+          "age": 23,
+          "club": "Leverkusen",
+          "clubCode": "B04",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 18,
+          "name": "Aleksandar Pavlović",
+          "age": 21,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2029"
+        },
+        {
+          "shirt": 21,
+          "name": "İlkay Gündoğan",
+          "age": 35,
+          "club": "Man City",
+          "clubCode": "MCI",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2026"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Kai Havertz",
+          "age": 27,
+          "club": "Arsenal",
+          "clubCode": "ARS",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 9,
+          "name": "Niclas Füllkrug",
+          "age": 33,
+          "club": "West Ham",
+          "clubCode": "WHU",
+          "clubId": null,
+          "playerId": null,
+          "foreign": true,
+          "contract": "Jun 2027"
+        },
+        {
+          "shirt": 10,
+          "name": "Jamal Musiala",
+          "age": 23,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": "jamal-musiala",
+          "foreign": false,
+          "contract": "Jun 2030"
+        },
+        {
+          "shirt": 11,
+          "name": "Leroy Sané",
+          "age": 30,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        },
+        {
+          "shirt": 19,
+          "name": "Leroy",
+          "age": 24,
+          "club": "Stuttgart",
+          "clubCode": "VFB",
+          "clubId": null,
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2028"
+        },
+        {
+          "shirt": 20,
+          "name": "Serge Gnabry",
+          "age": 30,
+          "club": "Bayern",
+          "clubCode": "FCB",
+          "clubId": "bayern-munich",
+          "playerId": null,
+          "foreign": false,
+          "contract": "Jun 2026"
+        }
+      ]
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Lothar Matthäus",
+          "value": 150,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Miroslav Klose",
+          "value": 137,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Lukas Podolski",
+          "value": 130,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Bastian Schweinsteiger",
+          "value": 121,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Philipp Lahm",
+          "value": 113,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Miroslav Klose",
+          "value": 71,
+          "playerId": null
+        },
+        {
+          "rank": 2,
+          "name": "Gerd Müller",
+          "value": 68,
+          "playerId": null
+        },
+        {
+          "rank": 3,
+          "name": "Lukas Podolski",
+          "value": 49,
+          "playerId": null
+        },
+        {
+          "rank": 4,
+          "name": "Rudi Völler",
+          "value": 47,
+          "playerId": null
+        },
+        {
+          "rank": 5,
+          "name": "Jürgen Klinsmann",
+          "value": 47,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Jamal Musiala",
+        "age": "18y 115d",
+        "year": 2021,
+        "playerId": "jamal-musiala"
+      },
+      "oldestPlayer": {
+        "name": "Lothar Matthäus",
+        "age": "39y 91d",
+        "year": 2000
+      }
+    },
+    "fixtures": [
+      {
+        "date": "Mar 23, 2026",
+        "competition": "Friendly",
+        "home": "Germany",
+        "away": "Italy",
+        "score": "1–1",
+        "venue": "Allianz Arena",
+        "referee": "C. Turpin",
+        "status": "ft",
+        "matchId": "germany-italy"
+      },
+      {
+        "date": "Nov 16, 2025",
+        "competition": "Nations League",
+        "home": "Germany",
+        "away": "Netherlands",
+        "score": "2–1",
+        "venue": "Signal Iduna Park",
+        "referee": "A. Taylor",
+        "status": "ft",
+        "matchId": "germany-netherlands"
+      },
+      {
+        "date": "Oct 11, 2025",
+        "competition": "WC Qualifier",
+        "home": "Germany",
+        "away": "N. Ireland",
+        "score": "4–0",
+        "venue": "Mercedes-Benz Arena",
+        "referee": "S. Marciniak",
+        "status": "ft",
+        "matchId": "germany-n-ireland"
+      },
+      {
+        "date": "Jun 10, 2026",
+        "competition": "Friendly",
+        "home": "Germany",
+        "away": "England",
+        "score": null,
+        "venue": "Wembley",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      },
+      {
+        "date": "Jun 17, 2026",
+        "competition": "World Cup",
+        "home": "Germany",
+        "away": "TBD",
+        "score": null,
+        "venue": "TBD",
+        "referee": "TBD",
+        "status": "upcoming",
+        "matchId": null
+      }
+    ],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "1954",
+          "1974",
+          "1990",
+          "2014"
+        ],
+        "code": "WC",
+        "count": 4
+      },
+      {
+        "name": "UEFA EURO",
+        "years": [
+          "1972",
+          "1980",
+          "1996"
+        ],
+        "code": "EUR",
+        "count": 3
+      },
+      {
+        "name": "Confederations Cup",
+        "years": [
+          "2017"
+        ],
+        "code": "CC",
+        "count": 1
+      },
+      {
+        "name": "Olympic Silver",
+        "years": [
+          "2016"
+        ],
+        "code": "OLY",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "england",
+    "name": "England",
+    "code": "ENG",
+    "confederation": "UEFA",
+    "association": {
+      "name": "The Football Association",
+      "short": "FA",
+      "founded": 1863,
+      "address": "Wembley Stadium, London HA9 0WS",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#000066",
+        "tertiary": "#C8102E"
+      }
+    },
+    "fifaRank": 4,
+    "rankingHistory": [
+      {
+        "year": 2022,
+        "rank": 5
+      },
+      {
+        "year": 2023,
+        "rank": 4
+      },
+      {
+        "year": 2024,
+        "rank": 4
+      },
+      {
+        "year": 2025,
+        "rank": 4
+      },
+      {
+        "year": 2026,
+        "rank": 4
+      }
+    ],
+    "squadValue": 1.4,
+    "stadium": {
+      "name": "Wembley Stadium",
+      "capacity": 90000,
+      "city": "London"
+    },
+    "coach": {
+      "name": "Thomas Tuchel",
+      "managerId": null,
+      "since": 2025
+    },
+    "squad": {
+      "GK": [],
+      "DEF": [],
+      "MID": [],
+      "FWD": []
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Peter Shilton",
+          "value": 125,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Harry Kane",
+          "value": 68,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Theo Walcott",
+        "age": "17y 75d",
+        "year": 2006
+      },
+      "oldestPlayer": {
+        "name": "Stanley Matthews",
+        "age": "42y 103d",
+        "year": 1957
+      }
+    },
+    "fixtures": [],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "1966"
+        ],
+        "code": "WC",
+        "count": 1
+      },
+      {
+        "name": "UEFA EURO (final)",
+        "years": [
+          "2021",
+          "2024"
+        ],
+        "code": "EUR",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "code": "ITA",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Federazione Italiana Giuoco Calcio",
+      "short": "FIGC",
+      "founded": 1898,
+      "address": "Via Gregorio Allegri 14, 00198 Roma",
+      "colors": {
+        "primary": "#009246",
+        "secondary": "#FFFFFF",
+        "tertiary": "#CE2B37"
+      }
+    },
+    "fifaRank": 9,
+    "rankingHistory": [
+      {
+        "year": 2022,
+        "rank": 6
+      },
+      {
+        "year": 2024,
+        "rank": 9
+      },
+      {
+        "year": 2026,
+        "rank": 9
+      }
+    ],
+    "squadValue": 0.85,
+    "stadium": {
+      "name": "Stadio Olimpico",
+      "capacity": 70634,
+      "city": "Rome"
+    },
+    "coach": {
+      "name": "Luciano Spalletti",
+      "managerId": null,
+      "since": 2023
+    },
+    "squad": {
+      "GK": [],
+      "DEF": [],
+      "MID": [],
+      "FWD": []
+    },
+    "legends": {
+      "caps": [
+        {
+          "rank": 1,
+          "name": "Gianluigi Buffon",
+          "value": 176,
+          "playerId": null
+        }
+      ],
+      "goals": [
+        {
+          "rank": 1,
+          "name": "Luigi Riva",
+          "value": 35,
+          "playerId": null
+        }
+      ],
+      "youngestDebut": {
+        "name": "Gianluigi Donnarumma",
+        "age": "17y 189d",
+        "year": 2016
+      },
+      "oldestPlayer": {
+        "name": "Dino Zoff",
+        "age": "41y 86d",
+        "year": 1983
+      }
+    },
+    "fixtures": [],
+    "trophies": [
+      {
+        "name": "FIFA World Cup",
+        "years": [
+          "1934",
+          "1938",
+          "1982",
+          "2006"
+        ],
+        "code": "WC",
+        "count": 4
+      },
+      {
+        "name": "UEFA EURO",
+        "years": [
+          "1968",
+          "2020"
+        ],
+        "code": "EUR",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "uefa",
+    "name": "UEFA",
+    "code": "EUR",
+    "confederation": "UEFA",
+    "association": {
+      "name": "Union of European Football Associations",
+      "short": "UEFA",
+      "founded": 1954,
+      "address": "Route de Genève 46, 1260 Nyon, Switzerland",
+      "colors": {
+        "primary": "#1A2B4A",
+        "secondary": "#FFFFFF",
+        "tertiary": "#E8B923"
+      }
+    },
+    "fifaRank": null,
+    "rankingHistory": [],
+    "squadValue": 0,
+    "stadium": {
+      "name": "—",
+      "capacity": 0,
+      "city": "Nyon"
+    },
+    "coach": {
+      "name": "—",
+      "managerId": null,
+      "since": null
+    },
+    "squad": {
+      "GK": [],
+      "DEF": [],
+      "MID": [],
+      "FWD": []
+    },
+    "legends": {
+      "caps": [],
+      "goals": [],
+      "youngestDebut": {
+        "name": "—",
+        "age": "—",
+        "year": "—"
+      },
+      "oldestPlayer": {
+        "name": "—",
+        "age": "—",
+        "year": "—"
+      }
+    },
+    "fixtures": [],
+    "trophies": []
+  }
+]

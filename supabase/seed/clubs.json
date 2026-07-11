@@ -1,0 +1,2074 @@
+[
+  {
+    "id": "fc-barcelona",
+    "name": "FC Barcelona",
+    "short": "BAR",
+    "league": "La Liga",
+    "leagueCode": "LAL",
+    "country": "Spain",
+    "founded": 1899,
+    "squadValue": 1124,
+    "squadSize": 26,
+    "avgAge": 25.1,
+    "foreignersPct": 54,
+    "stadium": {
+      "name": "Spotify Camp Nou",
+      "capacity": 99354,
+      "pitch": "105 × 68 m",
+      "city": "Barcelona"
+    },
+    "manager": {
+      "name": "Hansi Flick",
+      "managerId": "flick",
+      "nation": "GER",
+      "formation": "4-2-3-1",
+      "contractUntil": 2027,
+      "winPct": 74.2,
+      "matches": 62
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Marc-André ter Stegen",
+          "age": 34,
+          "nation": "GER",
+          "contract": "Jun 2028",
+          "value": 18,
+          "playerId": null
+        },
+        {
+          "shirt": 13,
+          "name": "Iñaki Peña",
+          "age": 27,
+          "nation": "ESP",
+          "contract": "Jun 2026",
+          "value": 8,
+          "playerId": null
+        },
+        {
+          "shirt": 25,
+          "name": "Wojciech Szczęsny",
+          "age": 36,
+          "nation": "POL",
+          "contract": "Jun 2026",
+          "value": 3,
+          "playerId": null
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 3,
+          "name": "Alejandro Balde",
+          "age": 22,
+          "nation": "ESP",
+          "contract": "Jun 2028",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "shirt": 4,
+          "name": "Ronald Araújo",
+          "age": 27,
+          "nation": "URU",
+          "contract": "Jun 2031",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 5,
+          "name": "Iñigo Martínez",
+          "age": 35,
+          "nation": "ESP",
+          "contract": "Jun 2026",
+          "value": 6,
+          "playerId": null
+        },
+        {
+          "shirt": 23,
+          "name": "Jules Koundé",
+          "age": 27,
+          "nation": "FRA",
+          "contract": "Jun 2027",
+          "value": 60,
+          "playerId": null
+        },
+        {
+          "shirt": 24,
+          "name": "Eric García",
+          "age": 25,
+          "nation": "ESP",
+          "contract": "Jun 2026",
+          "value": 18,
+          "playerId": null
+        },
+        {
+          "shirt": 2,
+          "name": "Pau Cubarsí",
+          "age": 19,
+          "nation": "ESP",
+          "contract": "Jun 2029",
+          "value": 50,
+          "playerId": null
+        },
+        {
+          "shirt": 35,
+          "name": "Gerard Martín",
+          "age": 24,
+          "nation": "ESP",
+          "contract": "Jun 2028",
+          "value": 12,
+          "playerId": null
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 8,
+          "name": "Pedri",
+          "age": 23,
+          "nation": "ESP",
+          "contract": "Jun 2030",
+          "value": 100,
+          "playerId": null
+        },
+        {
+          "shirt": 21,
+          "name": "Frenkie de Jong",
+          "age": 29,
+          "nation": "NED",
+          "contract": "Jun 2026",
+          "value": 40,
+          "playerId": null
+        },
+        {
+          "shirt": 17,
+          "name": "Marc Casadó",
+          "age": 22,
+          "nation": "ESP",
+          "contract": "Jun 2028",
+          "value": 35,
+          "playerId": null
+        },
+        {
+          "shirt": 6,
+          "name": "Gavi",
+          "age": 21,
+          "nation": "ESP",
+          "contract": "Jun 2030",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 20,
+          "name": "Dani Olmo",
+          "age": 27,
+          "nation": "ESP",
+          "contract": "Jun 2030",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "shirt": 16,
+          "name": "Fermín López",
+          "age": 23,
+          "nation": "ESP",
+          "contract": "Jun 2029",
+          "value": 40,
+          "playerId": null
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 10,
+          "name": "Lamine Yamal",
+          "age": 18,
+          "nation": "ESP",
+          "contract": "Jun 2031",
+          "value": 180,
+          "playerId": "lamine-yamal"
+        },
+        {
+          "shirt": 9,
+          "name": "Robert Lewandowski",
+          "age": 37,
+          "nation": "POL",
+          "contract": "Jun 2026",
+          "value": 12,
+          "playerId": null
+        },
+        {
+          "shirt": 11,
+          "name": "Raphinha",
+          "age": 29,
+          "nation": "BRA",
+          "contract": "Jun 2027",
+          "value": 65,
+          "playerId": null
+        },
+        {
+          "shirt": 7,
+          "name": "Ferran Torres",
+          "age": 26,
+          "nation": "ESP",
+          "contract": "Jun 2027",
+          "value": 35,
+          "playerId": null
+        },
+        {
+          "shirt": 19,
+          "name": "Pau Víctor",
+          "age": 24,
+          "nation": "ESP",
+          "contract": "Jun 2029",
+          "value": 15,
+          "playerId": null
+        },
+        {
+          "shirt": 14,
+          "name": "Ansu Fati",
+          "age": 23,
+          "nation": "ESP",
+          "contract": "Jun 2027",
+          "value": 25,
+          "playerId": null
+        }
+      ]
+    },
+    "standings": [
+      {
+        "pos": 1,
+        "club": "FC Barcelona",
+        "code": "BAR",
+        "pld": 28,
+        "w": 20,
+        "d": 5,
+        "l": 3,
+        "gf": 68,
+        "ga": 24,
+        "gd": 44,
+        "pts": 65,
+        "form": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "highlight": true
+      },
+      {
+        "pos": 2,
+        "club": "Real Madrid",
+        "code": "RMA",
+        "pld": 28,
+        "w": 19,
+        "d": 5,
+        "l": 4,
+        "gf": 62,
+        "ga": 28,
+        "gd": 34,
+        "pts": 62,
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 3,
+        "club": "Atlético Madrid",
+        "code": "ATM",
+        "pld": 28,
+        "w": 16,
+        "d": 8,
+        "l": 4,
+        "gf": 48,
+        "ga": 26,
+        "gd": 22,
+        "pts": 56,
+        "form": [
+          "D",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 4,
+        "club": "Athletic Club",
+        "code": "ATH",
+        "pld": 28,
+        "w": 14,
+        "d": 8,
+        "l": 6,
+        "gf": 42,
+        "ga": 28,
+        "gd": 14,
+        "pts": 50,
+        "form": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 5,
+        "club": "Real Sociedad",
+        "code": "RSO",
+        "pld": 28,
+        "w": 12,
+        "d": 9,
+        "l": 7,
+        "gf": 38,
+        "ga": 32,
+        "gd": 6,
+        "pts": 45,
+        "form": [
+          "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 6,
+        "club": "Villarreal",
+        "code": "VIL",
+        "pld": 28,
+        "w": 12,
+        "d": 7,
+        "l": 9,
+        "gf": 44,
+        "ga": 40,
+        "gd": 4,
+        "pts": 43,
+        "form": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 7,
+        "club": "Real Betis",
+        "code": "BET",
+        "pld": 28,
+        "w": 11,
+        "d": 8,
+        "l": 9,
+        "gf": 36,
+        "ga": 35,
+        "gd": 1,
+        "pts": 41,
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 8,
+        "club": "Sevilla",
+        "code": "SEV",
+        "pld": 28,
+        "w": 10,
+        "d": 8,
+        "l": 10,
+        "gf": 34,
+        "ga": 36,
+        "gd": -2,
+        "pts": 38,
+        "form": [
+          "L",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "highlight": false
+      }
+    ],
+    "formation": "4-2-3-1",
+    "startingXI": [
+      {
+        "shirt": 1,
+        "name": "ter Stegen",
+        "pos": "GK",
+        "x": 50,
+        "y": 122
+      },
+      {
+        "shirt": 3,
+        "name": "Balde",
+        "pos": "LB",
+        "x": 18,
+        "y": 98
+      },
+      {
+        "shirt": 2,
+        "name": "Cubarsí",
+        "pos": "CB",
+        "x": 38,
+        "y": 102
+      },
+      {
+        "shirt": 4,
+        "name": "Araújo",
+        "pos": "CB",
+        "x": 62,
+        "y": 102
+      },
+      {
+        "shirt": 23,
+        "name": "Koundé",
+        "pos": "RB",
+        "x": 82,
+        "y": 98
+      },
+      {
+        "shirt": 17,
+        "name": "Casadó",
+        "pos": "DM",
+        "x": 38,
+        "y": 76
+      },
+      {
+        "shirt": 8,
+        "name": "Pedri",
+        "pos": "CM",
+        "x": 62,
+        "y": 74
+      },
+      {
+        "shirt": 11,
+        "name": "Raphinha",
+        "pos": "LW",
+        "x": 22,
+        "y": 48
+      },
+      {
+        "shirt": 20,
+        "name": "Olmo",
+        "pos": "AM",
+        "x": 50,
+        "y": 52
+      },
+      {
+        "shirt": 10,
+        "name": "Yamal",
+        "pos": "RW",
+        "x": 78,
+        "y": 48,
+        "playerId": "lamine-yamal"
+      },
+      {
+        "shirt": 9,
+        "name": "Lewandowski",
+        "pos": "ST",
+        "x": 50,
+        "y": 28
+      }
+    ],
+    "transfers": {
+      "arrivals": [
+        {
+          "name": "Dani Olmo",
+          "from": "RB Leipzig",
+          "fee": 55,
+          "type": "Transfer"
+        },
+        {
+          "name": "Pau Víctor",
+          "from": "Girona",
+          "fee": 12,
+          "type": "Transfer"
+        },
+        {
+          "name": "Szczęsny",
+          "from": "Free agent",
+          "fee": 0,
+          "type": "Free"
+        }
+      ],
+      "departures": [
+        {
+          "name": "Ilkay Gündoğan",
+          "to": "Man City",
+          "fee": 0,
+          "type": "Free"
+        },
+        {
+          "name": "João Cancelo",
+          "to": "Al-Hilal",
+          "fee": 25,
+          "type": "Transfer"
+        },
+        {
+          "name": "Vitor Roque",
+          "to": "Betis",
+          "fee": null,
+          "type": "Loan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "real-madrid",
+    "name": "Real Madrid",
+    "short": "RMA",
+    "league": "La Liga",
+    "leagueCode": "LAL",
+    "country": "Spain",
+    "founded": 1902,
+    "squadValue": 1285,
+    "squadSize": 25,
+    "avgAge": 26.4,
+    "foreignersPct": 62,
+    "stadium": {
+      "name": "Santiago Bernabéu",
+      "capacity": 81044,
+      "pitch": "105 × 68 m",
+      "city": "Madrid"
+    },
+    "manager": {
+      "name": "Carlo Ancelotti",
+      "managerId": "ancelotti",
+      "nation": "ITA",
+      "formation": "4-3-3",
+      "contractUntil": 2026,
+      "winPct": 68.5,
+      "matches": 210
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Thibaut Courtois",
+          "age": 34,
+          "nation": "BEL",
+          "contract": "Jun 2026",
+          "value": 22,
+          "playerId": null
+        },
+        {
+          "shirt": 13,
+          "name": "Andriy Lunin",
+          "age": 27,
+          "nation": "UKR",
+          "contract": "Jun 2030",
+          "value": 25,
+          "playerId": null
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 2,
+          "name": "Dani Carvajal",
+          "age": 34,
+          "nation": "ESP",
+          "contract": "Jun 2026",
+          "value": 8,
+          "playerId": null
+        },
+        {
+          "shirt": 22,
+          "name": "Antonio Rüdiger",
+          "age": 33,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 18,
+          "playerId": null
+        },
+        {
+          "shirt": 4,
+          "name": "David Alaba",
+          "age": 33,
+          "nation": "AUT",
+          "contract": "Jun 2026",
+          "value": 12,
+          "playerId": null
+        },
+        {
+          "shirt": 23,
+          "name": "Ferland Mendy",
+          "age": 30,
+          "nation": "FRA",
+          "contract": "Jun 2027",
+          "value": 20,
+          "playerId": null
+        },
+        {
+          "shirt": 35,
+          "name": "Raúl Asencio",
+          "age": 22,
+          "nation": "ESP",
+          "contract": "Jun 2029",
+          "value": 28,
+          "playerId": null
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 5,
+          "name": "Jude Bellingham",
+          "age": 22,
+          "nation": "ENG",
+          "contract": "Jun 2029",
+          "value": 180,
+          "playerId": null
+        },
+        {
+          "shirt": 8,
+          "name": "Federico Valverde",
+          "age": 27,
+          "nation": "URU",
+          "contract": "Jun 2029",
+          "value": 120,
+          "playerId": null
+        },
+        {
+          "shirt": 15,
+          "name": "Arda Güler",
+          "age": 21,
+          "nation": "TUR",
+          "contract": "Jun 2029",
+          "value": 60,
+          "playerId": "arda-guler"
+        },
+        {
+          "shirt": 14,
+          "name": "Aurélien Tchouaméni",
+          "age": 26,
+          "nation": "FRA",
+          "contract": "Jun 2028",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 19,
+          "name": "Dani Ceballos",
+          "age": 29,
+          "nation": "ESP",
+          "contract": "Jun 2027",
+          "value": 18,
+          "playerId": null
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 7,
+          "name": "Vinícius Júnior",
+          "age": 26,
+          "nation": "BRA",
+          "contract": "Jun 2027",
+          "value": 140,
+          "playerId": "vinicius-junior"
+        },
+        {
+          "shirt": 11,
+          "name": "Rodrygo",
+          "age": 25,
+          "nation": "BRA",
+          "contract": "Jun 2028",
+          "value": 90,
+          "playerId": null
+        },
+        {
+          "shirt": 9,
+          "name": "Kylian Mbappé",
+          "age": 27,
+          "nation": "FRA",
+          "contract": "Jun 2029",
+          "value": 160,
+          "playerId": null
+        },
+        {
+          "shirt": 16,
+          "name": "Endrick",
+          "age": 19,
+          "nation": "BRA",
+          "contract": "Jun 2030",
+          "value": 55,
+          "playerId": null
+        }
+      ]
+    },
+    "standings": [
+      {
+        "pos": 1,
+        "club": "FC Barcelona",
+        "code": "BAR",
+        "pld": 28,
+        "w": 20,
+        "d": 5,
+        "l": 3,
+        "gf": 68,
+        "ga": 24,
+        "gd": 44,
+        "pts": 65,
+        "form": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 2,
+        "club": "Real Madrid",
+        "code": "RMA",
+        "pld": 28,
+        "w": 19,
+        "d": 5,
+        "l": 4,
+        "gf": 62,
+        "ga": 28,
+        "gd": 34,
+        "pts": 62,
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "highlight": true
+      },
+      {
+        "pos": 3,
+        "club": "Atlético Madrid",
+        "code": "ATM",
+        "pld": 28,
+        "w": 16,
+        "d": 8,
+        "l": 4,
+        "gf": 48,
+        "ga": 26,
+        "gd": 22,
+        "pts": 56,
+        "form": [
+          "D",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 4,
+        "club": "Athletic Club",
+        "code": "ATH",
+        "pld": 28,
+        "w": 14,
+        "d": 8,
+        "l": 6,
+        "gf": 42,
+        "ga": 28,
+        "gd": 14,
+        "pts": 50,
+        "form": [
+          "W",
+          "L",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 5,
+        "club": "Real Sociedad",
+        "code": "RSO",
+        "pld": 28,
+        "w": 12,
+        "d": 9,
+        "l": 7,
+        "gf": 38,
+        "ga": 32,
+        "gd": 6,
+        "pts": 45,
+        "form": [
+          "D",
+          "W",
+          "L",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      }
+    ],
+    "formation": "4-3-3",
+    "startingXI": [
+      {
+        "shirt": 1,
+        "name": "Courtois",
+        "pos": "GK",
+        "x": 50,
+        "y": 122
+      },
+      {
+        "shirt": 23,
+        "name": "Mendy",
+        "pos": "LB",
+        "x": 18,
+        "y": 98
+      },
+      {
+        "shirt": 22,
+        "name": "Rüdiger",
+        "pos": "CB",
+        "x": 38,
+        "y": 102
+      },
+      {
+        "shirt": 35,
+        "name": "Asencio",
+        "pos": "CB",
+        "x": 62,
+        "y": 102
+      },
+      {
+        "shirt": 2,
+        "name": "Carvajal",
+        "pos": "RB",
+        "x": 82,
+        "y": 98
+      },
+      {
+        "shirt": 14,
+        "name": "Tchouaméni",
+        "pos": "DM",
+        "x": 50,
+        "y": 78
+      },
+      {
+        "shirt": 8,
+        "name": "Valverde",
+        "pos": "CM",
+        "x": 32,
+        "y": 62
+      },
+      {
+        "shirt": 5,
+        "name": "Bellingham",
+        "pos": "CM",
+        "x": 68,
+        "y": 62
+      },
+      {
+        "shirt": 7,
+        "name": "Vinícius",
+        "pos": "LW",
+        "x": 22,
+        "y": 40,
+        "playerId": "vinicius-junior"
+      },
+      {
+        "shirt": 9,
+        "name": "Mbappé",
+        "pos": "ST",
+        "x": 50,
+        "y": 28
+      },
+      {
+        "shirt": 11,
+        "name": "Rodrygo",
+        "pos": "RW",
+        "x": 78,
+        "y": 40
+      }
+    ],
+    "transfers": {
+      "arrivals": [
+        {
+          "name": "Kylian Mbappé",
+          "from": "PSG",
+          "fee": 0,
+          "type": "Free"
+        },
+        {
+          "name": "Endrick",
+          "from": "Palmeiras",
+          "fee": 60,
+          "type": "Transfer"
+        }
+      ],
+      "departures": [
+        {
+          "name": "Toni Kroos",
+          "to": "Retired",
+          "fee": null,
+          "type": "Free"
+        },
+        {
+          "name": "Nacho",
+          "to": "Al-Qadsiah",
+          "fee": 0,
+          "type": "Free"
+        }
+      ]
+    }
+  },
+  {
+    "id": "juventus",
+    "name": "Juventus",
+    "short": "JUV",
+    "league": "Serie A",
+    "leagueCode": "SEA",
+    "country": "Italy",
+    "founded": 1897,
+    "squadValue": 610,
+    "squadSize": 27,
+    "avgAge": 25.8,
+    "foreignersPct": 48,
+    "stadium": {
+      "name": "Allianz Stadium",
+      "capacity": 41507,
+      "pitch": "105 × 68 m",
+      "city": "Turin"
+    },
+    "manager": {
+      "name": "Igor Tudor",
+      "nation": "CRO",
+      "formation": "3-4-2-1",
+      "contractUntil": 2027,
+      "winPct": 58.3,
+      "matches": 48
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Michele Di Gregorio",
+          "age": 28,
+          "nation": "ITA",
+          "contract": "Jun 2029",
+          "value": 28,
+          "playerId": null
+        },
+        {
+          "shirt": 29,
+          "name": "Mattia Perin",
+          "age": 33,
+          "nation": "ITA",
+          "contract": "Jun 2027",
+          "value": 5,
+          "playerId": null
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 3,
+          "name": "Bremer",
+          "age": 28,
+          "nation": "BRA",
+          "contract": "Jun 2029",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "shirt": 4,
+          "name": "Federico Gatti",
+          "age": 27,
+          "nation": "ITA",
+          "contract": "Jun 2028",
+          "value": 30,
+          "playerId": null
+        },
+        {
+          "shirt": 6,
+          "name": "Danilo",
+          "age": 34,
+          "nation": "BRA",
+          "contract": "Jun 2026",
+          "value": 4,
+          "playerId": null
+        },
+        {
+          "shirt": 27,
+          "name": "Andrea Cambiaso",
+          "age": 25,
+          "nation": "ITA",
+          "contract": "Jun 2029",
+          "value": 40,
+          "playerId": null
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 5,
+          "name": "Manuel Locatelli",
+          "age": 28,
+          "nation": "ITA",
+          "contract": "Jun 2028",
+          "value": 35,
+          "playerId": null
+        },
+        {
+          "shirt": 8,
+          "name": "Teun Koopmeiners",
+          "age": 28,
+          "nation": "NED",
+          "contract": "Jun 2029",
+          "value": 45,
+          "playerId": null
+        },
+        {
+          "shirt": 16,
+          "name": "Weston McKennie",
+          "age": 27,
+          "nation": "USA",
+          "contract": "Jun 2027",
+          "value": 25,
+          "playerId": null
+        },
+        {
+          "shirt": 10,
+          "name": "Kenan Yıldız",
+          "age": 21,
+          "nation": "TUR",
+          "contract": "Jun 2029",
+          "value": 75,
+          "playerId": "kenan-yildiz"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 9,
+          "name": "Dušan Vlahović",
+          "age": 26,
+          "nation": "SRB",
+          "contract": "Jun 2026",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "shirt": 7,
+          "name": "Francisco Conceição",
+          "age": 22,
+          "nation": "POR",
+          "contract": "Jun 2029",
+          "value": 40,
+          "playerId": null
+        },
+        {
+          "shirt": 11,
+          "name": "Nicolás González",
+          "age": 27,
+          "nation": "ARG",
+          "contract": "Jun 2028",
+          "value": 30,
+          "playerId": null
+        }
+      ]
+    },
+    "standings": [
+      {
+        "pos": 1,
+        "club": "Inter",
+        "code": "INT",
+        "pld": 28,
+        "w": 19,
+        "d": 6,
+        "l": 3,
+        "gf": 58,
+        "ga": 22,
+        "gd": 36,
+        "pts": 63,
+        "form": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 2,
+        "club": "Napoli",
+        "code": "NAP",
+        "pld": 28,
+        "w": 18,
+        "d": 6,
+        "l": 4,
+        "gf": 52,
+        "ga": 24,
+        "gd": 28,
+        "pts": 60,
+        "form": [
+          "W",
+          "D",
+          "W",
+          "W",
+          "L"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 3,
+        "club": "Atalanta",
+        "code": "ATA",
+        "pld": 28,
+        "w": 16,
+        "d": 7,
+        "l": 5,
+        "gf": 55,
+        "ga": 28,
+        "gd": 27,
+        "pts": 55,
+        "form": [
+          "D",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 4,
+        "club": "Juventus",
+        "code": "JUV",
+        "pld": 28,
+        "w": 15,
+        "d": 9,
+        "l": 4,
+        "gf": 46,
+        "ga": 26,
+        "gd": 20,
+        "pts": 54,
+        "form": [
+          "W",
+          "D",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": true
+      },
+      {
+        "pos": 5,
+        "club": "Milan",
+        "code": "MIL",
+        "pld": 28,
+        "w": 14,
+        "d": 8,
+        "l": 6,
+        "gf": 48,
+        "ga": 32,
+        "gd": 16,
+        "pts": 50,
+        "form": [
+          "L",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      }
+    ],
+    "formation": "3-4-2-1",
+    "startingXI": [
+      {
+        "shirt": 1,
+        "name": "Di Gregorio",
+        "pos": "GK",
+        "x": 50,
+        "y": 122
+      },
+      {
+        "shirt": 27,
+        "name": "Cambiaso",
+        "pos": "LWB",
+        "x": 16,
+        "y": 88
+      },
+      {
+        "shirt": 3,
+        "name": "Bremer",
+        "pos": "CB",
+        "x": 35,
+        "y": 100
+      },
+      {
+        "shirt": 4,
+        "name": "Gatti",
+        "pos": "CB",
+        "x": 50,
+        "y": 104
+      },
+      {
+        "shirt": 6,
+        "name": "Danilo",
+        "pos": "CB",
+        "x": 65,
+        "y": 100
+      },
+      {
+        "shirt": 16,
+        "name": "McKennie",
+        "pos": "RWB",
+        "x": 84,
+        "y": 88
+      },
+      {
+        "shirt": 5,
+        "name": "Locatelli",
+        "pos": "CM",
+        "x": 38,
+        "y": 70
+      },
+      {
+        "shirt": 8,
+        "name": "Koopmeiners",
+        "pos": "CM",
+        "x": 62,
+        "y": 70
+      },
+      {
+        "shirt": 10,
+        "name": "Yıldız",
+        "pos": "AM",
+        "x": 38,
+        "y": 48,
+        "playerId": "kenan-yildiz"
+      },
+      {
+        "shirt": 7,
+        "name": "Conceição",
+        "pos": "AM",
+        "x": 62,
+        "y": 48
+      },
+      {
+        "shirt": 9,
+        "name": "Vlahović",
+        "pos": "ST",
+        "x": 50,
+        "y": 28
+      }
+    ],
+    "transfers": {
+      "arrivals": [
+        {
+          "name": "Teun Koopmeiners",
+          "from": "Atalanta",
+          "fee": 54,
+          "type": "Transfer"
+        },
+        {
+          "name": "Francisco Conceição",
+          "from": "Porto",
+          "fee": 30,
+          "type": "Transfer"
+        }
+      ],
+      "departures": [
+        {
+          "name": "Adrien Rabiot",
+          "to": "Marseille",
+          "fee": 0,
+          "type": "Free"
+        },
+        {
+          "name": "Federico Chiesa",
+          "to": "Liverpool",
+          "fee": 15,
+          "type": "Transfer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bayern-munich",
+    "name": "Bayern Munich",
+    "short": "FCB",
+    "league": "Bundesliga",
+    "leagueCode": "BUN",
+    "country": "Germany",
+    "founded": 1900,
+    "squadValue": 980,
+    "squadSize": 25,
+    "avgAge": 25.6,
+    "foreignersPct": 56,
+    "stadium": {
+      "name": "Allianz Arena",
+      "capacity": 75024,
+      "pitch": "105 × 68 m",
+      "city": "Munich"
+    },
+    "manager": {
+      "name": "Vincent Kompany",
+      "managerId": "kompany",
+      "nation": "BEL",
+      "formation": "4-2-3-1",
+      "contractUntil": 2027,
+      "winPct": 71,
+      "matches": 55
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Manuel Neuer",
+          "age": 39,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 4,
+          "playerId": null
+        },
+        {
+          "shirt": 26,
+          "name": "Sven Ulreich",
+          "age": 37,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 1,
+          "playerId": null
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 3,
+          "name": "Kim Min-jae",
+          "age": 29,
+          "nation": "KOR",
+          "contract": "Jun 2028",
+          "value": 40,
+          "playerId": null
+        },
+        {
+          "shirt": 2,
+          "name": "Dayot Upamecano",
+          "age": 27,
+          "nation": "FRA",
+          "contract": "Jun 2026",
+          "value": 35,
+          "playerId": null
+        },
+        {
+          "shirt": 19,
+          "name": "Alphonso Davies",
+          "age": 25,
+          "nation": "CAN",
+          "contract": "Jun 2025",
+          "value": 50,
+          "playerId": null
+        },
+        {
+          "shirt": 22,
+          "name": "Raphaël Guerreiro",
+          "age": 32,
+          "nation": "POR",
+          "contract": "Jun 2026",
+          "value": 10,
+          "playerId": null
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 42,
+          "name": "Jamal Musiala",
+          "age": 23,
+          "nation": "GER",
+          "contract": "Jun 2030",
+          "value": 125,
+          "playerId": "jamal-musiala"
+        },
+        {
+          "shirt": 6,
+          "name": "Joshua Kimmich",
+          "age": 31,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 45,
+          "playerId": null
+        },
+        {
+          "shirt": 8,
+          "name": "Leon Goretzka",
+          "age": 31,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 25,
+          "playerId": null
+        },
+        {
+          "shirt": 45,
+          "name": "Aleksandar Pavlović",
+          "age": 21,
+          "nation": "GER",
+          "contract": "Jun 2029",
+          "value": 45,
+          "playerId": null
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 17,
+          "name": "Michael Olise",
+          "age": 24,
+          "nation": "FRA",
+          "contract": "Jun 2029",
+          "value": 110,
+          "playerId": "michael-olise"
+        },
+        {
+          "shirt": 9,
+          "name": "Harry Kane",
+          "age": 32,
+          "nation": "ENG",
+          "contract": "Jun 2027",
+          "value": 80,
+          "playerId": null
+        },
+        {
+          "shirt": 7,
+          "name": "Serge Gnabry",
+          "age": 30,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 30,
+          "playerId": null
+        },
+        {
+          "shirt": 10,
+          "name": "Leroy Sané",
+          "age": 30,
+          "nation": "GER",
+          "contract": "Jun 2026",
+          "value": 40,
+          "playerId": null
+        }
+      ]
+    },
+    "standings": [
+      {
+        "pos": 1,
+        "club": "Bayern Munich",
+        "code": "FCB",
+        "pld": 26,
+        "w": 20,
+        "d": 4,
+        "l": 2,
+        "gf": 78,
+        "ga": 22,
+        "gd": 56,
+        "pts": 64,
+        "form": [
+          "W",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": true
+      },
+      {
+        "pos": 2,
+        "club": "Leverkusen",
+        "code": "B04",
+        "pld": 26,
+        "w": 16,
+        "d": 6,
+        "l": 4,
+        "gf": 58,
+        "ga": 28,
+        "gd": 30,
+        "pts": 54,
+        "form": [
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 3,
+        "club": "Dortmund",
+        "code": "BVB",
+        "pld": 26,
+        "w": 14,
+        "d": 6,
+        "l": 6,
+        "gf": 52,
+        "ga": 34,
+        "gd": 18,
+        "pts": 48,
+        "form": [
+          "L",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 4,
+        "club": "RB Leipzig",
+        "code": "RBL",
+        "pld": 26,
+        "w": 13,
+        "d": 7,
+        "l": 6,
+        "gf": 48,
+        "ga": 32,
+        "gd": 16,
+        "pts": 46,
+        "form": [
+          "D",
+          "W",
+          "L",
+          "W",
+          "D"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 5,
+        "club": "Frankfurt",
+        "code": "SGE",
+        "pld": 26,
+        "w": 12,
+        "d": 7,
+        "l": 7,
+        "gf": 44,
+        "ga": 36,
+        "gd": 8,
+        "pts": 43,
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "highlight": false
+      }
+    ],
+    "formation": "4-2-3-1",
+    "startingXI": [
+      {
+        "shirt": 1,
+        "name": "Neuer",
+        "pos": "GK",
+        "x": 50,
+        "y": 122
+      },
+      {
+        "shirt": 19,
+        "name": "Davies",
+        "pos": "LB",
+        "x": 18,
+        "y": 98
+      },
+      {
+        "shirt": 3,
+        "name": "Kim",
+        "pos": "CB",
+        "x": 38,
+        "y": 102
+      },
+      {
+        "shirt": 2,
+        "name": "Upamecano",
+        "pos": "CB",
+        "x": 62,
+        "y": 102
+      },
+      {
+        "shirt": 22,
+        "name": "Guerreiro",
+        "pos": "RB",
+        "x": 82,
+        "y": 98
+      },
+      {
+        "shirt": 6,
+        "name": "Kimmich",
+        "pos": "DM",
+        "x": 38,
+        "y": 76
+      },
+      {
+        "shirt": 45,
+        "name": "Pavlović",
+        "pos": "DM",
+        "x": 62,
+        "y": 76
+      },
+      {
+        "shirt": 10,
+        "name": "Sané",
+        "pos": "LW",
+        "x": 22,
+        "y": 48
+      },
+      {
+        "shirt": 42,
+        "name": "Musiala",
+        "pos": "AM",
+        "x": 50,
+        "y": 52,
+        "playerId": "jamal-musiala"
+      },
+      {
+        "shirt": 17,
+        "name": "Olise",
+        "pos": "RW",
+        "x": 78,
+        "y": 48,
+        "playerId": "michael-olise"
+      },
+      {
+        "shirt": 9,
+        "name": "Kane",
+        "pos": "ST",
+        "x": 50,
+        "y": 28
+      }
+    ],
+    "transfers": {
+      "arrivals": [
+        {
+          "name": "Michael Olise",
+          "from": "Crystal Palace",
+          "fee": 53,
+          "type": "Transfer"
+        },
+        {
+          "name": "João Palhinha",
+          "from": "Fulham",
+          "fee": 51,
+          "type": "Transfer"
+        }
+      ],
+      "departures": [
+        {
+          "name": "Thomas Müller",
+          "to": "Vancouver",
+          "fee": 0,
+          "type": "Free"
+        },
+        {
+          "name": "Matthijs de Ligt",
+          "to": "Man United",
+          "fee": 45,
+          "type": "Transfer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "psg",
+    "name": "Paris Saint-Germain",
+    "short": "PSG",
+    "league": "Ligue 1",
+    "leagueCode": "LI1",
+    "country": "France",
+    "founded": 1970,
+    "squadValue": 920,
+    "squadSize": 28,
+    "avgAge": 24.2,
+    "foreignersPct": 61,
+    "stadium": {
+      "name": "Parc des Princes",
+      "capacity": 47929,
+      "pitch": "105 × 68 m",
+      "city": "Paris"
+    },
+    "manager": {
+      "name": "Luis Enrique",
+      "managerId": "luis-enrique",
+      "nation": "ESP",
+      "formation": "4-3-3",
+      "contractUntil": 2027,
+      "winPct": 69.8,
+      "matches": 88
+    },
+    "squad": {
+      "GK": [
+        {
+          "shirt": 1,
+          "name": "Gianluigi Donnarumma",
+          "age": 27,
+          "nation": "ITA",
+          "contract": "Jun 2026",
+          "value": 50,
+          "playerId": null
+        },
+        {
+          "shirt": 80,
+          "name": "Arnau Tenas",
+          "age": 24,
+          "nation": "ESP",
+          "contract": "Jun 2028",
+          "value": 8,
+          "playerId": null
+        }
+      ],
+      "DEF": [
+        {
+          "shirt": 5,
+          "name": "Marquinhos",
+          "age": 31,
+          "nation": "BRA",
+          "contract": "Jun 2028",
+          "value": 40,
+          "playerId": null
+        },
+        {
+          "shirt": 2,
+          "name": "Achraf Hakimi",
+          "age": 27,
+          "nation": "MAR",
+          "contract": "Jun 2026",
+          "value": 55,
+          "playerId": null
+        },
+        {
+          "shirt": 25,
+          "name": "Nuno Mendes",
+          "age": 23,
+          "nation": "POR",
+          "contract": "Jun 2026",
+          "value": 50,
+          "playerId": null
+        },
+        {
+          "shirt": 51,
+          "name": "Willian Pacho",
+          "age": 24,
+          "nation": "ECU",
+          "contract": "Jun 2029",
+          "value": 40,
+          "playerId": null
+        }
+      ],
+      "MID": [
+        {
+          "shirt": 17,
+          "name": "Vitinha",
+          "age": 25,
+          "nation": "POR",
+          "contract": "Jun 2027",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 8,
+          "name": "Fabián Ruiz",
+          "age": 29,
+          "nation": "ESP",
+          "contract": "Jun 2027",
+          "value": 35,
+          "playerId": null
+        },
+        {
+          "shirt": 87,
+          "name": "João Neves",
+          "age": 21,
+          "nation": "POR",
+          "contract": "Jun 2029",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 14,
+          "name": "Désiré Doué",
+          "age": 21,
+          "nation": "FRA",
+          "contract": "Jun 2029",
+          "value": 90,
+          "playerId": "desire-doue"
+        }
+      ],
+      "FWD": [
+        {
+          "shirt": 10,
+          "name": "Ousmane Dembélé",
+          "age": 28,
+          "nation": "FRA",
+          "contract": "Jun 2028",
+          "value": 70,
+          "playerId": null
+        },
+        {
+          "shirt": 7,
+          "name": "Khvicha Kvaratskhelia",
+          "age": 25,
+          "nation": "GEO",
+          "contract": "Jun 2029",
+          "value": 80,
+          "playerId": null
+        },
+        {
+          "shirt": 9,
+          "name": "Gonçalo Ramos",
+          "age": 24,
+          "nation": "POR",
+          "contract": "Jun 2028",
+          "value": 45,
+          "playerId": null
+        },
+        {
+          "shirt": 29,
+          "name": "Bradley Barcola",
+          "age": 23,
+          "nation": "FRA",
+          "contract": "Jun 2028",
+          "value": 60,
+          "playerId": null
+        }
+      ]
+    },
+    "standings": [
+      {
+        "pos": 1,
+        "club": "Paris SG",
+        "code": "PSG",
+        "pld": 26,
+        "w": 21,
+        "d": 4,
+        "l": 1,
+        "gf": 72,
+        "ga": 20,
+        "gd": 52,
+        "pts": 67,
+        "form": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "D"
+        ],
+        "highlight": true
+      },
+      {
+        "pos": 2,
+        "club": "Monaco",
+        "code": "ASM",
+        "pld": 26,
+        "w": 15,
+        "d": 6,
+        "l": 5,
+        "gf": 52,
+        "ga": 30,
+        "gd": 22,
+        "pts": 51,
+        "form": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 3,
+        "club": "Marseille",
+        "code": "OM",
+        "pld": 26,
+        "w": 14,
+        "d": 6,
+        "l": 6,
+        "gf": 48,
+        "ga": 32,
+        "gd": 16,
+        "pts": 48,
+        "form": [
+          "L",
+          "W",
+          "W",
+          "D",
+          "W"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 4,
+        "club": "Lille",
+        "code": "LIL",
+        "pld": 26,
+        "w": 13,
+        "d": 7,
+        "l": 6,
+        "gf": 42,
+        "ga": 28,
+        "gd": 14,
+        "pts": 46,
+        "form": [
+          "D",
+          "W",
+          "W",
+          "L",
+          "D"
+        ],
+        "highlight": false
+      },
+      {
+        "pos": 5,
+        "club": "Lyon",
+        "code": "OL",
+        "pld": 26,
+        "w": 12,
+        "d": 6,
+        "l": 8,
+        "gf": 44,
+        "ga": 36,
+        "gd": 8,
+        "pts": 42,
+        "form": [
+          "W",
+          "L",
+          "D",
+          "W",
+          "W"
+        ],
+        "highlight": false
+      }
+    ],
+    "formation": "4-3-3",
+    "startingXI": [
+      {
+        "shirt": 1,
+        "name": "Donnarumma",
+        "pos": "GK",
+        "x": 50,
+        "y": 122
+      },
+      {
+        "shirt": 25,
+        "name": "Mendes",
+        "pos": "LB",
+        "x": 18,
+        "y": 98
+      },
+      {
+        "shirt": 51,
+        "name": "Pacho",
+        "pos": "CB",
+        "x": 38,
+        "y": 102
+      },
+      {
+        "shirt": 5,
+        "name": "Marquinhos",
+        "pos": "CB",
+        "x": 62,
+        "y": 102
+      },
+      {
+        "shirt": 2,
+        "name": "Hakimi",
+        "pos": "RB",
+        "x": 82,
+        "y": 98
+      },
+      {
+        "shirt": 87,
+        "name": "Neves",
+        "pos": "CM",
+        "x": 32,
+        "y": 70
+      },
+      {
+        "shirt": 17,
+        "name": "Vitinha",
+        "pos": "CM",
+        "x": 50,
+        "y": 72
+      },
+      {
+        "shirt": 14,
+        "name": "Doué",
+        "pos": "CM",
+        "x": 68,
+        "y": 70,
+        "playerId": "desire-doue"
+      },
+      {
+        "shirt": 7,
+        "name": "Kvaratskhelia",
+        "pos": "LW",
+        "x": 22,
+        "y": 40
+      },
+      {
+        "shirt": 9,
+        "name": "Ramos",
+        "pos": "ST",
+        "x": 50,
+        "y": 28
+      },
+      {
+        "shirt": 10,
+        "name": "Dembélé",
+        "pos": "RW",
+        "x": 78,
+        "y": 40
+      }
+    ],
+    "transfers": {
+      "arrivals": [
+        {
+          "name": "Désiré Doué",
+          "from": "Rennes",
+          "fee": 50,
+          "type": "Transfer"
+        },
+        {
+          "name": "João Neves",
+          "from": "Benfica",
+          "fee": 60,
+          "type": "Transfer"
+        },
+        {
+          "name": "Khvicha Kvaratskhelia",
+          "from": "Napoli",
+          "fee": 70,
+          "type": "Transfer"
+        }
+      ],
+      "departures": [
+        {
+          "name": "Kylian Mbappé",
+          "to": "Real Madrid",
+          "fee": 0,
+          "type": "Free"
+        },
+        {
+          "name": "Marco Asensio",
+          "to": "Aston Villa",
+          "fee": null,
+          "type": "Loan"
+        }
+      ]
+    }
+  }
+]
