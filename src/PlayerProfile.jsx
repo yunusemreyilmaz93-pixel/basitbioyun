@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Avatar, Crest, Card, CardLabel, TrendChip, eurosLong, euros, Tip } from './ui.jsx'
-import { PLAYERS, DETAILS, CURRENT_SEASON } from './dataLayer.js'
+import { PLAYERS, DETAILS, CURRENT_SEASON, enrichPlayerFromWarehouse } from './dataLayer.js'
 import { POS, POS_LABEL } from './playerDetails.js'
 import { AiBadge } from './smart.jsx'
 import { translateSmartText, useI18n } from './i18n/I18nProvider.jsx'
@@ -1158,7 +1158,6 @@ export default function PlayerProfile({ player, onBack, onOpenPlayer, setView })
     let cancelled = false
     ;(async () => {
       try {
-        const { enrichPlayerFromWarehouse } = await import('./dataLayer.js')
         await enrichPlayerFromWarehouse(p.id)
         if (!cancelled) bump((n) => n + 1)
       } catch {

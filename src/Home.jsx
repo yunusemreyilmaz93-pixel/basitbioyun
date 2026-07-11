@@ -433,10 +433,14 @@ function ScrollRow({ label, hint, children }) {
 }
 
 function SearchedCard({ p, onOpenPlayer }) {
+  const clickable = Boolean(p.playerId && onOpenPlayer)
+  const Comp = clickable ? 'button' : 'div'
   return (
-    <button
-      onClick={() => onOpenPlayer(p.playerId)}
-      className="group relative flex w-48 shrink-0 flex-col rounded-2xl border border-white/5 bg-zinc-900/60 p-4 text-left transition-colors hover:border-white/10 hover:bg-zinc-900"
+    <Comp
+      onClick={clickable ? () => onOpenPlayer(p.playerId) : undefined}
+      className={`relative flex w-48 shrink-0 flex-col rounded-2xl border border-white/5 bg-zinc-900/60 p-4 text-left transition-colors ${
+        clickable ? 'group cursor-pointer hover:border-white/10 hover:bg-zinc-900' : ''
+      }`}
     >
       <span className="absolute right-3 top-2 font-display text-3xl font-bold tabular-nums leading-none text-white/[0.08] transition-colors group-hover:text-white/[0.14]">
         {String(p.rank).padStart(2, '0')}
@@ -458,17 +462,21 @@ function SearchedCard({ p, onOpenPlayer }) {
         <span className="font-display text-sm font-semibold tabular-nums text-emerald-400">{euros(p.value)}</span>
         <TrendArrow pct={p.trend} />
       </div>
-    </button>
+    </Comp>
   )
 }
 
 function ExpiringCard({ p, onOpenPlayer }) {
   const { t } = useI18n()
   const countdown = useMemo(() => formatCountdown(daysUntil(p.endDate), t), [p.endDate, t])
+  const clickable = Boolean(p.playerId && onOpenPlayer)
+  const Comp = clickable ? 'button' : 'div'
   return (
-    <button
-      onClick={() => onOpenPlayer(p.playerId)}
-      className="group flex w-52 shrink-0 flex-col rounded-2xl border border-white/5 bg-zinc-900/60 p-4 text-left transition-colors hover:border-white/10 hover:bg-zinc-900"
+    <Comp
+      onClick={clickable ? () => onOpenPlayer(p.playerId) : undefined}
+      className={`flex w-52 shrink-0 flex-col rounded-2xl border border-white/5 bg-zinc-900/60 p-4 text-left transition-colors ${
+        clickable ? 'group cursor-pointer hover:border-white/10 hover:bg-zinc-900' : ''
+      }`}
     >
       <div className="flex items-center gap-3">
         <Avatar name={p.name} size="md" />
@@ -502,7 +510,7 @@ function ExpiringCard({ p, onOpenPlayer }) {
           <p className="mt-1 text-[10px] text-zinc-500">→ {p.expires}</p>
         </div>
       </div>
-    </button>
+    </Comp>
   )
 }
 

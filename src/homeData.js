@@ -92,20 +92,22 @@ export const MOST_SEARCHED = [
   { rank: 5, playerId: 'arda-guler', name: 'Arda Güler', pos: 'AM', age: 21, club: 'Real Madrid', cc: 'RMA', value: 60, trend: 33.3 },
   { rank: 6, playerId: 'desire-doue', name: 'Désiré Doué', pos: 'AM', age: 21, club: 'Paris SG', cc: 'PSG', value: 90, trend: 25.0 },
   { rank: 7, playerId: 'michael-olise', name: 'Michael Olise', pos: 'RW', age: 24, club: 'Bayern', cc: 'FCB', value: 110, trend: 10.0 },
-  { rank: 8, playerId: 'lamine-yamal', name: 'Pedri', pos: 'CM', age: 23, club: 'FC Barcelona', cc: 'BAR', value: 100, trend: 5.3 },
-  { rank: 9, playerId: 'vinicius-junior', name: 'Rodrygo', pos: 'RW', age: 25, club: 'Real Madrid', cc: 'RMA', value: 90, trend: -8.2 },
-  { rank: 10, playerId: 'kenan-yildiz', name: 'Nico Williams', pos: 'LW', age: 24, club: 'Athletic Club', cc: 'ATH', value: 80, trend: 6.7 },
+  // Ranks 8–10 are showcase entries without a full profile yet → not linkable.
+  { rank: 8, playerId: null, name: 'Pedri', pos: 'CM', age: 23, club: 'FC Barcelona', cc: 'BAR', value: 100, trend: 5.3 },
+  { rank: 9, playerId: null, name: 'Rodrygo', pos: 'RW', age: 25, club: 'Real Madrid', cc: 'RMA', value: 90, trend: -8.2 },
+  { rank: 10, playerId: null, name: 'Nico Williams', pos: 'LW', age: 24, club: 'Athletic Club', cc: 'ATH', value: 80, trend: 6.7 },
 ]
 
-/* Free-agent watch: contracts ending June 2026 (and select 2027) */
+/* Free-agent watch: contracts ending June 2026 (and select 2027).
+   These veterans have no full profile in the curated set yet → not linkable. */
 export const EXPIRING = [
-  { playerId: 'vinicius-junior', name: 'Rüdiger', pos: 'CB', age: 33, club: 'Real Madrid', cc: 'RMA', value: 18, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'jamal-musiala', name: 'Kimmich', pos: 'DM', age: 31, club: 'Bayern', cc: 'FCB', value: 45, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'kenan-yildiz', name: 'Vlahović', pos: 'ST', age: 26, club: 'Juventus', cc: 'JUV', value: 55, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'lamine-yamal', name: 'De Jong', pos: 'CM', age: 29, club: 'FC Barcelona', cc: 'BAR', value: 40, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'michael-olise', name: 'Coman', pos: 'LW', age: 30, club: 'Bayern', cc: 'FCB', value: 35, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'desire-doue', name: 'Donnarumma', pos: 'GK', age: 27, club: 'Paris SG', cc: 'PSG', value: 50, expires: 'Jun 2026', endDate: '2026-06-30' },
-  { playerId: 'vinicius-junior', name: 'Alexander-Arnold', pos: 'RB', age: 27, club: 'Real Madrid', cc: 'RMA', value: 70, expires: 'Jun 2027', endDate: '2027-06-30' },
+  { playerId: null, name: 'Rüdiger', pos: 'CB', age: 33, club: 'Real Madrid', cc: 'RMA', value: 18, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'Kimmich', pos: 'DM', age: 31, club: 'Bayern', cc: 'FCB', value: 45, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'Vlahović', pos: 'ST', age: 26, club: 'Juventus', cc: 'JUV', value: 55, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'De Jong', pos: 'CM', age: 29, club: 'FC Barcelona', cc: 'BAR', value: 40, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'Coman', pos: 'LW', age: 30, club: 'Bayern', cc: 'FCB', value: 35, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'Donnarumma', pos: 'GK', age: 27, club: 'Paris SG', cc: 'PSG', value: 50, expires: 'Jun 2026', endDate: '2026-06-30' },
+  { playerId: null, name: 'Alexander-Arnold', pos: 'RB', age: 27, club: 'Real Madrid', cc: 'RMA', value: 70, expires: 'Jun 2027', endDate: '2027-06-30' },
 ]
 
 /* The 4 inputs to the Smart Valuation model (weights sum to 100) */
