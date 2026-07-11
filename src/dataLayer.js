@@ -17,10 +17,9 @@ import {
 } from './schema.js'
 import { isSupabaseConfigured } from './lib/supabase.js'
 import { fetchPlayerEnrichment, fetchSupabaseBundle } from './lib/supabaseData.js'
-import { rebuildScoutDirectory } from './scoutDirectory.js'
-import { rebuildClubDirectory } from './clubDirectory.js'
-import { rebuildCompetitionDirectory } from './competitionDirectory.js'
-import { rebuildNationDirectory } from './nationDirectory.js'
+
+// NOTE: Do NOT import scoutDirectory / clubDirectory / etc. here at top level.
+// Those modules import PLAYERS/CLUBS from this file → circular TDZ crash in production.
 
 import { PLAYERS as RAW_PLAYERS, SEARCH_INDEX as RAW_SEARCH } from './data.js'
 import { DETAILS as RAW_DETAILS } from './playerDetails.js'
@@ -215,11 +214,24 @@ export async function hydrateFromSupabase() {
     }
   }
 
+  rebuildSearchIndex()
+
+  // Dynamic imports break the dataLayer ↔ *Directory circular dependency
+  const [
+    { rebuildScoutDirectory },
+    { rebuildClubDirectory },
+    { rebuildCompetitionDirectory },
+    { rebuildNationDirectory },
+  ] = await Promise.all([
+    import('./scoutDirectory.js'),
+    import('./clubDirectory.js'),
+    import('./competitionDirectory.js'),
+    import('./nationDirectory.js'),
+  ])
   rebuildScoutDirectory(PLAYERS)
   rebuildClubDirectory(CLUBS)
   rebuildCompetitionDirectory(LEAGUES_DETAIL)
   rebuildNationDirectory(NATIONS)
-  rebuildSearchIndex()
 
   DATA_SOURCE.mode = 'supabase'
   DATA_SOURCE.provider = 'supabase'
