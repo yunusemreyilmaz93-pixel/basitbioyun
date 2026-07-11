@@ -63,8 +63,19 @@ function toRow(l) {
   const champion = top?.club || 'TBD'
   const championClubId = top?.clubId || null
   const championCode = top?.code || '—'
+  const totalValue = Number(l.totalValue) || 0
+  // Mock leagues store totalValue in €bn; warehouse may store €M-ish squad sums
+  const totalValueBn = totalValue > 50 ? totalValue / 1000 : totalValue
+  const playersCount = Number(l.players) || 0
   const avgPlayerValue =
-    l.players > 0 ? +((l.totalValue * 1000) / l.players).toFixed(2) : 0 // €M
+    playersCount > 0 ? +((totalValueBn * 1000) / playersCount).toFixed(2) : 0
+
+  let championValue = 0
+  try {
+    championValue = championValueBn(l, championClubId) || 0
+  } catch {
+    championValue = 0
+  }
 
   return {
     id: l.id,
@@ -77,16 +88,16 @@ function toRow(l) {
     nationCode: l.nationCode || '—',
     continent: l.continent,
     confederation: confederationFor(l),
-    type: l.type === 'international' ? 'continental' : 'domestic',
+    type: l.type === 'international' || l.meta?.type === 'international_cup' ? 'continental' : 'domestic',
     elite: ELITE_CUP_IDS.includes(l.id),
-    totalValue: l.totalValue, // €bn
-    teams: l.teams,
-    players: l.players,
-    avgPlayerValue, // €M
+    totalValue: totalValueBn,
+    teams: l.teams || 0,
+    players: playersCount,
+    avgPlayerValue,
     champion,
     championClubId,
     championCode,
-    championValue: championValueBn(l, championClubId), // €bn
+    championValue,
     founded: l.founded,
     real: !l.catalogStub,
   }

@@ -111,7 +111,11 @@ export const SEARCH_INDEX = [...RAW_SEARCH]
 
 function rebuildSearchIndex() {
   SEARCH_INDEX.length = 0
-  for (const p of Object.values(PLAYERS)) {
+  // Cap search index so command palette stays snappy
+  const topPlayers = Object.values(PLAYERS)
+    .sort((a, b) => (b.value || 0) - (a.value || 0))
+    .slice(0, 800)
+  for (const p of topPlayers) {
     SEARCH_INDEX.push({
       type: 'Player',
       label: p.name,
@@ -119,7 +123,7 @@ function rebuildSearchIndex() {
       playerId: p.id,
     })
   }
-  for (const c of Object.values(CLUBS)) {
+  for (const c of Object.values(CLUBS).slice(0, 400)) {
     SEARCH_INDEX.push({
       type: 'Club',
       label: c.name,
@@ -143,7 +147,7 @@ function rebuildSearchIndex() {
       nationId: n.id,
     })
   }
-  for (const m of Object.values(MATCHES_DETAIL).slice(0, 400)) {
+  for (const m of Object.values(MATCHES_DETAIL).slice(0, 200)) {
     SEARCH_INDEX.push({
       type: 'Match',
       label: `${m.home?.name || '?'} vs ${m.away?.name || '?'}`,
@@ -161,7 +165,11 @@ export async function hydrateFromSupabase() {
   // Allow hydrate when mode is supabase OR auto when configured + env not mock-only
   if (DATA_SOURCE.mode === 'mock' && import.meta.env.VITE_DATA_MODE === 'mock') return false
 
-  const bundle = await fetchSupabaseBundle({ maxGames: 2000 })
+  const bundle = await fetchSupabaseBundle({
+    maxPlayers: 2500,
+    maxGames: 600,
+    maxClubs: 800,
+  })
 
   for (const k of Object.keys(PLAYERS)) delete PLAYERS[k]
   Object.assign(PLAYERS, mapRecord(bundle.players, normalizePlayer))

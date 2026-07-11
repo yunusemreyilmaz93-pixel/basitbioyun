@@ -6,21 +6,27 @@ import { supabase } from './supabase.js'
 
 const PAGE = 1000
 
-async function fetchAll(table, { select = '*', order, ascending = true } = {}) {
+/**
+ * Paginated fetch with hard cap so the browser never downloads the full warehouse.
+ */
+async function fetchAll(table, { select = '*', order, ascending = true, maxRows = 5000 } = {}) {
   if (!supabase) throw new Error('Supabase not configured')
   let from = 0
   const all = []
+  const hardMax = Math.max(1, maxRows)
   for (;;) {
-    let q = supabase.schema('staging').from(table).select(select).range(from, from + PAGE - 1)
-    if (order) q = q.order(order, { ascending })
+    const end = Math.min(from + PAGE - 1, hardMax - 1)
+    if (from > end) break
+    let q = supabase.schema('staging').from(table).select(select).range(from, end)
+    if (order) q = q.order(order, { ascending, nullsFirst: false })
     const { data, error } = await q
     if (error) throw error
     if (!data?.length) break
     all.push(...data)
-    if (data.length < PAGE) break
+    if (data.length < PAGE || all.length >= hardMax) break
     from += PAGE
   }
-  return all
+  return all.slice(0, hardMax)
 }
 
 function guessPosCode(pos) {
@@ -299,19 +305,29 @@ function toRecord(rows) {
  * Full warehouse → app bundle (paginated).
  * Games limited to recent N for boot performance.
  */
-export async function fetchSupabaseBundle({ maxGames = 1500 } = {}) {
+export async function fetchSupabaseBundle({
+  maxPlayers = 2500,
+  maxGames = 600,
+  maxClubs = 800,
+} = {}) {
   if (!supabase) throw new Error('Supabase not configured')
 
+  // Small tables fully; big tables capped so the SPA can actually boot
   const [comps, clubsRaw, playersRaw, nationsRaw, gamesRaw] = await Promise.all([
-    fetchAll('competitions'),
-    fetchAll('clubs'),
-    fetchAll('players', { order: 'market_value_in_eur', ascending: false }),
-    fetchAll('national_teams'),
-    fetchAll('games', { order: 'date', ascending: false }),
+    fetchAll('competitions', { maxRows: 200 }),
+    fetchAll('clubs', { maxRows: maxClubs }),
+    fetchAll('players', {
+      order: 'market_value_in_eur',
+      ascending: false,
+      maxRows: maxPlayers,
+    }),
+    fetchAll('national_teams', { maxRows: 250 }),
+    fetchAll('games', { order: 'date', ascending: false, maxRows: maxGames }),
   ])
 
+  const compById = Object.fromEntries(comps.map((x) => [x.competition_id, x]))
   const leagues = toRecord(comps.map(mapLeague))
-  const clubs = toRecord(clubsRaw.map((c) => mapClubFixed(c, Object.fromEntries(comps.map((x) => [x.competition_id, x])))))
+  const clubs = toRecord(clubsRaw.map((c) => mapClubFixed(c, compById)))
   const clubMap = clubs
   const players = toRecord(playersRaw.map((p) => mapPlayer(p, clubMap)))
 
