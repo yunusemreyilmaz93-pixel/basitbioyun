@@ -1,16 +1,13 @@
 /**
- * Import Transfermarkt CSVs → staging.* tables in Supabase
+ * Import Transfermarkt CSVs → staging.* in Supabase
  *
- * Usage (PowerShell):
+ * PowerShell:
  *   $env:SUPABASE_URL="https://xxxx.supabase.co"
- *   $env:SUPABASE_SERVICE_ROLE_KEY="eyJ...."
- *   npm run import:tm
- *
- * Optional:
- *   $env:TM_DATA_DIR="C:\Users\YUNUS EMRE\Desktop\football_datasets\archive"
- *   npm run import:tm -- --only competitions,clubs,players
- *   npm run import:tm -- --only valuations
- *   npm run import:tm -- --only appearances   (huge — run later)
+ *   $env:SUPABASE_SERVICE_ROLE_KEY="eyJ...."   # SECRET — never paste in chat
+ *   npm run import:tm              # wave 1
+ *   npm run import:tm -- --all     # wave 1+2
+ *   npm run import:tm -- --rest    # wave 3 big files (appearances, events, lineups, club_games)
+ *   npm run import:tm -- --everything
  */
 import { createReadStream, existsSync } from 'node:fs'
 import { join } from 'node:path'
@@ -21,14 +18,7 @@ const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY
 
 if (!url || !key) {
-  console.error(`
-Eksik env.
-PowerShell:
-
-  $env:SUPABASE_URL="https://SENIN-PROJE.supabase.co"
-  $env:SUPABASE_SERVICE_ROLE_KEY="eyJ....service_role...."
-  npm run import:tm
-`)
+  console.error('Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (secret key)')
   process.exit(1)
 }
 
@@ -36,11 +26,9 @@ const DATA_DIR =
   process.env.TM_DATA_DIR ||
   join(process.env.USERPROFILE || process.env.HOME || '', 'Desktop', 'football_datasets', 'archive')
 
-const onlyArg = process.argv.find((a) => a.startsWith('--only'))
 const onlyList = (() => {
   const i = process.argv.indexOf('--only')
   if (i >= 0 && process.argv[i + 1]) return process.argv[i + 1].split(',').map((s) => s.trim())
-  if (onlyArg?.includes('=')) return onlyArg.split('=')[1].split(',').map((s) => s.trim())
   return null
 })()
 
@@ -50,7 +38,6 @@ const supabase = createClient(url, key, {
 
 const BATCH = Number(process.env.IMPORT_BATCH || 500)
 
-/** @type {{ id: string, file: string, table: string, pk?: string, skipId?: boolean, wave: number }[]} */
 const JOBS = [
   { id: 'competitions', file: 'competitions.csv', table: 'competitions', pk: 'competition_id', wave: 1 },
   { id: 'countries', file: 'countries.csv', table: 'countries', pk: 'country_id', wave: 1 },
@@ -60,8 +47,11 @@ const JOBS = [
   { id: 'transfers', file: 'transfers.csv', table: 'transfers', skipId: true, wave: 2 },
   { id: 'valuations', file: 'player_valuations.csv', table: 'player_valuations', skipId: true, wave: 2 },
   { id: 'games', file: 'games.csv', table: 'games', pk: 'game_id', wave: 2 },
-  // Wave 3 — very large
+  // Wave 3 — large
+  { id: 'club_games', file: 'club_games.csv', table: 'club_games', skipId: true, wave: 3 },
   { id: 'appearances', file: 'appearances.csv', table: 'appearances', pk: 'appearance_id', wave: 3 },
+  { id: 'game_events', file: 'game_events.csv', table: 'game_events', pk: 'game_event_id', wave: 3 },
+  { id: 'game_lineups', file: 'game_lineups.csv', table: 'game_lineups', pk: 'game_lineups_id', wave: 3 },
 ]
 
 function emptyToNull(row) {
@@ -87,88 +77,58 @@ function numFields(row, fields) {
 
 function cleanRow(table, raw) {
   let row = emptyToNull(raw)
-  if (table === 'players') {
-    row = numFields(row, [
-      'last_season',
-      'height_in_cm',
-      'international_caps',
-      'international_goals',
-      'market_value_in_eur',
-      'highest_market_value_in_eur',
-    ])
-  } else if (table === 'clubs') {
-    row = numFields(row, [
-      'total_market_value',
-      'squad_size',
-      'average_age',
-      'foreigners_number',
-      'foreigners_percentage',
-      'national_team_players',
-      'stadium_seats',
-      'last_season',
-    ])
-  } else if (table === 'competitions') {
-    row = numFields(row, ['total_clubs'])
-  } else if (table === 'countries') {
-    row = numFields(row, ['total_clubs', 'total_players', 'average_age'])
-  } else if (table === 'national_teams') {
-    row = numFields(row, [
-      'squad_size',
-      'average_age',
-      'foreigners_number',
-      'foreigners_percentage',
-      'total_market_value',
-      'fifa_ranking',
-      'last_season',
-    ])
-  } else if (table === 'transfers') {
-    row = numFields(row, ['transfer_fee', 'market_value_in_eur'])
-  } else if (table === 'player_valuations') {
-    row = numFields(row, ['market_value_in_eur'])
-  } else if (table === 'games') {
-    row = numFields(row, [
-      'season',
-      'home_club_goals',
-      'away_club_goals',
-      'home_club_position',
-      'away_club_position',
-      'attendance',
-    ])
-  } else if (table === 'appearances') {
-    row = numFields(row, [
-      'yellow_cards',
-      'red_cards',
-      'goals',
-      'assists',
-      'minutes_played',
-    ])
+  const map = {
+    players: [
+      'last_season', 'height_in_cm', 'international_caps', 'international_goals',
+      'market_value_in_eur', 'highest_market_value_in_eur',
+    ],
+    clubs: [
+      'total_market_value', 'squad_size', 'average_age', 'foreigners_number',
+      'foreigners_percentage', 'national_team_players', 'stadium_seats', 'last_season',
+    ],
+    competitions: ['total_clubs'],
+    countries: ['total_clubs', 'total_players', 'average_age'],
+    national_teams: [
+      'squad_size', 'average_age', 'foreigners_number', 'foreigners_percentage',
+      'total_market_value', 'fifa_ranking', 'last_season',
+    ],
+    transfers: ['transfer_fee', 'market_value_in_eur'],
+    player_valuations: ['market_value_in_eur'],
+    games: [
+      'season', 'home_club_goals', 'away_club_goals', 'home_club_position',
+      'away_club_position', 'attendance',
+    ],
+    appearances: ['yellow_cards', 'red_cards', 'goals', 'assists', 'minutes_played'],
+    club_games: [
+      'own_goals', 'own_position', 'opponent_goals', 'opponent_position', 'is_win',
+    ],
+    game_events: ['minute'],
+    game_lineups: ['number', 'team_captain'],
   }
+  if (map[table]) row = numFields(row, map[table])
   return row
 }
 
 async function upsertBatch(table, rows, pk) {
   if (!rows.length) return
-  const opts = pk ? { onConflict: pk } : undefined
-  // tables without natural pk: plain insert
+  const q = supabase.schema('staging').from(table)
   if (!pk) {
-    const { error } = await supabase.schema('staging').from(table).insert(rows)
+    const { error } = await q.insert(rows)
     if (error) throw error
     return
   }
-  const { error } = await supabase.schema('staging').from(table).upsert(rows, opts)
+  const { error } = await q.upsert(rows, { onConflict: pk })
   if (error) throw error
 }
 
 async function importCsv(job) {
   const path = join(DATA_DIR, job.file)
   if (!existsSync(path)) {
-    console.warn(`  SKIP missing file: ${path}`)
-    return { ok: false, count: 0 }
+    console.warn(`  SKIP missing: ${path}`)
+    return { count: 0 }
   }
 
   console.log(`\n→ ${job.id}  (${job.file})`)
-  console.log(`  path: ${path}`)
-
   let batch = []
   let total = 0
   let errors = 0
@@ -185,7 +145,6 @@ async function importCsv(job) {
 
   for await (const raw of parser) {
     const row = cleanRow(job.table, raw)
-    // drop auto id columns if present in CSV (none expected)
     if (job.skipId && 'id' in row) delete row.id
     batch.push(row)
 
@@ -195,14 +154,12 @@ async function importCsv(job) {
         total += batch.length
         process.stdout.write(`\r  rows: ${total.toLocaleString('en-US')}`)
       } catch (e) {
-        errors++
-        console.error(`\n  batch error at ~${total}:`, e.message || e)
-        // try row-by-row for this batch to salvage
+        console.error(`\n  batch error @${total}:`, e.message || e)
         for (const r of batch) {
           try {
             await upsertBatch(job.table, [r], job.pk)
             total++
-          } catch (e2) {
+          } catch {
             errors++
           }
         }
@@ -228,34 +185,32 @@ async function importCsv(job) {
     }
   }
 
-  console.log(`\n  done: ${total.toLocaleString('en-US')} rows` + (errors ? `  (errors: ${errors})` : ''))
-  return { ok: true, count: total, errors }
+  console.log(`\n  done: ${total.toLocaleString('en-US')}` + (errors ? `  errors:${errors}` : ''))
+  return { count: total, errors }
 }
 
-// Default: wave 1 only (safe first run). Use --all for wave 1+2, or --only appearances
-const wantAll = process.argv.includes('--all')
-const wantWave3 = process.argv.includes('--wave3') || onlyList?.includes('appearances')
+const everything = process.argv.includes('--everything')
+const rest = process.argv.includes('--rest') || process.argv.includes('--wave3')
+const all = process.argv.includes('--all')
 
 let jobs = JOBS.filter((j) => {
   if (onlyList) return onlyList.includes(j.id)
-  if (wantWave3) return j.wave <= 3
-  if (wantAll) return j.wave <= 2
+  if (everything) return true
+  if (rest) return j.wave === 3
+  if (all) return j.wave <= 2
   return j.wave === 1
 })
 
 console.log('Supabase URL:', url)
 console.log('Data dir:', DATA_DIR)
 console.log('Jobs:', jobs.map((j) => j.id).join(', '))
-console.log('Batch size:', BATCH)
+console.log('Batch:', BATCH)
 
 if (!existsSync(DATA_DIR)) {
-  console.error(`\nDataset klasörü bulunamadı: ${DATA_DIR}`)
-  console.error('TM_DATA_DIR env ile doğru yolu ver.')
+  console.error('Dataset folder missing:', DATA_DIR)
   process.exit(1)
 }
 
-const started = Date.now()
-for (const job of jobs) {
-  await importCsv(job)
-}
-console.log(`\nAll done in ${((Date.now() - started) / 1000).toFixed(1)}s`)
+const t0 = Date.now()
+for (const job of jobs) await importCsv(job)
+console.log(`\nAll done in ${((Date.now() - t0) / 1000 / 60).toFixed(1)} min`)
