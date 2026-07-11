@@ -96,6 +96,14 @@ export const COMPETITION_DIRECTORY = Object.values(LEAGUES_DETAIL)
   .map(toRow)
   .sort((a, b) => b.totalValue - a.totalValue)
 
+export function rebuildCompetitionDirectory(leaguesRecord) {
+  const rows = Object.values(leaguesRecord || {})
+    .map(toRow)
+    .sort((a, b) => (b.totalValue || 0) - (a.totalValue || 0))
+  COMPETITION_DIRECTORY.length = 0
+  COMPETITION_DIRECTORY.push(...rows)
+}
+
 export function formatBn(v) {
   if (v >= 10) return `€${v.toFixed(1)}bn`
   if (v >= 1) return `€${v.toFixed(2)}bn`

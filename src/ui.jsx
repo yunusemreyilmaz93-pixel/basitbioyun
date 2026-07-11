@@ -108,8 +108,8 @@ export function eurosLong(m) {
   return `€${m.toFixed(2)}m`
 }
 
-export function Avatar({ name, size = 'md', ring = false }) {
-  const initials = name
+export function Avatar({ name, size = 'md', ring = false, src = null }) {
+  const initials = (name || '?')
     .split(' ')
     .map((w) => w[0])
     .slice(0, 2)
@@ -121,11 +121,25 @@ export function Avatar({ name, size = 'md', ring = false }) {
     xl: 'size-20 text-2xl',
     '2xl': 'size-24 text-3xl',
   }
+  const ringCls = ring ? 'ring-2 ring-emerald-400/60 ring-offset-2 ring-offset-zinc-900' : ''
+  if (src) {
+    return (
+      <img
+        src={src}
+        alt=""
+        className={`${sizes[size]} ${ringCls} shrink-0 rounded-full object-cover bg-zinc-800 ring-1 ring-white/10`}
+        loading="lazy"
+        referrerPolicy="no-referrer"
+        onError={(e) => {
+          e.currentTarget.style.display = 'none'
+          if (e.currentTarget.nextSibling) e.currentTarget.nextSibling.hidden = false
+        }}
+      />
+    )
+  }
   return (
     <div
-      className={`${sizes[size]} ${
-        ring ? 'ring-2 ring-emerald-400/60 ring-offset-2 ring-offset-zinc-900' : ''
-      } flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-zinc-700 to-zinc-800 font-display font-semibold text-zinc-200`}
+      className={`${sizes[size]} ${ringCls} flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-zinc-700 to-zinc-800 font-display font-semibold text-zinc-200`}
       aria-hidden="true"
     >
       {initials}

@@ -60,16 +60,35 @@ function formatMv(v) {
   return eurosLong(v)
 }
 
-function PlayerPhoto({ name, shirt }) {
-  const initials = name.split(' ').map((w) => w[0]).slice(0, 2).join('')
+function PlayerPhoto({ name, shirt, src }) {
+  const initials = (name || '?')
+    .split(' ')
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join('')
   return (
     <div className="relative size-28 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-700 to-zinc-900 ring-1 ring-white/10 sm:size-32">
-      <div className="absolute inset-0 flex items-center justify-center font-display text-4xl font-semibold text-zinc-300" aria-hidden="true">
-        {initials}
-      </div>
-      <span className="absolute bottom-1.5 right-1.5 flex size-7 items-center justify-center rounded-lg bg-zinc-950/80 font-display text-xs font-bold text-emerald-400 ring-1 ring-white/10">
-        {shirt}
-      </span>
+      {src ? (
+        <img
+          src={src}
+          alt=""
+          className="absolute inset-0 size-full object-cover"
+          loading="lazy"
+          referrerPolicy="no-referrer"
+        />
+      ) : (
+        <div
+          className="absolute inset-0 flex items-center justify-center font-display text-4xl font-semibold text-zinc-300"
+          aria-hidden="true"
+        >
+          {initials}
+        </div>
+      )}
+      {shirt != null && shirt !== '' && (
+        <span className="absolute bottom-1.5 right-1.5 flex size-7 items-center justify-center rounded-lg bg-zinc-950/80 font-display text-xs font-bold text-emerald-400 ring-1 ring-white/10">
+          {shirt}
+        </span>
+      )}
     </div>
   )
 }
@@ -182,7 +201,7 @@ function ProfileHero({ p, d, setView }) {
         {/* Left — identity */}
         <div>
           <div className="flex gap-5">
-            <PlayerPhoto name={p.name} shirt={p.shirt} />
+            <PlayerPhoto name={p.name} shirt={p.shirt} src={p.imageUrl || d?.imageUrl} />
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-2">
                 <button
@@ -1127,10 +1146,28 @@ export default function PlayerProfile({ player, onBack, onOpenPlayer, setView })
   const p = player
   const d = DETAILS[p.id]
   const [tab, setTab] = useState('overview')
+  const [, bump] = useState(0)
   const view = setView || ((type, id) => type === 'player' && onOpenPlayer?.(id))
 
   useEffect(() => {
     setTab('overview')
+  }, [p.id])
+
+  // Lazy-load transfers + valuation history from warehouse
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const { enrichPlayerFromWarehouse } = await import('./dataLayer.js')
+        await enrichPlayerFromWarehouse(p.id)
+        if (!cancelled) bump((n) => n + 1)
+      } catch {
+        /* ignore */
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
   }, [p.id])
 
   if (!d) {

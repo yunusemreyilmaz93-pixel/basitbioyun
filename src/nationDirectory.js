@@ -5,7 +5,7 @@
 import { NATIONS } from './dataLayer.js'
 
 /** Marketing-size global national-team index */
-export const GLOBAL_NATION_INDEX = 211
+export let GLOBAL_NATION_INDEX = 211
 
 export const CONFEDERATIONS = [
   { id: 'UEFA', label: 'UEFA' },
@@ -166,6 +166,16 @@ function buildDirectory() {
 }
 
 export const NATION_DIRECTORY = buildDirectory()
+
+export function rebuildNationDirectory(nationsRecord) {
+  const reals = Object.values(nationsRecord || {})
+    .filter((n) => n.id !== 'uefa')
+    .map(realToRow)
+    .sort((a, b) => (a.fifaRank || 999) - (b.fifaRank || 999))
+  NATION_DIRECTORY.length = 0
+  NATION_DIRECTORY.push(...reals)
+  GLOBAL_NATION_INDEX = reals.length
+}
 
 export function formatSquadValueBn(v) {
   if (v >= 1) return `€${v.toFixed(2)}bn`

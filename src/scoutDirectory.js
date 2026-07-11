@@ -143,30 +143,31 @@ function mapRealPosition(position) {
 }
 
 function realToScoutRow(p) {
-  const { pos, group } = mapRealPosition(p.position)
-  const goals = p.seasonStats?.goals ?? Math.round((hash(p.value * 13) % 20))
-  const assists = p.seasonStats?.assists ?? Math.round((hash(p.value * 17) % 15))
-  const form = +(6.2 + (p.value / 180) * 1.8 + (hash(p.age) % 40) / 100).toFixed(2)
+  const { pos, group } = mapRealPosition(p.pos || p.position)
+  const goals = p.seasonStats?.goals ?? 0
+  const assists = p.seasonStats?.assists ?? 0
+  const form = +(6.2 + (Math.min(p.value || 0, 180) / 180) * 1.8 + ((p.age || 25) % 7) / 10).toFixed(2)
   return {
     id: p.id,
     playerId: p.id,
     name: p.name,
-    nation: p.nation,
+    nation: p.nation || { code: '—', name: '—' },
     club: p.club,
     clubShort: p.clubShort,
     clubId: p.clubId || null,
-    league: p.league,
+    league: p.league || '—',
     position: pos,
-    posGroup: group,
+    posGroup: p.posGroup || group,
     age: p.age,
     form: Math.min(9.5, form),
     goals,
     assists,
     contractUntil: p.contractUntil,
-    value: p.value,
-    status: p.contractUntil <= 2026 ? 'expiring' : 'active',
+    value: p.value || 0,
+    status: p.contractUntil && p.contractUntil <= 2026 ? 'expiring' : 'active',
     loan: false,
     real: true,
+    imageUrl: p.imageUrl || null,
   }
 }
 
@@ -214,16 +215,29 @@ function syntheticRow(i) {
   }
 }
 
-/** Full scouting cache used by filters (real + synthetic) */
+/** Full scouting cache used by filters (real + synthetic in mock mode) */
 export const SCOUT_DIRECTORY = (() => {
   const reals = Object.values(PLAYERS).map(realToScoutRow)
   const synth = Array.from({ length: 293 }, (_, i) => syntheticRow(i + 1))
-  // Put real stars first by value for rank prestige
   return [...reals, ...synth]
 })()
 
-/** Marketing-size global index (for empty-filter branding) */
-export const GLOBAL_INDEX_SIZE = 14842
+/** Global index brand number — updated after Supabase hydrate */
+export let GLOBAL_INDEX_SIZE = 14842
+
+/** Replace directory with warehouse players (no synthetic filler). */
+export function rebuildScoutDirectory(playersRecord) {
+  const reals = Object.values(playersRecord || {})
+    .map(realToScoutRow)
+    .sort((a, b) => (b.value || 0) - (a.value || 0))
+  SCOUT_DIRECTORY.length = 0
+  SCOUT_DIRECTORY.push(...reals)
+  GLOBAL_INDEX_SIZE = reals.length
+  // Dynamic league list from data
+  const leagues = [...new Set(reals.map((r) => r.league).filter((l) => l && l !== '—'))].sort()
+  SCOUT_LEAGUES.length = 0
+  SCOUT_LEAGUES.push('All Leagues', ...leagues)
+}
 
 export function posGroupOf(position) {
   for (const [g, list] of Object.entries(POS_GROUPS)) {

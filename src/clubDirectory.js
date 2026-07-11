@@ -17,8 +17,8 @@ export const CLUB_SCOUT_LEAGUES = [
   'Championship',
 ]
 
-/** Marketing-size global club index */
-export const GLOBAL_CLUB_INDEX = 842
+/** Marketing-size global club index — updated after hydrate */
+export let GLOBAL_CLUB_INDEX = 842
 
 const PREFIX = [
   'Sporting', 'United', 'City', 'Athletic', 'Royal', 'Olympic', 'National', 'Dynamo',
@@ -128,6 +128,18 @@ export const CLUB_DIRECTORY = (() => {
   const synth = Array.from({ length: 195 }, (_, i) => syntheticRow(i + 1))
   return [...reals, ...synth]
 })()
+
+export function rebuildClubDirectory(clubsRecord) {
+  const reals = Object.values(clubsRecord || {})
+    .map(realToRow)
+    .sort((a, b) => (b.squadValue || 0) - (a.squadValue || 0))
+  CLUB_DIRECTORY.length = 0
+  CLUB_DIRECTORY.push(...reals)
+  GLOBAL_CLUB_INDEX = reals.length
+  const leagues = [...new Set(reals.map((r) => r.league).filter(Boolean))].sort()
+  CLUB_SCOUT_LEAGUES.length = 0
+  CLUB_SCOUT_LEAGUES.push(...leagues)
+}
 
 export function formatSquadValue(m) {
   if (m >= 1000) return `€${(m / 1000).toFixed(2)}bn`

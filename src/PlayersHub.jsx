@@ -512,7 +512,7 @@ export default function PlayersHub({ setView }) {
                               canPlayer ? '' : 'cursor-default'
                             }`}
                           >
-                            <Avatar name={r.name} size="xs" />
+                            <Avatar name={r.name} size="xs" src={r.imageUrl} />
                             <span className="min-w-0">
                               <span
                                 className={`block truncate text-[11px] font-medium text-zinc-100 ${

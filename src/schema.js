@@ -20,24 +20,33 @@ export const CURRENT_WINDOW = {
 }
 
 /** Data layer status — mock | supabase | api */
-const envMode = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_DATA_MODE) || 'mock'
+const envMode =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_DATA_MODE) || 'auto'
 const hasSupabase =
   typeof import.meta !== 'undefined' &&
   Boolean(import.meta.env?.VITE_SUPABASE_URL && import.meta.env?.VITE_SUPABASE_ANON_KEY)
 
+// auto: use supabase when keys exist (unless forced mock)
+const resolvedMode =
+  envMode === 'mock'
+    ? 'mock'
+    : envMode === 'api'
+      ? 'api'
+      : envMode === 'supabase' || (envMode === 'auto' && hasSupabase)
+        ? hasSupabase
+          ? 'supabase'
+          : 'mock'
+        : 'mock'
+
 export const DATA_SOURCE = {
-  mode: envMode === 'supabase' && hasSupabase ? 'supabase' : envMode === 'api' ? 'api' : 'mock',
-  provider:
-    envMode === 'supabase' && hasSupabase
-      ? 'supabase'
-      : envMode === 'api'
-        ? null
-        : null, // later: 'api-football' | 'sportmonks'
+  mode: resolvedMode,
+  provider: resolvedMode === 'supabase' ? 'supabase' : null,
   season: CURRENT_SEASON,
   window: CURRENT_WINDOW,
   asOf: '2026-07-11',
   readyForApi: true,
   supabaseConfigured: hasSupabase,
+  warehouse: null,
 }
 
 export function emptyExternalIds(partial = {}) {
