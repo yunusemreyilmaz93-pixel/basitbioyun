@@ -3,6 +3,7 @@
  * Future: swap to live API for fresh rows; keep this as historical warehouse reader.
  */
 import { supabase } from './supabase.js'
+import { competitionDisplayName } from './displayNames.js'
 
 const PAGE = 1000
 
@@ -114,13 +115,25 @@ function nationCode(citizenship) {
   return String(citizenship).slice(0, 3).toUpperCase()
 }
 
-function mapPlayer(row, clubMap) {
+function prettyCompetition(entity) {
+  return competitionDisplayName(entity, 'en')
+}
+
+function mapPlayer(row, clubMap, leagueMap) {
   const id = String(row.player_id)
   const clubId = row.current_club_id != null ? String(row.current_club_id) : null
   const club = clubId && clubMap[clubId]
   const valueM = eurToM(row.market_value_in_eur)
   const highM = eurToM(row.highest_market_value_in_eur)
   const pos = row.sub_position || row.position || '—'
+  const leagueId = club?.leagueId || (row.current_club_domestic_competition_id
+    ? String(row.current_club_domestic_competition_id)
+    : null)
+  const leagueEntity = (leagueId && leagueMap?.[leagueId]) || null
+  const leagueName =
+    club?.leagueDisplay ||
+    (leagueEntity ? prettyCompetition(leagueEntity) : null) ||
+    prettyCompetition({ id: leagueId, name: club?.league, code: row.current_club_domestic_competition_id })
   return {
     id,
     name: row.name || `${row.first_name || ''} ${row.last_name || ''}`.trim() || id,
@@ -131,7 +144,8 @@ function mapPlayer(row, clubMap) {
     club: row.current_club_name || club?.name || 'Free Agent',
     clubId,
     clubShort: club?.short || shortCode(row.current_club_name),
-    league: club?.league || row.current_club_domestic_competition_id || '—',
+    league: leagueName,
+    leagueId,
     nation: {
       name: row.country_of_citizenship || '—',
       code: nationCode(row.country_of_citizenship),
@@ -170,17 +184,26 @@ function mapPlayer(row, clubMap) {
   }
 }
 
-function mapClubFixed(row, compMap) {
-  const leagueId = row.domestic_competition_id || null
-  const league = leagueId && compMap[leagueId]
+function mapClubFixed(row, compMap, leagueRecord) {
+  const leagueId = row.domestic_competition_id ? String(row.domestic_competition_id) : null
+  const leagueRaw = leagueId && compMap[leagueId]
+  const leagueObj = leagueId && leagueRecord?.[leagueId]
+  const leagueDisplay = prettyCompetition(
+    leagueObj || {
+      id: leagueId,
+      code: leagueRaw?.competition_code || leagueId,
+      name: leagueRaw?.name || leagueId,
+    },
+  )
   return {
     id: String(row.club_id),
     name: row.name,
     short: shortCode(row.name, (row.club_code || 'fc').slice(0, 3).toUpperCase()),
-    league: league?.name || row.domestic_competition_id || '—',
-    leagueCode: row.domestic_competition_id || null,
-    leagueId: leagueId ? String(leagueId) : null,
-    country: league?.country_name || null,
+    league: leagueDisplay,
+    leagueDisplay,
+    leagueCode: leagueRaw?.competition_code || row.domestic_competition_id || null,
+    leagueId,
+    country: leagueRaw?.country_name || leagueObj?.country || null,
     founded: null,
     squadSize: row.squad_size ?? 0,
     avgAge: Number(row.average_age) || 0,
@@ -188,13 +211,13 @@ function mapClubFixed(row, compMap) {
     squadValue: eurToM(row.total_market_value),
     stadium: {
       name: row.stadium_name || '—',
-      capacity: row.stadium_seats ?? 0,
-      city: '—',
-      pitch: '—',
+      capacity: Number(row.stadium_seats) || 0,
+      city: leagueRaw?.country_name || '—',
+      pitch: 'Natural grass',
     },
     formation: '4-3-3',
     manager: { name: row.coach_name || '—', managerId: null },
-    squad: [],
+    squad: { GK: [], DEF: [], MID: [], FWD: [] },
     startingXI: [],
     standings: [],
     transfers: { arrivals: [], departures: [] },
@@ -377,31 +400,60 @@ export async function fetchSupabaseBundle({
 
   const compById = Object.fromEntries(comps.map((x) => [x.competition_id, x]))
   const leagues = toRecord(comps.map(mapLeague))
-  const clubs = toRecord(clubsRaw.map((c) => mapClubFixed(c, compById)))
-  const clubMap = clubs
-  const players = toRecord(playersRaw.map((p) => mapPlayer(p, clubMap)))
+  // Apply pretty league names immediately (no slugs in UI)
+  for (const L of Object.values(leagues)) {
+    L.displayName = prettyCompetition(L)
+    L.name = L.displayName
+    L.fullName = L.displayName
+  }
 
-  // Attach squads to clubs
+  const clubs = toRecord(clubsRaw.map((c) => mapClubFixed(c, compById, leagues)))
+  const clubMap = clubs
+  const players = toRecord(playersRaw.map((p) => mapPlayer(p, clubMap, leagues)))
+
+  // Attach squads grouped the way ClubProfile expects: { GK, DEF, MID, FWD }
+  for (const c of Object.values(clubs)) {
+    c.squad = { GK: [], DEF: [], MID: [], FWD: [] }
+  }
   for (const p of Object.values(players)) {
     if (!p.clubId || !clubs[p.clubId]) continue
-    if (!clubs[p.clubId].squad) clubs[p.clubId].squad = []
-    clubs[p.clubId].squad.push({
+    const g = p.posGroup || 'MID'
+    const bucket = clubs[p.clubId].squad[g] ? g : 'MID'
+    clubs[p.clubId].squad[bucket].push({
       playerId: p.id,
       name: p.name,
       pos: p.pos,
-      age: p.age,
-      value: p.value,
-      nation: p.nation,
-      imageUrl: p.imageUrl,
+      age: p.age ?? '—',
+      value: p.value || 0,
+      nation: p.nation?.code || p.nation?.name || '—',
+      contract: p.contractUntil || '—',
+      imageUrl: p.imageUrl || null,
     })
   }
+  // Refresh squadSize from loaded players when CSV size missing
+  for (const c of Object.values(clubs)) {
+    const n =
+      (c.squad.GK?.length || 0) +
+      (c.squad.DEF?.length || 0) +
+      (c.squad.MID?.length || 0) +
+      (c.squad.FWD?.length || 0)
+    if (n > 0) c.squadSize = n
+    // recompute avg age roughly from loaded squad if needed
+    if (!c.avgAge && n > 0) {
+      const ages = [...c.squad.GK, ...c.squad.DEF, ...c.squad.MID, ...c.squad.FWD]
+        .map((x) => Number(x.age))
+        .filter((a) => Number.isFinite(a) && a > 0)
+      if (ages.length) c.avgAge = +(ages.reduce((a, b) => a + b, 0) / ages.length).toFixed(1)
+    }
+  }
 
-  // League totals
+  // League totals from clubs (€M → store as bn for UI cards that expect bn)
   for (const c of Object.values(clubs)) {
     const lid = c.leagueId
     if (lid && leagues[lid]) {
-      leagues[lid].totalValue = (leagues[lid].totalValue || 0) + (c.squadValue || 0)
+      leagues[lid].totalValue = (leagues[lid].totalValue || 0) + (c.squadValue || 0) / 1000
       leagues[lid].players = (leagues[lid].players || 0) + (c.squadSize || 0)
+      leagues[lid].teams = (leagues[lid].teams || 0) + 1
     }
   }
 

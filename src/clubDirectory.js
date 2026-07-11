@@ -72,20 +72,29 @@ function shortCode(i, h) {
 }
 
 function realToRow(c) {
+  const stadium =
+    typeof c.stadium === 'string'
+      ? c.stadium
+      : c.stadium?.name || '—'
+  const capacity =
+    typeof c.stadium === 'object' && c.stadium
+      ? Number(c.stadium.capacity) || 0
+      : Number(c.capacity) || 0
   return {
     id: c.id,
     clubId: c.id,
     name: c.name,
     short: c.short,
-    league: c.league,
+    league: c.leagueDisplay || c.league || '—',
     leagueCode: c.leagueCode,
-    squadSize: c.squadSize,
-    avgAge: c.avgAge,
-    foreignersPct: c.foreignersPct,
-    stadium: c.stadium.name,
-    capacity: c.stadium.capacity,
+    leagueId: c.leagueId || null,
+    squadSize: c.squadSize || 0,
+    avgAge: Number(c.avgAge) || 0,
+    foreignersPct: Number(c.foreignersPct) || 0,
+    stadium,
+    capacity,
     /** squad value in €M */
-    squadValue: c.squadValue,
+    squadValue: Number(c.squadValue) || 0,
     real: true,
   }
 }

@@ -9,6 +9,7 @@ import {
 } from './clubDirectory.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
 import { DATA_SOURCE } from './dataLayer.js'
+import { competitionDisplayName } from './lib/displayNames.js'
 
 const PAGE_SIZE = 25
 
@@ -114,7 +115,7 @@ function countActiveFilters(f) {
  * ClubsHub — high-density club scouting directory (PlayersHub architecture).
  */
 export default function ClubsHub({ setView }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const [filters, setFilters] = useState(defaultFilters)
   const [sort, setSort] = useState('value')
   const [page, setPage] = useState(1)
@@ -209,8 +210,11 @@ export default function ClubsHub({ setView }) {
   const showingTo = Math.min(safePage * PAGE_SIZE, foundDisplay)
 
   const openLeague = (row) => {
-    const lid = LEAGUE_CODE_TO_ID[row.leagueCode] || LEAGUE_NAME_TO_ID[row.league]
-    if (lid) setView('league', lid)
+    const lid =
+      row.leagueId ||
+      LEAGUE_CODE_TO_ID[row.leagueCode] ||
+      LEAGUE_NAME_TO_ID[row.league]
+    if (lid) setView('league', String(lid))
   }
 
   return (
@@ -496,20 +500,25 @@ export default function ClubsHub({ setView }) {
                             onClick={() => openLeague(r)}
                             className="block w-full truncate text-left text-zinc-400 transition-colors hover:text-sky-300"
                           >
-                            {r.league}
+                            {competitionDisplayName(
+                              { id: r.leagueId, code: r.leagueCode, name: r.league },
+                              locale,
+                            )}
                           </button>
                         </td>
-                        <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-300">{r.squadSize}</td>
-                        <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-400">
-                          {r.avgAge.toFixed(1)}
+                        <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-300">
+                          {r.squadSize || '—'}
                         </td>
                         <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-400">
-                          {r.foreignersPct}%
+                          {(Number(r.avgAge) || 0).toFixed(1)}
+                        </td>
+                        <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-400">
+                          {Number(r.foreignersPct) || 0}%
                         </td>
                         <td className="min-w-0 px-1 py-1.5">
-                          <span className="block truncate text-zinc-300">{r.stadium}</span>
+                          <span className="block truncate text-zinc-300">{r.stadium || '—'}</span>
                           <span className="font-mono text-[9px] tabular-nums text-zinc-600">
-                            {r.capacity.toLocaleString('en-US')}
+                            {(Number(r.capacity) || 0).toLocaleString('en-US')}
                           </span>
                         </td>
                         <td className="px-1 py-1.5 text-right font-mono text-[12px] font-bold tabular-nums text-emerald-400">

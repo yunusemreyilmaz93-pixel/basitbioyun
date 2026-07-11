@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Avatar, Crest, Card, CardLabel, euros, eurosLong, ScoreBadge } from './ui.jsx'
 import { LEAGUE_CODE_TO_ID, LEAGUE_NAME_TO_ID } from './leagueData.js'
-import { CLUB_BY_SHORT } from './clubData.js'
+import { CLUB_BY_SHORT } from './dataLayer.js'
 import { matchesForClub } from './matchData.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { competitionDisplayName } from './lib/displayNames.js'
 
 /* ================================================================== */
 /*  Shared bits                                                        */
@@ -94,24 +95,34 @@ function resolveLeagueId(club) {
 }
 
 function LeagueLink({ club, setView, className = '' }) {
+  const { locale } = useI18n()
   const leagueId = resolveLeagueId(club)
+  const label = competitionDisplayName(
+    { id: club.leagueId, code: club.leagueCode, name: club.leagueDisplay || club.league },
+    locale,
+  )
   if (!leagueId || !setView) {
-    return <span className={className}>{club.league}</span>
+    return <span className={className}>{label}</span>
   }
   return (
     <button
       type="button"
-      onClick={() => setView('league', leagueId)}
+      onClick={() => setView('league', String(leagueId))}
       className={`transition-colors hover:text-sky-300 ${className}`}
     >
-      {club.league}
+      {label}
     </button>
   )
 }
 
 function ClubHeader({ club, setView }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const leagueId = resolveLeagueId(club)
+  const leagueLabel = competitionDisplayName(
+    { id: club.leagueId, code: club.leagueCode, name: club.leagueDisplay || club.league },
+    locale,
+  )
+  const stadium = club.stadium || { name: '—', capacity: 0, city: '—', pitch: '—' }
   return (
     <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900/90 to-zinc-900/50 p-5 backdrop-blur-md sm:p-7">
       <div className="pointer-events-none absolute -left-20 -top-24 size-72 rounded-full bg-emerald-400/[0.06] blur-3xl" aria-hidden="true" />
@@ -119,30 +130,34 @@ function ClubHeader({ club, setView }) {
 
       <div className="relative flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex min-w-0 gap-5">
-          <GiantCrest code={club.short} />
+          <GiantCrest code={club.short || 'FC'} />
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
                 disabled={!leagueId}
-                onClick={() => leagueId && setView?.('league', leagueId)}
+                onClick={() => leagueId && setView?.('league', String(leagueId))}
                 className={`rounded-sm bg-white/10 px-1.5 py-0.5 font-display text-[10px] font-bold tracking-wide text-zinc-200 ${
                   leagueId ? 'transition-colors hover:bg-sky-500/15 hover:text-sky-300' : ''
                 }`}
               >
-                {club.leagueCode}
+                {club.leagueCode || '—'}
               </button>
               <LeagueLink club={club} setView={setView} className="text-xs text-zinc-400" />
-              <span className="text-zinc-700">·</span>
-              <span className="text-xs text-zinc-500">
-                {t('common.est')} {club.founded}
-              </span>
+              {club.founded != null && (
+                <>
+                  <span className="text-zinc-700">·</span>
+                  <span className="text-xs text-zinc-500">
+                    {t('common.est')} {club.founded}
+                  </span>
+                </>
+              )}
             </div>
             <h1 className="mt-1.5 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               {club.name}
             </h1>
             <p className="mt-1 text-sm text-zinc-400">
-              {club.stadium.city}, {club.country}
+              {[stadium.city, club.country].filter(Boolean).join(', ') || leagueLabel}
             </p>
 
             <div className="mt-4 flex flex-wrap items-end gap-x-4 gap-y-1">
@@ -151,7 +166,7 @@ function ClubHeader({ club, setView }) {
                   {t('club.squadValue')}
                 </p>
                 <p className="mt-0.5 font-display text-3xl font-bold tabular-nums tracking-tight text-emerald-400 sm:text-4xl">
-                  {formatBn(club.squadValue)}
+                  {formatBn(Number(club.squadValue) || 0)}
                 </p>
               </div>
             </div>
@@ -159,12 +174,14 @@ function ClubHeader({ club, setView }) {
         </div>
 
         <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3 lg:w-auto lg:min-w-[320px] lg:grid-cols-2">
-          <StatPill label={t('club.squadSize')}>{club.squadSize}</StatPill>
-          <StatPill label={t('club.averageAge')}>{club.avgAge.toFixed(1)}</StatPill>
-          <StatPill label={t('club.foreigners')}>{club.foreignersPct}%</StatPill>
-          <StatPill label={t('club.stadium')}>{club.stadium.name}</StatPill>
-          <StatPill label={t('club.capacity')}>{club.stadium.capacity.toLocaleString('en-US')}</StatPill>
-          <StatPill label={t('club.pitch')}>{club.stadium.pitch}</StatPill>
+          <StatPill label={t('club.squadSize')}>{club.squadSize || 0}</StatPill>
+          <StatPill label={t('club.averageAge')}>{(Number(club.avgAge) || 0).toFixed(1)}</StatPill>
+          <StatPill label={t('club.foreigners')}>{Number(club.foreignersPct) || 0}%</StatPill>
+          <StatPill label={t('club.stadium')}>{stadium.name}</StatPill>
+          <StatPill label={t('club.capacity')}>
+            {(Number(stadium.capacity) || 0).toLocaleString('en-US')}
+          </StatPill>
+          <StatPill label={t('club.pitch')}>{stadium.pitch || '—'}</StatPill>
         </div>
       </div>
     </section>
@@ -184,7 +201,7 @@ const SQUAD_GROUPS = [
 
 function SquadGroup({ groupKey, label, players, open, onToggle, onOpenPlayer }) {
   const { t } = useI18n()
-  const total = players.reduce((a, p) => a + p.value, 0)
+  const total = players.reduce((a, p) => a + (Number(p.value) || 0), 0)
 
   return (
     <div className="overflow-hidden rounded-xl border border-white/5">
@@ -252,7 +269,7 @@ function SquadGroup({ groupKey, label, players, open, onToggle, onOpenPlayer }) 
                         onClick={clickable ? () => onOpenPlayer(pl.playerId) : undefined}
                         className={`flex w-full min-w-0 items-center gap-1.5 text-left ${clickable ? 'group cursor-pointer' : ''}`}
                       >
-                        <Avatar name={pl.name} size="xs" />
+                        <Avatar name={pl.name} size="xs" src={pl.imageUrl} />
                         <span
                           className={`truncate text-[11px] font-medium text-zinc-100 ${clickable ? 'transition-colors group-hover:text-emerald-300' : ''}`}
                         >
@@ -260,15 +277,19 @@ function SquadGroup({ groupKey, label, players, open, onToggle, onOpenPlayer }) 
                         </span>
                       </RowTag>
                     </td>
-                    <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-400">{pl.age}</td>
+                    <td className="px-1 py-1.5 text-right font-mono tabular-nums text-zinc-400">
+                      {pl.age ?? '—'}
+                    </td>
                     <td className="px-1 py-1.5">
                       <span className="rounded-sm bg-white/10 px-1 py-px font-mono text-[9px] font-bold text-zinc-300">
-                        {pl.nation}
+                        {typeof pl.nation === 'object' ? pl.nation?.code || '—' : pl.nation || '—'}
                       </span>
                     </td>
-                    <td className="truncate px-1 py-1.5 font-mono text-[10px] tabular-nums text-zinc-400">{pl.contract}</td>
+                    <td className="truncate px-1 py-1.5 font-mono text-[10px] tabular-nums text-zinc-400">
+                      {pl.contract ?? '—'}
+                    </td>
                     <td className="px-1 py-1.5 text-right font-mono text-[12px] font-semibold tabular-nums text-emerald-400">
-                      {euros(pl.value)}
+                      {euros(Number(pl.value) || 0)}
                     </td>
                   </tr>
                 )

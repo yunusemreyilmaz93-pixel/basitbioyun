@@ -197,12 +197,38 @@ export function normalizeClub(raw) {
     leagueId: raw.leagueId ?? null,
     stadium,
     transfers,
-    squad: Array.isArray(raw.squad) ? raw.squad : [],
+    // Support both shapes: grouped {GK,DEF,MID,FWD} (UI) or flat array
+    squad: (() => {
+      if (!raw.squad) return { GK: [], DEF: [], MID: [], FWD: [] }
+      if (Array.isArray(raw.squad)) {
+        const g = { GK: [], DEF: [], MID: [], FWD: [] }
+        for (const pl of raw.squad) {
+          const key = pl.posGroup || pl.group || 'MID'
+          ;(g[key] || g.MID).push(pl)
+        }
+        return g
+      }
+      return {
+        GK: Array.isArray(raw.squad.GK) ? raw.squad.GK : [],
+        DEF: Array.isArray(raw.squad.DEF) ? raw.squad.DEF : [],
+        MID: Array.isArray(raw.squad.MID) ? raw.squad.MID : [],
+        FWD: Array.isArray(raw.squad.FWD) ? raw.squad.FWD : [],
+      }
+    })(),
     startingXI: Array.isArray(raw.startingXI) ? raw.startingXI : [],
     standings: Array.isArray(raw.standings) ? raw.standings : [],
     nextFixtures: Array.isArray(raw.nextFixtures) ? raw.nextFixtures : [],
     lastResults: Array.isArray(raw.lastResults) ? raw.lastResults : [],
-    squadSize: raw.squadSize ?? raw.squad?.length ?? 0,
+    squadSize:
+      raw.squadSize ??
+      (raw.squad && !Array.isArray(raw.squad)
+        ? (raw.squad.GK?.length || 0) +
+          (raw.squad.DEF?.length || 0) +
+          (raw.squad.MID?.length || 0) +
+          (raw.squad.FWD?.length || 0)
+        : Array.isArray(raw.squad)
+          ? raw.squad.length
+          : 0),
     avgAge: raw.avgAge ?? 0,
     foreignersPct: raw.foreignersPct ?? 0,
     squadValue: raw.squadValue ?? 0,
