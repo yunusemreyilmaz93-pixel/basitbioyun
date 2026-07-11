@@ -8,6 +8,8 @@ import {
   formatSquadValueBn,
 } from './nationDirectory.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { Flag } from './ui/Flag.jsx'
+import { DATA_SOURCE } from './dataLayer.js'
 
 const PAGE_SIZE = 25
 
@@ -61,18 +63,10 @@ function ToggleChip({ active, onClick, children }) {
   )
 }
 
-function FlagMark({ code }) {
-  let h = 0
-  for (let i = 0; i < code.length; i++) h = (h * 31 + code.charCodeAt(i)) % 360
+function FlagMark({ code, name }) {
   return (
-    <span
-      className="inline-flex size-6 shrink-0 items-center justify-center rounded-md font-display text-[8px] font-bold tracking-wide text-white/90 ring-1 ring-white/15"
-      style={{
-        background: `linear-gradient(145deg, hsl(${h} 48% 36%), hsl(${(h + 40) % 360} 46% 16%))`,
-      }}
-      aria-hidden="true"
-    >
-      {code}
+    <span className="inline-flex size-6 shrink-0 items-center justify-center overflow-hidden rounded-md bg-zinc-900 ring-1 ring-white/15">
+      <Flag code={code} name={name} size={24} className="size-full object-cover" />
     </span>
   )
 }
@@ -206,6 +200,7 @@ export default function NationsHub({ setView }) {
   }, [filters, sort])
 
   const isOpenSearch =
+    DATA_SOURCE.mode !== 'supabase' &&
     !filters.query &&
     !filters.confederations.length &&
     filters.maxFifaRank >= 211 &&
@@ -527,7 +522,7 @@ export default function NationsHub({ setView }) {
                               canNation ? '' : 'cursor-default'
                             }`}
                           >
-                            <FlagMark code={r.code} />
+                            <FlagMark code={r.code} name={r.name} />
                             <span
                               className={`truncate text-[11px] font-medium text-zinc-100 ${
                                 canNation

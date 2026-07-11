@@ -1,5 +1,6 @@
 import { Avatar, Crest, Card, CardLabel, euros, ScoreBadge } from './ui.jsx'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { Flag } from './ui/Flag.jsx'
 
 /* ================================================================== */
 /*  Shared                                                             */
@@ -17,20 +18,15 @@ function formatBn(v) {
   return `€${v.toFixed(2)}bn`
 }
 
-function FlagBadge({ code, large = false }) {
-  let h = 0
-  for (let i = 0; i < code.length; i++) h = (h * 31 + code.charCodeAt(i)) % 360
+function FlagBadge({ code, name, large = false }) {
+  const size = large ? 80 : 40
   return (
     <div
-      className={`flex shrink-0 items-center justify-center rounded-2xl font-display font-bold tracking-tight text-white/95 ring-1 ring-white/15 ${
-        large ? 'size-20 text-xl sm:size-24 sm:text-2xl' : 'size-10 text-xs'
+      className={`flex shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-zinc-900 ring-1 ring-white/15 ${
+        large ? 'size-20 sm:size-24' : 'size-10'
       }`}
-      style={{
-        background: `linear-gradient(145deg, hsl(${h} 48% 38%), hsl(${(h + 50) % 360} 42% 16%))`,
-      }}
-      aria-hidden="true"
     >
-      {code}
+      <Flag code={code} name={name} size={size} className="size-full rounded-2xl object-cover" />
     </div>
   )
 }
@@ -99,8 +95,32 @@ function RankSparkline({ history }) {
 
 function NationHeader({ nation, setView }) {
   const { t } = useI18n()
-  const a = nation.association
-  const coach = nation.coach
+  const a =
+    nation.association && typeof nation.association === 'object'
+      ? {
+          name: nation.association.name || nation.name,
+          short: nation.association.short || nation.code,
+          founded: nation.association.founded,
+          address: nation.association.address || '',
+          colors: nation.association.colors || nation.colors || {
+            primary: '#3f3f46',
+            secondary: '#27272a',
+            tertiary: '#18181b',
+          },
+        }
+      : {
+          name: typeof nation.association === 'string' ? nation.association : nation.name,
+          short: nation.code,
+          founded: null,
+          address: '',
+          colors: nation.colors || {
+            primary: '#3f3f46',
+            secondary: '#27272a',
+            tertiary: '#18181b',
+          },
+        }
+  const coach = nation.coach || { name: '—' }
+  const stadium = nation.stadium || { name: '—', capacity: 0, city: '—' }
 
   return (
     <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900/90 to-zinc-900/50 p-5 backdrop-blur-md sm:p-7">
@@ -109,17 +129,21 @@ function NationHeader({ nation, setView }) {
 
       <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-[1.2fr_1fr]">
         <div className="flex min-w-0 gap-4 sm:gap-5">
-          <FlagBadge code={nation.code} large />
+          <FlagBadge code={nation.code} name={nation.name} large />
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-md border border-sky-400/25 bg-sky-500/10 px-2 py-0.5 font-display text-[10px] font-bold tracking-wide text-sky-300">
                 {a.short}
               </span>
               <span className="text-xs text-zinc-400">{nation.confederation}</span>
-              <span className="text-zinc-700">·</span>
-              <span className="text-xs text-zinc-500">
-                {t('common.est')} {a.founded}
-              </span>
+              {a.founded != null && (
+                <>
+                  <span className="text-zinc-700">·</span>
+                  <span className="text-xs text-zinc-500">
+                    {t('common.est')} {a.founded}
+                  </span>
+                </>
+              )}
             </div>
             <h1 className="mt-1.5 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               {nation.name}
@@ -127,12 +151,14 @@ function NationHeader({ nation, setView }) {
             <p className="mt-1 text-sm text-zinc-400">{a.name}</p>
 
             <div className="mt-3 flex flex-wrap gap-1.5">
-              <ColorSwatch hex={a.colors.primary} label="pri" />
-              <ColorSwatch hex={a.colors.secondary} label="sec" />
-              <ColorSwatch hex={a.colors.tertiary} label="ter" />
+              <ColorSwatch hex={a.colors.primary || '#3f3f46'} label="pri" />
+              <ColorSwatch hex={a.colors.secondary || '#27272a'} label="sec" />
+              <ColorSwatch hex={a.colors.tertiary || '#18181b'} label="ter" />
             </div>
 
-            <p className="mt-3 max-w-md text-xs leading-relaxed text-zinc-500">{a.address}</p>
+            {a.address ? (
+              <p className="mt-3 max-w-md text-xs leading-relaxed text-zinc-500">{a.address}</p>
+            ) : null}
 
             <div className="mt-4 flex flex-wrap items-end gap-4">
               <div>
@@ -145,11 +171,11 @@ function NationHeader({ nation, setView }) {
               </div>
               <div className="rounded-xl border border-white/5 bg-white/[0.02] px-3 py-2">
                 <p className="text-[10px] uppercase tracking-wide text-zinc-500">{t('club.nationalStadium')}</p>
-                <p className="text-sm font-medium text-zinc-100">{nation.stadium.name}</p>
+                <p className="text-sm font-medium text-zinc-100">{stadium.name || '—'}</p>
                 <p className="text-[11px] tabular-nums text-zinc-500">
-                  {nation.stadium.capacity > 0
-                    ? `${nation.stadium.capacity.toLocaleString('en-US')} · ${nation.stadium.city}`
-                    : nation.stadium.city}
+                  {stadium.capacity > 0
+                    ? `${stadium.capacity.toLocaleString('en-US')} · ${stadium.city || ''}`
+                    : stadium.city || '—'}
                 </p>
               </div>
             </div>

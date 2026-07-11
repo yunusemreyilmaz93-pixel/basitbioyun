@@ -7,6 +7,8 @@ import {
   formatPlayerValue,
 } from './competitionDirectory.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { competitionDisplayName } from './lib/displayNames.js'
+import { Flag } from './ui/Flag.jsx'
 
 const CATEGORY_IDS = [
   { id: 'all', key: 'hubs.allCompetitions' },
@@ -39,9 +41,11 @@ function LogoMark({ code, large = false }) {
 }
 
 function FlagPill({ code }) {
+  if (!code) return null
   return (
-    <span className="inline-flex items-center rounded-sm bg-white/10 px-1.5 py-0.5 font-display text-[9px] font-bold tracking-wide text-zinc-300">
-      {code}
+    <span className="inline-flex items-center gap-1 rounded-sm bg-white/10 px-1 py-0.5 text-zinc-300">
+      <Flag code={code} size={14} />
+      <span className="font-display text-[9px] font-bold tracking-wide">{code}</span>
     </span>
   )
 }
@@ -75,7 +79,8 @@ function sortRows(rows, sort) {
 /* ------------------------------------------------------------------ */
 
 function EliteCupCard({ c, setView }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
+  const title = competitionDisplayName(c, locale)
   return (
     <button
       type="button"
@@ -94,9 +99,9 @@ function EliteCupCard({ c, setView }) {
       </div>
       <div className="relative mt-3 min-w-0 flex-1">
         <p className="font-display text-[15px] font-semibold leading-snug text-white transition-colors group-hover:text-sky-200">
-          {c.name}
+          {title}
         </p>
-        <p className="mt-0.5 truncate text-[11px] text-zinc-500">{c.fullName}</p>
+        <p className="mt-0.5 truncate text-[11px] text-zinc-500">{c.code || c.fullName}</p>
       </div>
       <div className="relative mt-3 flex items-end justify-between gap-2 border-t border-white/5 pt-3">
         <div>
@@ -147,7 +152,8 @@ function EliteCupCard({ c, setView }) {
 /* ------------------------------------------------------------------ */
 
 function DomesticCard({ c, setView }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
+  const title = competitionDisplayName(c, locale)
   return (
     <button
       type="button"
@@ -158,9 +164,9 @@ function DomesticCard({ c, setView }) {
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-1.5">
           <span className="truncate text-[13px] font-semibold text-zinc-100 transition-colors group-hover:text-emerald-300">
-            {c.name}
+            {title}
           </span>
-          <FlagPill code={c.nationCode} />
+          <FlagPill code={c.nationCode || c.country} />
         </div>
         <p className="mt-0.5 truncate text-[11px] text-zinc-500">{c.country}</p>
         <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-[13px]">

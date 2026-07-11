@@ -9,7 +9,9 @@ import {
   SEARCH_INDEX,
   DATA_SOURCE,
   getDataStatus,
+  hydrateFromSupabase,
 } from './dataLayer.js'
+import { isSupabaseConfigured } from './lib/supabase.js'
 import { fold } from './ui.jsx'
 import HomepageDashboard from './Home.jsx'
 import PlayerProfile from './PlayerProfile.jsx'
@@ -350,6 +352,38 @@ export default function App() {
   const [selectedId, setSelectedId] = useState(null)
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [smartOpen, setSmartOpen] = useState(false)
+  /** Bumps after warehouse hydrate so hubs remount with real rows */
+  const [dataTick, setDataTick] = useState(0)
+  const [liveHint, setLiveHint] = useState(null)
+
+  // Background hydrate — UI already visible (mock first, then live)
+  useEffect(() => {
+    const wantLive =
+      isSupabaseConfigured &&
+      (DATA_SOURCE.mode === 'supabase' || import.meta.env.VITE_DATA_MODE === 'supabase')
+    if (!wantLive) return
+    let cancelled = false
+    setLiveHint('live')
+    ;(async () => {
+      try {
+        const ok = await hydrateFromSupabase()
+        if (cancelled) return
+        if (ok) {
+          setDataTick((n) => n + 1)
+          setLiveHint(null)
+          console.info('[basitbioyun] live data ready', getDataStatus().counts)
+        } else {
+          setLiveHint(null)
+        }
+      } catch (err) {
+        console.warn('[basitbioyun] hydrate failed', err)
+        if (!cancelled) setLiveHint(null)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const setView = useCallback((nextView, id) => {
     // Aliases
@@ -360,16 +394,43 @@ export default function App() {
           ? 'competitions'
           : nextView
 
-    // Validate detail ids before swap
-    if (v === 'player' && id && !PLAYERS[id]) return
-    if (v === 'club' && id && !CLUBS[id]) return
-    if (v === 'match' && id && !MATCHES_DETAIL[id]) return
-    if (v === 'league' && id && !LEAGUES_DETAIL[id]) return
-    if (v === 'nation' && id && !NATIONS[id]) return
-    if (v === 'manager' && id && !MANAGERS[id]) return
+    // Coerce ids to string (warehouse ids are often numeric strings)
+    const sid = id != null ? String(id) : null
+
+    // Validate detail ids — if missing, open not-found instead of silent no-op
+    if (v === 'player' && sid && !PLAYERS[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
+    if (v === 'club' && sid && !CLUBS[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
+    if (v === 'match' && sid && !MATCHES_DETAIL[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
+    if (v === 'league' && sid && !LEAGUES_DETAIL[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
+    if (v === 'nation' && sid && !NATIONS[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
+    if (v === 'manager' && sid && !MANAGERS[sid]) {
+      setViewState('missing')
+      setSelectedId(sid)
+      return
+    }
 
     setViewState(v)
-    setSelectedId(id ?? null)
+    setSelectedId(sid)
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
   }, [])
 
@@ -396,6 +457,7 @@ export default function App() {
   if (view === 'homepage') {
     screen = (
       <HomepageDashboard
+        key={`home-${dataTick}`}
         onOpenPlayer={(id) => setView('player', id)}
         onOpenClub={(id) => setView('club', id)}
         onOpenMatch={(id) => setView('match', id)}
@@ -404,17 +466,17 @@ export default function App() {
       />
     )
   } else if (view === 'players') {
-    screen = <PlayersHub setView={setView} />
+    screen = <PlayersHub key={`players-${dataTick}`} setView={setView} />
   } else if (view === 'clubs') {
-    screen = <ClubsHub setView={setView} />
+    screen = <ClubsHub key={`clubs-${dataTick}`} setView={setView} />
   } else if (view === 'managers') {
-    screen = <ManagersHub setView={setView} />
+    screen = <ManagersHub key={`managers-${dataTick}`} setView={setView} />
   } else if (view === 'competitions') {
-    screen = <CompetitionsHub setView={setView} />
+    screen = <CompetitionsHub key={`comps-${dataTick}`} setView={setView} />
   } else if (view === 'nations') {
-    screen = <NationsHub setView={setView} />
+    screen = <NationsHub key={`nations-${dataTick}`} setView={setView} />
   } else if (view === 'market') {
-    screen = <MarketHubPage setView={setView} />
+    screen = <MarketHubPage key={`market-${dataTick}`} setView={setView} />
   } else if (view === 'player' && PLAYERS[selectedId]) {
     screen = (
       <PlayerProfile
@@ -486,6 +548,11 @@ export default function App() {
         onSearchOpen={() => setPaletteOpen(true)}
         onLearnMore={() => setSmartOpen(true)}
       />
+      {liveHint && (
+        <div className="border-b border-sky-400/20 bg-sky-500/10 px-4 py-1.5 text-center text-[11px] text-sky-300">
+          Canlı veri güncelleniyor…
+        </div>
+      )}
       <TerminalChrome view={view} selectedId={selectedId} setView={setView} />
 
       {screen}

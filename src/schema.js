@@ -175,13 +175,39 @@ export function normalizePlayerDetails(raw, playerId) {
 
 export function normalizeClub(raw) {
   if (!raw) return null
+  const stadium =
+    raw.stadium && typeof raw.stadium === 'object'
+      ? {
+          name: raw.stadium.name || '—',
+          capacity: raw.stadium.capacity ?? 0,
+          city: raw.stadium.city || '—',
+          pitch: raw.stadium.pitch || '—',
+        }
+      : { name: '—', capacity: 0, city: '—', pitch: '—' }
+  const transfers = raw.transfers && typeof raw.transfers === 'object'
+    ? {
+        arrivals: Array.isArray(raw.transfers.arrivals) ? raw.transfers.arrivals : [],
+        departures: Array.isArray(raw.transfers.departures) ? raw.transfers.departures : [],
+      }
+    : { arrivals: [], departures: [] }
   return {
     ...raw,
     externalIds: emptyExternalIds(raw.externalIds),
     seasonId: raw.seasonId ?? CURRENT_SEASON.id,
     leagueId: raw.leagueId ?? null,
-    nextFixtures: raw.nextFixtures ?? [],
-    lastResults: raw.lastResults ?? [],
+    stadium,
+    transfers,
+    squad: Array.isArray(raw.squad) ? raw.squad : [],
+    startingXI: Array.isArray(raw.startingXI) ? raw.startingXI : [],
+    standings: Array.isArray(raw.standings) ? raw.standings : [],
+    nextFixtures: Array.isArray(raw.nextFixtures) ? raw.nextFixtures : [],
+    lastResults: Array.isArray(raw.lastResults) ? raw.lastResults : [],
+    squadSize: raw.squadSize ?? raw.squad?.length ?? 0,
+    avgAge: raw.avgAge ?? 0,
+    foreignersPct: raw.foreignersPct ?? 0,
+    squadValue: raw.squadValue ?? 0,
+    manager: raw.manager || { name: '—', managerId: null },
+    formation: raw.formation || '—',
     meta: {
       source: DATA_SOURCE.mode,
       provider: DATA_SOURCE.provider,
@@ -212,10 +238,31 @@ export function normalizeMatch(raw) {
 
 export function normalizeLeague(raw) {
   if (!raw) return null
+  const zones = raw.zones && typeof raw.zones === 'object'
+    ? {
+        ucl: raw.zones.ucl || { max: 4, label: 'UEFA Champions League' },
+        uel: raw.zones.uel,
+        uecl: raw.zones.uecl,
+        relegation: raw.zones.relegation || { min: 18, max: 20, label: 'Relegation' },
+      }
+    : {
+        ucl: { max: 4, label: 'UEFA Champions League' },
+        relegation: { min: 18, max: 20, label: 'Relegation' },
+      }
   return {
     ...raw,
     externalIds: emptyExternalIds(raw.externalIds),
     seasonId: raw.seasonId ?? CURRENT_SEASON.id,
+    zones,
+    standings: Array.isArray(raw.standings) ? raw.standings : [],
+    allTime: Array.isArray(raw.allTime) ? raw.allTime : [],
+    leaders: raw.leaders && typeof raw.leaders === 'object' ? raw.leaders : {},
+    bestXi: Array.isArray(raw.bestXi) ? raw.bestXi : [],
+    teams: raw.teams ?? 0,
+    players: raw.players ?? 0,
+    foreignersPct: raw.foreignersPct ?? 0,
+    avgAge: raw.avgAge ?? 0,
+    totalValue: raw.totalValue ?? 0,
     meta: {
       source: DATA_SOURCE.mode,
       provider: DATA_SOURCE.provider,
@@ -230,6 +277,14 @@ export function normalizeNation(raw) {
   return {
     ...raw,
     externalIds: emptyExternalIds(raw.externalIds),
+    squad: Array.isArray(raw.squad) ? raw.squad : [],
+    fixtures: Array.isArray(raw.fixtures) ? raw.fixtures : [],
+    trophies: Array.isArray(raw.trophies) ? raw.trophies : [],
+    legends: raw.legends && typeof raw.legends === 'object' ? raw.legends : {},
+    rankingHistory: Array.isArray(raw.rankingHistory) ? raw.rankingHistory : [],
+    coach: raw.coach || { name: '—' },
+    stadium: raw.stadium && typeof raw.stadium === 'object' ? raw.stadium : {},
+    colors: raw.colors && typeof raw.colors === 'object' ? raw.colors : {},
     seasonId: raw.seasonId ?? CURRENT_SEASON.id,
     meta: {
       source: DATA_SOURCE.mode,

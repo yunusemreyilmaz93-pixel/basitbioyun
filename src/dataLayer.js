@@ -195,9 +195,11 @@ export async function hydrateFromSupabase() {
   for (const k of Object.keys(NATIONS)) delete NATIONS[k]
   Object.assign(NATIONS, mapRecord(bundle.nations, normalizeNation))
 
-  for (const k of Object.keys(MANAGERS)) delete MANAGERS[k]
-  // Keep empty managers from warehouse for now (no TM manager dump)
-  Object.assign(MANAGERS, mapRecord(bundle.managers || {}, normalizeManager))
+  // Warehouse has no full manager dossiers — keep mock managers for hub UX
+  if (bundle.managers && Object.keys(bundle.managers).length) {
+    for (const k of Object.keys(MANAGERS)) delete MANAGERS[k]
+    Object.assign(MANAGERS, mapRecord(bundle.managers, normalizeManager))
+  }
 
   for (const k of Object.keys(MATCHES_DETAIL)) delete MATCHES_DETAIL[k]
   Object.assign(MATCHES_DETAIL, mapRecord(bundle.matches, normalizeMatch))

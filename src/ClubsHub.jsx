@@ -8,6 +8,7 @@ import {
   formatSquadValue,
 } from './clubDirectory.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { DATA_SOURCE } from './dataLayer.js'
 
 const PAGE_SIZE = 25
 
@@ -162,6 +163,7 @@ export default function ClubsHub({ setView }) {
   }, [filters, sort])
 
   const isOpenSearch =
+    DATA_SOURCE.mode !== 'supabase' &&
     !filters.query &&
     !filters.leagues.length &&
     filters.valueMin <= 0 &&

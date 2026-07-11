@@ -2,6 +2,8 @@ import { Fragment, useEffect, useMemo, useState } from 'react'
 import { Avatar, Crest, Card, CardLabel, ScoreBadge } from './ui.jsx'
 import { matchesForLeague } from './matchData.js'
 import { translateZoneLabel, useI18n } from './i18n/I18nProvider.jsx'
+import { competitionDisplayName } from './lib/displayNames.js'
+import { Flag } from './ui/Flag.jsx'
 
 /* ================================================================== */
 /*  Shared                                                             */
@@ -42,10 +44,11 @@ function FlagButton({ code, nationId, setView }) {
       className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.04] px-2 py-1 transition-colors hover:border-sky-400/30 hover:bg-sky-500/10"
       title={code}
     >
+      <Flag code={code} size={18} />
       <span className="rounded-sm bg-white/10 px-1.5 py-0.5 font-display text-[10px] font-bold tracking-wide text-zinc-200">
         {code}
       </span>
-      <span className="text-[10px] font-medium text-sky-400">↗</span>
+      {nationId ? <span className="text-[10px] font-medium text-sky-400">↗</span> : null}
     </button>
   )
 }
@@ -66,7 +69,9 @@ function HeroStat({ label, children, accent = false }) {
 }
 
 function LeagueHero({ league, setView }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
+  const title = competitionDisplayName(league, locale)
+  const totalBn = Number(league.totalValue) || 0
   return (
     <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900/90 to-zinc-900/50 p-5 backdrop-blur-md sm:p-7">
       <div className="pointer-events-none absolute -left-20 -top-24 size-72 rounded-full bg-sky-400/[0.06] blur-3xl" aria-hidden="true" />
@@ -77,12 +82,16 @@ function LeagueHero({ league, setView }) {
           <LeagueLogo code={league.code} />
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
-              <FlagButton code={league.nationCode} nationId={league.nationId} setView={setView} />
-              <span className="text-xs text-zinc-400">{league.country}</span>
-              <span className="text-zinc-700">·</span>
-              <span className="text-xs text-zinc-500">
-                {t('common.est')} {league.founded}
-              </span>
+              <FlagButton code={league.nationCode || league.country} nationId={league.nationId} setView={setView} />
+              <span className="text-xs text-zinc-400">{league.country || league.confederation || '—'}</span>
+              {league.founded != null && (
+                <>
+                  <span className="text-zinc-700">·</span>
+                  <span className="text-xs text-zinc-500">
+                    {t('common.est')} {league.founded}
+                  </span>
+                </>
+              )}
               {league.type === 'international' && (
                 <span className="rounded-md bg-sky-500/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-sky-300 ring-1 ring-sky-400/25">
                   {t('hubs.continentalOnly')}
@@ -90,16 +99,16 @@ function LeagueHero({ league, setView }) {
               )}
             </div>
             <h1 className="mt-1.5 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              {league.name}
+              {title}
             </h1>
-            <p className="mt-1 text-sm text-zinc-400">{league.fullName}</p>
+            <p className="mt-1 text-sm text-zinc-400">{league.code || league.fullName}</p>
 
             <div className="mt-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-300/80">
                 {t('league.totalMarket')}
               </p>
               <p className="mt-0.5 font-display text-3xl font-bold tabular-nums tracking-tight text-emerald-400 sm:text-4xl">
-                €{league.totalValue.toFixed(2)}
+                €{totalBn.toFixed(2)}
                 <span className="text-xl text-zinc-500">bn</span>
               </p>
             </div>
@@ -354,22 +363,27 @@ function StandingsPanel({ league, setView }) {
       {/* Zone legend */}
       {tab === 'current' && (
         <div className="mt-3 flex flex-wrap gap-3 text-[10px] text-zinc-500">
-          <span className="inline-flex items-center gap-1.5">
-            <span className="h-3 w-0.5 bg-sky-400" /> {translateZoneLabel(t, league.zones.ucl.label)}
-          </span>
-          {league.zones.uel && (
+          {league.zones?.ucl?.label && (
+            <span className="inline-flex items-center gap-1.5">
+              <span className="h-3 w-0.5 bg-sky-400" /> {translateZoneLabel(t, league.zones.ucl.label)}
+            </span>
+          )}
+          {league.zones?.uel?.label && (
             <span className="inline-flex items-center gap-1.5">
               <span className="h-3 w-0.5 bg-violet-400" /> {translateZoneLabel(t, league.zones.uel.label)}
             </span>
           )}
-          {league.zones.uecl && (
+          {league.zones?.uecl?.label && (
             <span className="inline-flex items-center gap-1.5">
               <span className="h-3 w-0.5 bg-cyan-500" /> {translateZoneLabel(t, league.zones.uecl.label)}
             </span>
           )}
-          <span className="inline-flex items-center gap-1.5">
-            <span className="h-3 w-0.5 bg-red-500" /> {translateZoneLabel(t, league.zones.relegation.label)}
-          </span>
+          {league.zones?.relegation?.label && (
+            <span className="inline-flex items-center gap-1.5">
+              <span className="h-3 w-0.5 bg-red-500" />{' '}
+              {translateZoneLabel(t, league.zones.relegation.label)}
+            </span>
+          )}
         </div>
       )}
 

@@ -7,6 +7,7 @@ import {
   GLOBAL_INDEX_SIZE,
 } from './scoutDirectory.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { DATA_SOURCE } from './dataLayer.js'
 
 const PAGE_SIZE = 25
 
@@ -190,8 +191,9 @@ export default function PlayersHub({ setView }) {
     return rows
   }, [filters, sort])
 
-  // Simulate massive index: when filters are essentially open, brand as full DB size
+  // Simulate massive index only in mock mode (warehouse uses real row counts)
   const isOpenSearch =
+    DATA_SOURCE.mode !== 'supabase' &&
     !filters.query &&
     !filters.leagues.length &&
     !filters.groups.length &&

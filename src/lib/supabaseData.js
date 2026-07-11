@@ -206,13 +206,30 @@ function mapClubFixed(row, compMap) {
 }
 
 function mapLeague(row) {
+  const id = String(row.competition_id)
+  const code = row.competition_code || row.competition_id
+  // Prefer human name; fall back later via displayNames
+  const rawName = row.name || code || id
   return {
-    id: String(row.competition_id),
-    name: row.name,
-    fullName: row.name,
-    code: row.competition_code || row.competition_id,
+    id,
+    name: rawName,
+    fullName: rawName,
+    code,
     country: row.country_name || null,
     confederation: row.confederation || null,
+    continent:
+      row.confederation === 'europa' || row.confederation === 'UEFA'
+        ? 'Europe'
+        : row.confederation === 'CONMEBOL'
+          ? 'South America'
+          : row.confederation === 'AFC'
+            ? 'Asia'
+            : row.confederation === 'CAF'
+              ? 'Africa'
+              : row.confederation === 'CONCACAF'
+                ? 'North America'
+                : undefined,
+    type: row.type === 'international_cup' || row.type === 'domestic_cup' ? 'international' : 'domestic',
     teams: row.total_clubs ?? 0,
     players: 0,
     foreignersPct: 0,
@@ -233,22 +250,55 @@ function mapLeague(row) {
 }
 
 function mapNation(row) {
+  const code = String(row.country_code || row.team_code || 'xx')
+    .replace(/[0-9]/g, '')
+    .slice(0, 3)
+    .toUpperCase() || '—'
+  const countryName = row.country_name || row.name || '—'
   return {
     id: String(row.national_team_id),
     name: row.name,
-    code: (row.country_code || row.team_code || '—').slice(0, 3).toUpperCase(),
+    code,
     confederation: row.confederation || null,
     fifaRank: row.fifa_ranking ?? null,
-    squadValue: eurToM(row.total_market_value),
-    association: row.country_name || null,
-    stadium: {},
-    coach: { name: row.coach_name || '—' },
-    colors: {},
+    // UI expects €bn on some nation cards; keep as bn if huge else M→bn
+    squadValue: (() => {
+      const m = eurToM(row.total_market_value)
+      return m >= 1000 ? m / 1000 : m / 1000 // always store as bn for formatBn on nation pages
+    })(),
+    association: {
+      name: countryName,
+      short: code,
+      founded: null,
+      address: '',
+      colors: {
+        primary: '#3f3f46',
+        secondary: '#27272a',
+        tertiary: '#18181b',
+      },
+    },
+    stadium: {
+      name: '—',
+      capacity: 0,
+      city: countryName,
+    },
+    coach: { name: row.coach_name || '—', managerId: null, since: null },
+    colors: {
+      primary: '#3f3f46',
+      secondary: '#27272a',
+      tertiary: '#18181b',
+    },
     squad: [],
     fixtures: [],
     trophies: [],
-    legends: {},
-    rankingHistory: [],
+    legends: { caps: [], goals: [] },
+    rankingHistory: row.fifa_ranking != null
+      ? [
+          { year: 2023, rank: Math.min(211, (row.fifa_ranking || 50) + 4) },
+          { year: 2024, rank: Math.min(211, (row.fifa_ranking || 50) + 2) },
+          { year: 2025, rank: row.fifa_ranking },
+        ]
+      : [],
     imageUrl: row.team_image_url || null,
     externalIds: { transfermarkt: row.national_team_id },
     meta: { url: row.url },

@@ -6,6 +6,7 @@ import {
   SMART_RISERS, MOST_SEARCHED, EXPIRING, LEAGUES,
 } from './homeData.js'
 import { useI18n } from './i18n/I18nProvider.jsx'
+import { LEAGUES_DETAIL } from './dataLayer.js'
 
 /* ------------------------------------------------------------------ */
 /*  Shared tiny bits — existing design tokens                          */
@@ -509,8 +510,8 @@ function ExpiringCard({ p, onOpenPlayer }) {
 /*  4 — Top 5 league grid                                              */
 /* ------------------------------------------------------------------ */
 
-/* Homepage league cards → LeagueProfile ids */
-const LEAGUE_IDS = {
+/* Homepage league cards → resolve live warehouse ids when available */
+const LEAGUE_ID_FALLBACK = {
   ENG: 'premier-league',
   ESP: 'la-liga',
   GER: 'bundesliga',
@@ -518,10 +519,33 @@ const LEAGUE_IDS = {
   FRA: 'ligue-1',
 }
 
+function resolveHomeLeagueId(code, name) {
+  const fallback = LEAGUE_ID_FALLBACK[code]
+  if (fallback && LEAGUES_DETAIL[fallback]) return fallback
+  // TM codes often used as ids after hydrate
+  const codeMap = { ENG: 'GB1', ESP: 'ES1', GER: 'L1', ITA: 'IT1', FRA: 'FR1' }
+  const tm = codeMap[code]
+  if (tm && LEAGUES_DETAIL[tm]) return tm
+  const needle = String(name || '').toLowerCase()
+  const hit = Object.values(LEAGUES_DETAIL).find((x) => {
+    const n = String(x.name || '').toLowerCase()
+    const id = String(x.id || '').toLowerCase()
+    return (
+      (needle && n.includes(needle.split(' ')[0])) ||
+      (code === 'ENG' && (n.includes('premier') || id.includes('gb1'))) ||
+      (code === 'ESP' && (n.includes('liga') || id.includes('es1'))) ||
+      (code === 'GER' && (n.includes('bundes') || id === 'l1')) ||
+      (code === 'ITA' && (n.includes('serie') || id.includes('it1'))) ||
+      (code === 'FRA' && (n.includes('ligue') || id.includes('fr1')))
+    )
+  })
+  return hit?.id || fallback || null
+}
+
 function LeagueCard({ l, onOpenLeague }) {
   const { t } = useI18n()
   const up = l.trend >= 0
-  const leagueId = LEAGUE_IDS[l.code]
+  const leagueId = resolveHomeLeagueId(l.code, l.name)
   const clickable = Boolean(leagueId && onOpenLeague)
   const Wrapper = clickable ? 'button' : 'div'
   return (

@@ -745,13 +745,33 @@ function TransferLedger({ transfers, className = '' }) {
 
 export default function ClubProfile({ club, onBack, onOpenPlayer, setView }) {
   const { t } = useI18n()
+  if (!club) {
+    return (
+      <main className="mx-auto max-w-7xl px-4 py-8">
+        <p className="text-zinc-400">{t('common.screenNotFound')}</p>
+      </main>
+    )
+  }
+  const transfers = club.transfers || { arrivals: [], departures: [] }
+  const stadium = club.stadium || { name: '—', capacity: 0, city: '—', pitch: '—' }
   const netSpend = useMemo(() => {
-    const inFee = (club.transfers.arrivals || []).reduce((a, row) => a + (row.fee || 0), 0)
-    const outFee = (club.transfers.departures || []).reduce((a, row) => a + (row.fee || 0), 0)
+    const inFee = (transfers.arrivals || []).reduce((a, row) => a + (row.fee || 0), 0)
+    const outFee = (transfers.departures || []).reduce((a, row) => a + (row.fee || 0), 0)
     return inFee - outFee
-  }, [club])
+  }, [transfers])
 
   const openPlayer = (id) => (setView ? setView('player', id) : onOpenPlayer?.(id))
+  // soft-patch missing nested shapes for warehouse clubs
+  const safeClub = {
+    ...club,
+    transfers,
+    stadium,
+    squad: club.squad || [],
+    standings: club.standings || [],
+    lastResults: club.lastResults || [],
+    nextFixtures: club.nextFixtures || [],
+    manager: club.manager || { name: '—', managerId: null },
+  }
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
@@ -774,27 +794,27 @@ export default function ClubProfile({ club, onBack, onOpenPlayer, setView }) {
         {t('common.backMarket')}
       </button>
 
-      <ClubHeader club={club} setView={setView} />
+      <ClubHeader club={safeClub} setView={setView} />
 
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
         {/* Main: squad directory */}
         <div className="min-w-0 lg:col-span-8">
-          <SquadDirectory club={club} onOpenPlayer={openPlayer} />
+          <SquadDirectory club={safeClub} onOpenPlayer={openPlayer} />
         </div>
 
         {/* Sidebar */}
         <aside className="space-y-5 lg:col-span-4">
-          <ManagerWidget manager={club.manager} setView={setView} />
-          <RecentMatches club={club} setView={setView} />
-          <StandingsWidget club={club} setView={setView} />
+          <ManagerWidget manager={safeClub.manager} setView={setView} />
+          <RecentMatches club={safeClub} setView={setView} />
+          <StandingsWidget club={safeClub} setView={setView} />
         </aside>
       </div>
 
       {/* Bottom: tactics + transfers — equal-height symmetrical pair */}
       <div className="mt-6 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-2">
-        <TacticsBoard club={club} onOpenPlayer={openPlayer} />
+        <TacticsBoard club={safeClub} onOpenPlayer={openPlayer} />
         <div className="flex h-full min-h-0 flex-col">
-          <TransferLedger transfers={club.transfers} className="flex-1" />
+          <TransferLedger transfers={safeClub.transfers} className="flex-1" />
           <p className="mt-2 text-right text-xs text-zinc-500">
             {t('club.arrivals')} − {t('club.departures')}{' '}
             <span
