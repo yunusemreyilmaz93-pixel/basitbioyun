@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "seed:export": "node scripts/export-seed.mjs",
-    "seed:supabase": "node scripts/seed-supabase.mjs"
+    "seed:supabase": "node scripts/seed-supabase.mjs",
+    "import:tm": "node scripts/import-transfermarkt.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.2",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "@vitejs/plugin-react": "^4.5.0",
+    "csv-parse": "^7.0.1",
     "tailwindcss": "^4.3.2",
     "vite": "^6.3.5"
   }
