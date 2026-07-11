@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-zinc-950);
+  color: var(--color-zinc-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Signature: slow pulse on the live value dot */
+@keyframes value-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.8); }
+}
+.animate-value-pulse {
+  animation: value-pulse 2.4s ease-in-out infinite;
+}
+
+/* Sparkline draw-in on load */
+@keyframes draw-line {
+  from { stroke-dashoffset: 600; }
+  to { stroke-dashoffset: 0; }
+}
+.animate-draw-line {
+  stroke-dasharray: 600;
+  animation: draw-line 1.6s ease-out forwards;
+}
+
+/* Hide scrollbar on horizontal data rows (still scrollable) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Tooltip-safe scroll shells: horizontal scroll without creating a paint
+ * containment that traps absolutely-positioned UI. Prefer the portaled Tip
+ * in ui.jsx; this remains a defensive layout guard for local overlays.
+ */
+.table-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.table-scroll table {
+  overflow: visible;
+}
+.table-scroll thead,
+.table-scroll tbody,
+.table-scroll tr,
+.table-scroll th,
+.table-scroll td {
+  overflow: visible;
+  position: relative;
+  z-index: auto;
+}
+.table-scroll th:hover,
+.table-scroll td:hover {
+  z-index: 20;
+}
+
+/*
+ * Data tables — readable terminal density.
+ * Hubs + profiles previously used 9–11px type; numbers were unreadable.
+ * Keep compact layout, lift body to ~13px and mono stats to ~14px.
+ */
+table.data-table,
+table.table-fixed {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.4;
+}
+
+table.data-table thead th,
+table.table-fixed thead th {
+  font-size: 0.6875rem !important; /* 11px headers */
+  font-weight: 600 !important;
+  letter-spacing: 0.06em;
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important;
+  color: rgb(161 161 170); /* zinc-400 — slightly brighter than zinc-500 */
+  white-space: nowrap;
+}
+
+table.data-table tbody td,
+table.data-table tfoot td,
+table.table-fixed tbody td,
+table.table-fixed tfoot td {
+  font-size: 0.8125rem !important; /* 13px */
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important;
+  vertical-align: middle;
+}
+
+/* Numbers & ranks: primary readable surface */
+table.data-table .font-mono,
+table.data-table .tabular-nums,
+table.table-fixed .font-mono,
+table.table-fixed .tabular-nums {
+  font-size: 0.875rem !important; /* 14px */
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+/* Name / club labels that used micro text utilities */
+table.data-table td span.truncate,
+table.data-table td span.block,
+table.table-fixed td span.truncate,
+table.table-fixed td span.block {
+  font-size: 0.8125rem !important; /* 13px */
+  line-height: 1.35;
+}
+
+/* Keep tiny nation/status chips readable but not huge */
+table.data-table td span.font-mono.text-\[8px\],
+table.data-table td span[class*='text-[8px]'],
+table.data-table td span[class*='text-[9px]'],
+table.table-fixed td span[class*='text-[8px]'],
+table.table-fixed td span[class*='text-[9px]'] {
+  font-size: 0.625rem !important; /* 10px chips */
+  line-height: 1.2;
+}
+
+/* Value cells (SMV etc.) — slightly stronger */
+table.data-table td.text-emerald-400,
+table.data-table td .text-emerald-400,
+table.table-fixed td.text-emerald-400,
+table.table-fixed td .text-emerald-400 {
+  font-size: 0.9375rem !important; /* 15px */
+  font-weight: 600 !important;
+}
+
+/* Non–table-fixed data tables (e.g. season-by-comp at text-sm) */
+table.data-table:not(.table-fixed) thead th {
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+}
+table.data-table:not(.table-fixed) tbody td {
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+}
+
+/* Slightly larger avatars/crests inside dense tables */
+table.data-table .size-5,
+table.table-fixed .size-5 {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  font-size: 0.5625rem !important;
+}
+table.data-table .size-6,
+table.table-fixed .size-6 {
+  width: 1.75rem !important;
+  height: 1.75rem !important;
+  font-size: 0.625rem !important;
+}
+
+/* Auto-scrolling news ticker (vertical, seamless loop, pause on hover) */
+@keyframes news-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+.news-track {
+  animation: news-scroll 26s linear infinite;
+}
+.news-viewport:hover .news-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-value-pulse,
+  .animate-draw-line,
+  .news-track {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
